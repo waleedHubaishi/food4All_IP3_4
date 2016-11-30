@@ -46,7 +46,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/imageButton4"
-        android:layout_weight="0.37" />
+        android:layout_weight="0.37"
+        android:onClick="goToLogin"/>
 
     <TextView
         android:layout_width="match_parent"
