@@ -60,7 +60,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/imageButton5"
-        android:layout_weight="0.41" />
+        android:layout_weight="0.41"
+        android:onClick="goToRegister" />
 
     <TextView
         android:text="Registrieren"

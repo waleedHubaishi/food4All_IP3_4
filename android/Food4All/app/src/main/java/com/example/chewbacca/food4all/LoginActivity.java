@@ -285,6 +285,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailView.setAdapter(adapter);
     }
 
+    /** Called when the user clicks the Login button */
+    public void goToStartscreen(View view) {
+        Intent intent = new Intent(this, Startscreen.class);
+        startActivity(intent);
+    }
+
 
     private interface ProfileQuery {
         String[] PROJECTION = {
