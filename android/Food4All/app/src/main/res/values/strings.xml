@@ -3,7 +3,7 @@
 
     <!-- Strings related to login -->
     <string name="login_title">Login</string>
-    <string name="prompt_username">Benutzername</string>
+    <string name="prompt_email">E-Mail</string>
     <string name="prompt_password">Passwort</string>
     <string name="password_forgotten"><u>Passwort vergessen?</u></string>
     <string name="action_sign_in">Einloggen</string>
