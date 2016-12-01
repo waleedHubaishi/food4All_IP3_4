@@ -22,6 +22,11 @@ public class Startscreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToRegister(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+    }
+
     // TODO: make link for register activity
     /** Called when the user clicks the Register button */
     /* public void goToRegister(View view) {
