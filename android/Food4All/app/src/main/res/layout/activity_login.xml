@@ -9,7 +9,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chewbacca.food4all.LoginActivity">
+    tools:context="com.example.chewbacca.food4all.LoginActivity"
+    android:background="#46abd7"
+    android:fontFamily="sans-serif">
 
     <!-- Login progress -->
 
@@ -27,32 +29,22 @@
         android:layout_height="wrap_content"
         android:weightSum="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="?attr/actionModeCloseDrawable"
-            android:id="@+id/imageButton"
-            android:onClick="goToStartscreen" />
-
         <TextView
             android:text="Login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textView2"
-            android:layout_weight="1.00" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageButton2" />
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="240dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -61,48 +53,64 @@
             android:orientation="vertical"
             android:weightSum="1">
 
+            <!-- TODO: insert some head icon -->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageView2" />
+                android:id="@+id/imageView2"
+                android:layout_weight="3.49" />
 
             <AutoCompleteTextView
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/prompt_email"
+                android:id="@+id/username"
+                android:layout_height="40dp"
+                android:hint="@string/prompt_username"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:background="#fbfbfb"
+                android:layout_weight="0.54"
+                android:layout_gravity="center"
+                android:layout_width="320dp"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:hint="@string/prompt_password"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:background="#fbfbfb"
+                android:layout_weight="0.54"
+                android:layout_gravity="center"
+                android:layout_width="320dp"
+                android:padding="8dp"
+                android:layout_marginBottom="30px"/>
 
-            <Button
-                android:text="Passwort vegessen?"
-                android:layout_width="281dp"
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:id="@+id/Button" />
+                android:text="@string/password_forgotten"
+                android:gravity="center"
+                android:layout_weight="0.31" />
 
             <Button
-        android:id="@+id/email_sign_in_button"
-        style="?android:textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/action_sign_in"
-        android:textStyle="bold"
-                android:layout_weight="4.84" />
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
     </ScrollView>
