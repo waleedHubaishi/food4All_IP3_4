@@ -109,7 +109,23 @@
                 android:text="@string/action_sign_in"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/startscreen_register"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                android:background="@color/colornavigation"
+                android:layout_weight="3.49"
+                android:onClick="goToRegisterActivity"
+                />
 
         </LinearLayout>
     </ScrollView>

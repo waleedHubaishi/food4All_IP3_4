@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chewbacca.food4all.RegisterActivity">
+    tools:context="com.example.chewbacca.food4all.RegisterActivity"
+    android:background="@color/colorbackground">
 
     <ImageButton
         app:srcCompat="@android:color/holo_green_dark"
@@ -51,40 +52,38 @@
 
     <AutoCompleteTextView
         android:id="@+id/actvBenutzername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:hint="Benutzername"
         android:inputType="textPersonName"
         android:maxLines="1"
         android:singleLine="true"
         android:layout_marginBottom="28dp"
+        android:background="@color/colorpopupbackground"
         android:layout_above="@+id/actvEmail"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <AutoCompleteTextView
         android:id="@+id/actvEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:singleLine="true"
+        android:background="@color/colorpopupbackground"
         android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/actvBenutzername"
+        android:layout_alignStart="@+id/actvBenutzername" />
 
     <Button
         android:text="Weiter"
-        android:layout_width="wrap_content"
+        android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/actvEmail"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="13dp"
         android:id="@+id/bWeiter"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="goToRegister2" />
+        android:onClick="goToRegister2"
+        android:layout_below="@+id/actvEmail"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
