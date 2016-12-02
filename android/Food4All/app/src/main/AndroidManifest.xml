@@ -13,8 +13,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".Startscreen"
             android:label="@string/app_name">
         </activity>
         <activity android:name=".Adv1Activity">
@@ -24,10 +25,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Adv2Activity" />
         <activity android:name=".Adv3Activity" />
         <activity android:name=".Adv4Activity" />
         <activity android:name=".Adv5Activity"></activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+
     </application>
 
 </manifest>
