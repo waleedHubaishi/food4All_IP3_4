@@ -17,8 +17,8 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/imageButton15"
-        android:layout_alignEnd="@+id/imageButton15" />
+        android:layout_alignRight="@+id/ibInfo2"
+        android:layout_alignEnd="@+id/ibInfo2" />
 
     <CheckBox
         android:text="Ich bin mit den AGBs der FoodHeld-App einverstanden"
