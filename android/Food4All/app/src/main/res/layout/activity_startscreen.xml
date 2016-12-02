@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.chewbacca.food4all.Startscreen"
     android:weightSum="1"
-    android:background="@color/Background"
+    android:background="@color/colorbackground"
     android:fontFamily="sans-serif">
 
     <!-- Startup screen -->
