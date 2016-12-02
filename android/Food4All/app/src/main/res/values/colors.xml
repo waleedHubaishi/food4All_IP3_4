@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="Background">#46abd7</color>
-    <color name="Popupbackground">#fbfbfb</color>
+    <color name="colorbackground">#46abd7</color>
+    <color name="colorpopupbackground">#fbfbfb</color>
+    <color name="colornavigation">#769e2c</color>
+    <color name="colortext1">#ffa900</color>
 </resources>
