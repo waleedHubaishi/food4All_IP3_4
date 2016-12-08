@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
+		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
+		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
 		A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E21DED9A1100F7601F /* ViewController.swift */; };
 		A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0E41DED9A1100F7601F /* Main.storyboard */; };
@@ -76,6 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A454A0DD1DED9A1100F7601F /* FoodForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A0E01DED9A1100F7601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A454A0E21DED9A1100F7601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,13 +89,10 @@
 		A454A0E81DED9A1100F7601F /* FoodForAll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodForAll.xcdatamodel; sourceTree = "<group>"; };
 		A454A0EA1DED9A1100F7601F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A454A0ED1DED9A1100F7601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A454A0EF1DED9A1100F7601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A454A0F41DED9A1100F7601F /* FoodForAllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForAllTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllTests.swift; sourceTree = "<group>"; };
-		A454A0FA1DED9A1100F7601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A454A0FF1DED9A1100F7601F /* FoodForAllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForAllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllUITests.swift; sourceTree = "<group>"; };
-		A454A1051DED9A1100F7601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A472998E1DF02B2D002B3977 /* fiveCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiveCircles.png; sourceTree = "<group>"; };
 		A472998F1DF02B2D002B3977 /* fourCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourCircles.png; sourceTree = "<group>"; };
 		A47299901DF02B2D002B3977 /* oneCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneCircle.png; sourceTree = "<group>"; };
@@ -190,9 +193,9 @@
 				A4DDC84E1DF08EB4006C94F8 /* TabBarViewController.swift */,
 				BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */,
 				A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */,
+				A420898D1DF9AA5800147A3C /* Info.plist */,
 				A454A0E71DED9A1100F7601F /* FoodForAll.xcdatamodeld */,
 				A47299AC1DF064AA002B3977 /* Podfile */,
-				A454A0EF1DED9A1100F7601F /* Info.plist */,
 				A454A0EA1DED9A1100F7601F /* Assets.xcassets */,
 			);
 			path = FoodForAll;
@@ -202,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */,
-				A454A0FA1DED9A1100F7601F /* Info.plist */,
+				A420898F1DF9AA7500147A3C /* Info.plist */,
 			);
 			path = FoodForAllTests;
 			sourceTree = "<group>";
@@ -211,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */,
-				A454A1051DED9A1100F7601F /* Info.plist */,
+				A42089911DF9AA7E00147A3C /* Info.plist */,
 			);
 			path = FoodForAllUITests;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */,
 				A4DDC8421DF07805006C94F8 /* camera.png in Resources */,
 				A47299961DF02B2D002B3977 /* oneCircle.png in Resources */,
+				A420898E1DF9AA5800147A3C /* Info.plist in Resources */,
 				A47299951DF02B2D002B3977 /* fourCircles.png in Resources */,
 				A47FCDC11DF1818700F70C1A /* next-blue.png in Resources */,
 				A47FCDBB1DF1812200F70C1A /* profile.png in Resources */,
@@ -418,6 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42089901DF9AA7500147A3C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42089921DF9AA7E00147A3C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
