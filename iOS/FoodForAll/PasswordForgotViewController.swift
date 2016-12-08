@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+
+//some small changes are need to be made
+
+
+
 class PasswordForgotViewController: UIViewController {
     
     @IBOutlet weak var passwordResetL: UILabel!
