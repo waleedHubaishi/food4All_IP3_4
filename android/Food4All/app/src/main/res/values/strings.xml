@@ -24,4 +24,6 @@
     <string name="startscreen_title">Anmelden</string>
     <string name="startscreen_login">Login</string>
     <string name="startscreen_register">Registrieren</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
