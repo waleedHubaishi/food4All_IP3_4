@@ -1,7 +1,7 @@
 package com.example.chewbacca.food4all;
+
 import android.Manifest;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
@@ -16,7 +16,6 @@ import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -32,12 +31,6 @@ import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -47,20 +40,17 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class Adv5Activity extends AppCompatActivity {
     private static final String TAG = "Adv5Activity";
     private Button takePictureButton;
     private TextureView textureView;
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
-
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
         ORIENTATIONS.append(Surface.ROTATION_90, 0);
         ORIENTATIONS.append(Surface.ROTATION_180, 270);
         ORIENTATIONS.append(Surface.ROTATION_270, 180);
     }
-
     private String cameraId;
     protected CameraDevice cameraDevice;
     protected CameraCaptureSession cameraCaptureSessions;
@@ -73,12 +63,6 @@ public class Adv5Activity extends AppCompatActivity {
     private boolean mFlashSupported;
     private Handler mBackgroundHandler;
     private HandlerThread mBackgroundThread;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,31 +76,23 @@ public class Adv5Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 takePicture();
-
             }
         });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
-
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
             //open your camera here
             openCamera();
         }
-
         @Override
         public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int width, int height) {
             // Transform you image captured size according to the surface width and height
         }
-
         @Override
         public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
             return false;
         }
-
         @Override
         public void onSurfaceTextureUpdated(SurfaceTexture surface) {
         }
@@ -129,12 +105,10 @@ public class Adv5Activity extends AppCompatActivity {
             cameraDevice = camera;
             createCameraPreview();
         }
-
         @Override
         public void onDisconnected(CameraDevice camera) {
             cameraDevice.close();
         }
-
         @Override
         public void onError(CameraDevice camera, int error) {
             cameraDevice.close();
@@ -149,13 +123,11 @@ public class Adv5Activity extends AppCompatActivity {
             createCameraPreview();
         }
     };
-
     protected void startBackgroundThread() {
         mBackgroundThread = new HandlerThread("Camera Background");
         mBackgroundThread.start();
         mBackgroundHandler = new Handler(mBackgroundThread.getLooper());
     }
-
     protected void stopBackgroundThread() {
         mBackgroundThread.quitSafely();
         try {
@@ -166,9 +138,8 @@ public class Adv5Activity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     protected void takePicture() {
-        if (null == cameraDevice) {
+        if(null == cameraDevice) {
             Log.e(TAG, "cameraDevice is null");
             return;
         }
@@ -195,7 +166,7 @@ public class Adv5Activity extends AppCompatActivity {
             // Orientation
             int rotation = getWindowManager().getDefaultDisplay().getRotation();
             captureBuilder.set(CaptureRequest.JPEG_ORIENTATION, ORIENTATIONS.get(rotation));
-            final File file = new File(Environment.getExternalStorageDirectory() + "/pic.jpg");
+            final File file = new File(Environment.getExternalStorageDirectory()+"/pic.jpg");
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
                 @Override
                 public void onImageAvailable(ImageReader reader) {
@@ -216,7 +187,6 @@ public class Adv5Activity extends AppCompatActivity {
                         }
                     }
                 }
-
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
@@ -247,7 +217,6 @@ public class Adv5Activity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-
                 @Override
                 public void onConfigureFailed(CameraCaptureSession session) {
                 }
@@ -255,10 +224,7 @@ public class Adv5Activity extends AppCompatActivity {
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
-        Intent intent = new Intent(this, Adv6Activity.class);
-        startActivity(intent);
     }
-
     protected void createCameraPreview() {
         try {
             SurfaceTexture texture = textureView.getSurfaceTexture();
@@ -267,7 +233,7 @@ public class Adv5Activity extends AppCompatActivity {
             Surface surface = new Surface(texture);
             captureRequestBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
             captureRequestBuilder.addTarget(surface);
-            cameraDevice.createCaptureSession(Arrays.asList(surface), new CameraCaptureSession.StateCallback() {
+            cameraDevice.createCaptureSession(Arrays.asList(surface), new CameraCaptureSession.StateCallback(){
                 @Override
                 public void onConfigured(@NonNull CameraCaptureSession cameraCaptureSession) {
                     //The camera is already closed
@@ -278,7 +244,6 @@ public class Adv5Activity extends AppCompatActivity {
                     cameraCaptureSessions = cameraCaptureSession;
                     updatePreview();
                 }
-
                 @Override
                 public void onConfigureFailed(@NonNull CameraCaptureSession cameraCaptureSession) {
                     Toast.makeText(Adv5Activity.this, "Configuration change", Toast.LENGTH_SHORT).show();
@@ -288,7 +253,6 @@ public class Adv5Activity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     private void openCamera() {
         CameraManager manager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
         Log.e(TAG, "is camera open");
@@ -309,9 +273,8 @@ public class Adv5Activity extends AppCompatActivity {
         }
         Log.e(TAG, "openCamera X");
     }
-
     protected void updatePreview() {
-        if (null == cameraDevice) {
+        if(null == cameraDevice) {
             Log.e(TAG, "updatePreview error, return");
         }
         captureRequestBuilder.set(CaptureRequest.CONTROL_MODE, CameraMetadata.CONTROL_MODE_AUTO);
@@ -321,7 +284,6 @@ public class Adv5Activity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     private void closeCamera() {
         if (null != cameraDevice) {
             cameraDevice.close();
@@ -332,7 +294,6 @@ public class Adv5Activity extends AppCompatActivity {
             imageReader = null;
         }
     }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == REQUEST_CAMERA_PERMISSION) {
@@ -343,7 +304,6 @@ public class Adv5Activity extends AppCompatActivity {
             }
         }
     }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -355,48 +315,11 @@ public class Adv5Activity extends AppCompatActivity {
             textureView.setSurfaceTextureListener(textureListener);
         }
     }
-
     @Override
     protected void onPause() {
         Log.e(TAG, "onPause");
         //closeCamera();
         stopBackgroundThread();
         super.onPause();
-    }
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Adv5 Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
     }
 }

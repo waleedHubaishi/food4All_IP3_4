@@ -26,5 +26,6 @@
     <string name="startscreen_register">Registrieren</string>
     <string name="action_settings">Settings</string>
     <string name="take_picture">Take picture</string>
+    <string name="title_activity_adv7">Adv7Activity</string>
 
 </resources>
