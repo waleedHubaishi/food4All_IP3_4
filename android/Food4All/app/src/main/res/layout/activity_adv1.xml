@@ -12,7 +12,7 @@
     tools:context="com.example.chewbacca.food4all.Adv1Activity">
 
     <TextView
-        android:text="TextView"
+        android:text="Was ist es ?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
@@ -53,14 +53,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textCapWords|textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/editText"
         android:hint="Name... (z.B. Cupcake)"
         android:layout_marginTop="64dp"
         android:layout_below="@+id/progressBar"
         android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5" />
+        android:layout_toEndOf="@+id/textView5"
+        android:text="Name (z.B Cupcake)" />
 
     <Spinner
         android:layout_width="match_parent"

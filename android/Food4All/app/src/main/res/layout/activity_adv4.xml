@@ -12,7 +12,7 @@
     tools:context="com.example.chewbacca.food4all.Adv4Activity">
 
     <TextView
-        android:text="TextView"
+        android:text="Ort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -62,4 +62,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:id="@+id/progressBar4" />
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:id="@+id/mapView5" />
+
 </RelativeLayout>
