@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 
@@ -17,7 +18,8 @@ public class RegisterActivity extends AppCompatActivity {
     private ImageButton imgButton;
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
-    private RelativeLayout relativeLayout;
+    private LinearLayout linearLayout;
+    // private RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         /** popups when user clicks on image-button */
         imgButton = (ImageButton) findViewById(R.id.ibInfo1);
-        relativeLayout = (RelativeLayout) findViewById(R.id.relative);
+        linearLayout = (LinearLayout) findViewById(R.id.linear);
 
         imgButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
                 ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup,null);
 
                 popupWindow = new PopupWindow(container,400,400, true);
-                popupWindow.showAtLocation(relativeLayout, Gravity.NO_GRAVITY,500,500);
+                popupWindow.showAtLocation(linearLayout, Gravity.NO_GRAVITY,500,500);
 
                 container.setOnTouchListener(new View.OnTouchListener() {
                     @Override
