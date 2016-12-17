@@ -1,94 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relative"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chewbacca.food4all.Register2Activity">
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.chewbacca.food4all.RegisterActivity"
+    android:background="@color/colorbackground">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <ImageButton
-        app:srcCompat="@android:color/holo_green_dark"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/imageButton8"
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
 
-    <ImageButton
-        app:srcCompat="@android:color/holo_green_dark"
-        android:id="@+id/imageButton4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/ibInfo2"
-        android:layout_alignEnd="@+id/ibInfo2" />
+        <ImageButton
+            app:srcCompat="@android:color/holo_green_dark"
+            android:id="@+id/imageButton4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"/>
 
-    <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
-        android:layout_below="@+id/textInputLayout2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/imageButton10" />
+        <ImageButton
+            app:srcCompat="@android:color/holo_green_dark"
+            android:id="@+id/imageButton8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"/>
 
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@android:color/darker_gray"
+            android:id="@+id/imageButton10"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+
+    
+    
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_dialog_info"
         android:layout_marginBottom="52dp"
         android:id="@+id/ibInfo2"
-        android:layout_alignBottom="@+id/etPasswort1"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:id="@+id/etPasswort1"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/imagebutton_help"/>
+    
+    <ScrollView
+        android:id="@+id/register_form2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Passwort"
-        android:imeActionId="@+id/login"
-        android:imeActionLabel="@string/action_sign_in_short"
-        android:imeOptions="actionUnspecified"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:layout_marginTop="151dp"
-        android:layout_below="@+id/imageButton11"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/password_register_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
 
-    <EditText
-        android:id="@+id/etPasswort2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Passwort wiederholen"
-        android:imeActionId="@+id/login"
-        android:imeActionLabel="@string/action_sign_in_short"
-        android:imeOptions="actionUnspecified"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:layout_marginTop="11dp"
-        android:layout_below="@+id/etPasswort1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:id="@+id/etPasswort1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"/>
 
-    <Button
-        android:text="Weiter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bWeiter2"
-        android:onClick="goToRegister3"
-        android:layout_below="@+id/etPasswort2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        />
+            <EditText
+                android:id="@+id/etPasswort2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password2"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="20dp" />
 
-</RelativeLayout>
+            <Button
+                android:text="@string/button_go_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bWeiter2"
+                android:onClick="goToRegister3"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

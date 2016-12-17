@@ -19,7 +19,6 @@ public class RegisterActivity extends AppCompatActivity {
     private PopupWindow popupWindow;
     private LayoutInflater layoutInflater;
     private LinearLayout linearLayout;
-    // private RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
