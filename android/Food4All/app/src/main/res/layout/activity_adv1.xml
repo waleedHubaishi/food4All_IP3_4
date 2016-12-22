@@ -69,7 +69,6 @@
         android:id="@+id/editText"
         android:hint="Name... (z.B. Cupcake)"
         android:layout_marginTop="62dp"
-        android:text="Name (z.B Cupcake)"
         android:layout_below="@+id/progressBar"
         android:layout_centerHorizontal="true" />
 

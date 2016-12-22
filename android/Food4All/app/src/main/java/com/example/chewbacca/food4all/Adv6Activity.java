@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.net.Inet4Address;
+
 public class Adv6Activity extends AppCompatActivity {
 
     @Override
@@ -14,6 +16,11 @@ public class Adv6Activity extends AppCompatActivity {
     }
     public void goToAdv5Activity(View view) {
         Intent intent = new Intent(this, Adv5Activity.class);
+        startActivity(intent);
+    }
+
+    public void goToAdv4Activity(View view)  {
+        Intent intent = new Intent(this, Adv4Activity.class);
         startActivity(intent);
     }
 }
