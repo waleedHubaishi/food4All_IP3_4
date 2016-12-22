@@ -34,11 +34,13 @@ public class Adv2Activity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
 
-        if(b != null)
+        if(b != null) {
             exampleOne = b.getString("productName");
             exampleTwo = b.getString("productCategory");
-        System.out.println(exampleOne);
-        System.out.println(exampleTwo);
+            System.out.println(exampleOne);
+            System.out.println(exampleTwo);
+        }
+
         Intent intent = new Intent(this, Adv3Activity.class);
         startActivity(intent);
     }

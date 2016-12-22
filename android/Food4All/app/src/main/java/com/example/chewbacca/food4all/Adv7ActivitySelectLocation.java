@@ -2,6 +2,7 @@ package com.example.chewbacca.food4all;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,17 +14,22 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Adv7ActivitySelectLocation extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private TextView mTapTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adv7_select_location);
+        mTapTextView = (TextView) findViewById(R.id.tap_text);
+//        setUpMap();
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-    }
 
+      
+    }
 
     /**
      * Manipulates the map once available.
@@ -43,4 +49,8 @@ public class Adv7ActivitySelectLocation extends FragmentActivity implements OnMa
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
+
+
+
+
 }
