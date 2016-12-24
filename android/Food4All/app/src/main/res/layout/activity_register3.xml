@@ -57,7 +57,7 @@
             android:layout_gravity="bottom">
 
             <CheckBox
-                android:text="@string/accept_agb"
+                android:text="@string/reg_accept_agb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBox"
@@ -65,10 +65,10 @@
                 android:layout_weight="1" />
 
             <Button
-                android:text="@string/end_registration"
+                android:text="@string/reg_end"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/bRegistrierungAbschluss"
+                android:id="@+id/reg_end"
                 android:onClick="goToRegister4"
                 android:layout_weight="1" />
         </LinearLayout>

@@ -13,8 +13,10 @@
     <string name="prompt_password">Passwort</string>
     <string name="prompt_password2">Passwort wiederholen</string>
     <string name="password_forgotten"><u>Passwort vergessen?</u></string>
-    <string name="accept_agb">Ich bin mit den AGBs der FoodHeld-App einverstanden</string>
-    <string name="end_registration">Registrierung abschliessen</string>
+    <string name="reg_accept_agb">Ich bin mit den AGBs der FoodHeld-App einverstanden</string>
+    <string name="reg_end">Registrierung abschliessen</string>
+    <string name="reg_thank_you">Vielen Dank für deine Registrierung.</string>
+    <string name="reg_back_to_startscreen">Zurück zur Startseite</string>
     <string name="action_sign_in">Einloggen</string>
     <string name="action_sign_in_short">Einloggen</string>
     <string name="error_invalid_email">Diese E-Mail ist ungültig</string>
