@@ -19,6 +19,11 @@
     <string name="reg_back_to_startscreen">Zurück zur Startseite</string>
     <string name="action_sign_in">Einloggen</string>
     <string name="action_sign_in_short">Einloggen</string>
+    <string name="error_invalid_uname">Folgende Kriterien müssen erfüllt werden:\n
+        - 3 bis 12 Zeichen lang\n
+        - Nur Buchstaben, Zahlen und _\n
+        - Fängt mit Buchstabe oder _ an
+    </string>
     <string name="error_invalid_email">Diese E-Mail ist ungültig</string>
     <string name="error_invalid_password">Folgende Kriterien müssen erfüllt werden:
 
