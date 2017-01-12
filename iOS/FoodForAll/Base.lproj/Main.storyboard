@@ -893,9 +893,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="weiter"/>
                                 <connections>
-                                    <segue destination="RJj-94-8zN" kind="show" id="qpK-hQ-yLG">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <action selector="toCapcha:" destination="EAY-2k-tcC" eventType="touchUpInside" id="1Dq-Vn-4kH"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regTwoCircles.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-J8-YWL">
@@ -906,7 +904,6 @@
                         <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="nextB" destination="MuY-x0-AkF" id="N2A-GG-f4E"/>
                         <outlet property="passwordTF" destination="Kbp-wU-9ya" id="bgh-yf-5QM"/>
                         <outlet property="passwordverificationTF" destination="HPB-rX-HZw" id="PCj-sF-iW7"/>
                     </connections>
@@ -918,7 +915,7 @@
         <!--REGISTRIEREN-->
         <scene sceneID="WVU-zD-brB">
             <objects>
-                <viewController title="REGISTRIEREN" id="RJj-94-8zN" customClass="RegistrationCaptchaViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="capcha" title="REGISTRIEREN" id="RJj-94-8zN" customClass="RegistrationCaptchaViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AVV-j1-3tr"/>
                         <viewControllerLayoutGuide type="bottom" id="F4U-ee-kkv"/>
@@ -939,6 +936,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="registrieren"/>
+                                <connections>
+                                    <action selector="goToHome:" destination="RJj-94-8zN" eventType="touchUpInside" id="BYj-MR-pAQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="aAJI75BGd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-rI-eUK">
                                 <rect key="frame" x="16" y="279" width="229" height="21"/>
@@ -955,7 +955,6 @@
                         <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="registrationB" destination="Z6E-hh-Rir" id="dE5-bT-ypw"/>
                         <outlet property="verifyL" destination="VIa-rI-eUK" id="Qk7-Lc-ahc"/>
                         <outlet property="verifyTF" destination="Kda-gT-pPZ" id="7tW-EN-xU1"/>
                     </connections>

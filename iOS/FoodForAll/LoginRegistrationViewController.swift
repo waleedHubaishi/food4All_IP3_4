@@ -55,7 +55,7 @@ class LoginRegistrationViewController: UIViewController {
     func displayAlertMessage(messageToDisplay: String)
     {
         print(messageToDisplay)
-        let alertController = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Fehler", message: messageToDisplay, preferredStyle: .alert)
         
         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
             

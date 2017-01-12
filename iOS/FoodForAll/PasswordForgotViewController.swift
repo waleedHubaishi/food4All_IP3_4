@@ -74,7 +74,7 @@ class PasswordForgotViewController: UIViewController {
     //Display the alert message popup
     func displayAlertMessage(messageToDisplay: String) {
         
-        let alert = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Fehler", message: messageToDisplay, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
             
         }

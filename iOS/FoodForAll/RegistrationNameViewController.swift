@@ -22,14 +22,22 @@ class RegistrationNameViewController: UIViewController {
     }
     
     @IBAction func toPasswordVC(){
-    checkUserName()
+        
+        let length = userNameTF.text?.characters.count
+        checkingEmailFT(emailTF: emailTF.text!)
+        if (!(length! < 20 && length! > 5)){
+            displayAlertMessage(messageToDisplay: "Benutzername ist ungültig!")
+        }
+            if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){
+                let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "passWord") as! RegistrationPasswordViewController
+                self.navigationController?.pushViewController(secondViewController, animated: true)}
     
     }
     
     func displayAlertMessage(messageToDisplay: String)
     {
         print(messageToDisplay)
-        let alertController = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Fehler", message: messageToDisplay, preferredStyle: .alert)
         
         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
             
@@ -42,21 +50,10 @@ class RegistrationNameViewController: UIViewController {
         self.present(alertController, animated: true, completion:nil)
     }
     
-    func checkUserName()
-    {
-    
-        let length = userNameTF.text?.characters.count
-        
-        if(length! < 20 && length! > 5)
-        {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "passWord") as! RegistrationPasswordViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-
-        }
-        
-        else
-        {
-          displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")
+    func checkingEmailFT(emailTF : String){
+        EmailTextFieldVerficationViewController().emailVerification(emailT: emailTF)
+        if EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF) == false {
+            displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")
         }
     }
     
