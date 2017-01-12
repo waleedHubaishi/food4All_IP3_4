@@ -12,7 +12,7 @@
     tools:context="com.example.chewbacca.food4all.Adv3Activity">
 
     <TextView
-        android:text="TextView"
+        android:text="Abholung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -54,4 +54,36 @@
         android:layout_marginEnd="33dp"
         android:id="@+id/imageButton7"
         android:onClick="goToAdv2Activity"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:focusable="false"
+        android:id="@+id/editText2"
+        android:text="Abholen bis..." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:focusable="false"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText4"
+        android:text="Uhrzeit" />
 </RelativeLayout>

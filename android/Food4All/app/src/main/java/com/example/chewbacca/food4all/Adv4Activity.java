@@ -19,9 +19,14 @@ public class Adv4Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gotoadv7Activity(View view) {
+        Intent intent = new Intent(this, Adv7ActivitySelectLocation.class);
+        startActivity(intent);
+    }
+
     /** Called when the user clicks the Login button */
     public void goToAdv5Activity(View view) {
-        Intent intent = new Intent(this, Adv5Activity.class);
+        Intent intent = new Intent(this, Adv6Activity.class);
         startActivity(intent);
     }
 }
