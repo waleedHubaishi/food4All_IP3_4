@@ -80,7 +80,7 @@ class LoginRegistrationViewController: UIViewController {
     func isValidPassword(passwordString: String) -> Bool {
         
         var returnValue = true
-        let passwordRegEx = "[A-Z0-9a-z._%+-:/><#]{8,30}"
+        let passwordRegEx = "([A-Za-z._%+-:/><#]{8,30})([0-9]{1,})"
         
         do {
             let regex = try NSRegularExpression(pattern: passwordRegEx)
