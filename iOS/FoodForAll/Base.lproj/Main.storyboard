@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
+>>>>>>> iOS_loginAndReg
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -170,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-Do-QoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="1007"/>
+            <point key="canvasLocation" x="3241" y="1123"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="i0t-hL-8Q1">
@@ -230,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTG-Rv-gWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4149.6000000000004" y="1005.2473763118442"/>
+            <point key="canvasLocation" x="4150" y="1122"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="MqF-FR-Z60">
@@ -299,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1u4-qD-HKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5072.8000000000002" y="1005.2473763118442"/>
+            <point key="canvasLocation" x="5073" y="1122"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="tb4-zT-2Pu">
@@ -367,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-4r-GhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6062" y="1006"/>
+            <point key="canvasLocation" x="6062" y="1122"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="U7P-bT-r4a">
@@ -436,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGP-ZK-Yld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7024.8000000000002" y="1005.2473763118442"/>
+            <point key="canvasLocation" x="7025" y="1122"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="Sev-cb-nz9">
@@ -503,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgZ-Nj-n83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7956" y="1005.2473763118442"/>
+            <point key="canvasLocation" x="7956" y="1122"/>
         </scene>
         <!--Add Food Check Photo View Controller-->
         <scene sceneID="oWp-4G-DlI">
@@ -692,7 +697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMC-Td-pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5216.8000000000002" y="125.4872563718141"/>
+            <point key="canvasLocation" x="5073" y="174"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="3Zw-qD-BMt">
@@ -714,7 +719,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbr-7K-4mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-599" y="543"/>
+=======
+            <point key="canvasLocation" x="1030" y="174"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R3e-PB-9Sq">
@@ -736,7 +745,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjP-Ye-KoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="1007"/>
+            <point key="canvasLocation" x="2302" y="1123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cfb-0d-6A7">
@@ -803,7 +812,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRS-Lq-b2M">
                                 <rect key="frame" x="16" y="388" width="156" height="30"/>
@@ -907,7 +916,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtB-Gk-dhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="3241" y="2935"/>
+=======
+            <point key="canvasLocation" x="2265" y="3591"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--PASSWORT-->
         <scene sceneID="M6a-tF-znF">
@@ -937,7 +950,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnY-cP-5w2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="4150" y="2935"/>
+=======
+            <point key="canvasLocation" x="3574" y="3592"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--PASSWORT-->
         <scene sceneID="lcc-oH-Ey3">
@@ -970,11 +987,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="bestätigen"/>
-                                <connections>
-                                    <segue destination="Em4-P7-fqp" kind="show" id="REw-u2-O0f">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -987,6 +999,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScL-y7-fkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="6062" y="2786"/>
         </scene>
         <!--SUCHE-->
@@ -1006,6 +1019,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8P-pb-Igu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7956" y="1976"/>
+=======
+            <point key="canvasLocation" x="4844" y="3591"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--REGISTRIEREN-->
         <scene sceneID="dIR-bv-VrW">
@@ -1058,7 +1074,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JsJ-CS-yiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="4150" y="1976"/>
+=======
+            <point key="canvasLocation" x="3575" y="2548"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--REGISTRIEREN-->
         <scene sceneID="bll-fO-kxF">
@@ -1077,14 +1097,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort bestätigen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPB-rX-HZw">
                                 <rect key="frame" x="16" y="318" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-x0-AkF">
                                 <rect key="frame" x="141" y="395" width="92" height="30"/>
@@ -1112,7 +1132,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nD-FX-f18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="5073" y="1976"/>
+=======
+            <point key="canvasLocation" x="4844" y="2548"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--REGISTRIEREN-->
         <scene sceneID="WVU-zD-brB">
@@ -1138,11 +1162,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="registrieren"/>
-                                <connections>
-                                    <segue destination="Em4-P7-fqp" kind="show" id="txB-GB-Ihe">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="aAJI75BGd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-rI-eUK">
                                 <rect key="frame" x="16" y="279" width="229" height="21"/>
@@ -1166,7 +1185,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqI-vt-STc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="6062" y="1976"/>
+=======
+            <point key="canvasLocation" x="6062" y="2548"/>
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--login-->
         <scene sceneID="OSJ-zz-n37">
@@ -1186,7 +1209,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tD-Vg-ma7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2302" y="1976"/>
+=======
+            <point key="canvasLocation" x="1030" y="1123"/>
+>>>>>>> iOS_loginAndReg
         </scene>
     </scenes>
     <resources>
@@ -1208,8 +1235,5 @@
         <image name="threeCircles.png" width="288" height="39"/>
         <image name="twoCircles.png" width="288" height="39"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="REw-u2-O0f"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
