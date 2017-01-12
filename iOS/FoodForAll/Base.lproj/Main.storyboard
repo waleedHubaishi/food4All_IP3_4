@@ -4,6 +4,9 @@
 =======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
+<<<<<<< HEAD
+>>>>>>> iOS_loginAndReg
+=======
 >>>>>>> iOS_loginAndReg
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -509,6 +512,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgZ-Nj-n83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7956" y="1122"/>
+<<<<<<< HEAD
         </scene>
         <!--Add Food Check Photo View Controller-->
         <scene sceneID="oWp-4G-DlI">
@@ -671,6 +675,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BN-lF-QF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9949.6000000000004" y="1005.2473763118442"/>
+=======
+>>>>>>> iOS_loginAndReg
         </scene>
         <!--View Controller-->
         <scene sceneID="2sQ-XT-Xhr">
@@ -720,7 +726,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbr-7K-4mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="-599" y="543"/>
+=======
+            <point key="canvasLocation" x="1030" y="174"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="1030" y="174"/>
 >>>>>>> iOS_loginAndReg
@@ -917,7 +927,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtB-Gk-dhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="3241" y="2935"/>
+=======
+            <point key="canvasLocation" x="2265" y="3591"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="2265" y="3591"/>
 >>>>>>> iOS_loginAndReg
@@ -951,7 +965,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnY-cP-5w2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="4150" y="2935"/>
+=======
+            <point key="canvasLocation" x="3574" y="3592"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="3574" y="3592"/>
 >>>>>>> iOS_loginAndReg
@@ -1000,6 +1018,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScL-y7-fkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="6062" y="2786"/>
         </scene>
         <!--SUCHE-->
@@ -1019,6 +1038,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8P-pb-Igu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7956" y="1976"/>
+=======
+            <point key="canvasLocation" x="4844" y="3591"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="4844" y="3591"/>
 >>>>>>> iOS_loginAndReg
@@ -1075,7 +1097,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JsJ-CS-yiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="4150" y="1976"/>
+=======
+            <point key="canvasLocation" x="3575" y="2548"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="3575" y="2548"/>
 >>>>>>> iOS_loginAndReg
@@ -1133,7 +1159,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nD-FX-f18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="5073" y="1976"/>
+=======
+            <point key="canvasLocation" x="4844" y="2548"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="4844" y="2548"/>
 >>>>>>> iOS_loginAndReg
@@ -1186,7 +1216,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqI-vt-STc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="6062" y="1976"/>
+=======
+            <point key="canvasLocation" x="6062" y="2548"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="6062" y="2548"/>
 >>>>>>> iOS_loginAndReg
@@ -1210,7 +1244,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tD-Vg-ma7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="2302" y="1976"/>
+=======
+            <point key="canvasLocation" x="1030" y="1123"/>
+>>>>>>> iOS_loginAndReg
 =======
             <point key="canvasLocation" x="1030" y="1123"/>
 >>>>>>> iOS_loginAndReg
