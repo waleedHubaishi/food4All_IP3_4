@@ -19,6 +19,7 @@ class Food {
     var place:String!
     var foodPhoto:UIImage!
     
+
    }
 
 

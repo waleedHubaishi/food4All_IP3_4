@@ -26,10 +26,11 @@ class FoodOverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(food.name)
         // Do any additional setup after loading the view.
         foodName.text = food.name
         foodCategory.text = food.category
-       // donaterName.text = food.name
+        donaterName.text = "Lorenzo"
         pickedupOn.text = food.pickedUp
         pickedupAtTill.text = food.pickedUpAt
         expirationDate.text = food.expiration
@@ -41,6 +42,10 @@ class FoodOverviewViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 
