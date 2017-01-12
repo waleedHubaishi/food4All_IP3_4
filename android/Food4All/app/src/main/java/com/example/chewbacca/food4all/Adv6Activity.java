@@ -23,4 +23,8 @@ public class Adv6Activity extends AppCompatActivity {
         Intent intent = new Intent(this, Adv4Activity.class);
         startActivity(intent);
     }
+    public void goToAdv8Activity(View view)  {
+        Intent intent = new Intent(this, Adv8ActivityGalleryView.class);
+        startActivity(intent);
+    }
 }

@@ -1,15 +1,24 @@
 package com.example.chewbacca.food4all;
 
+import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.Projection;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.vision.barcode.Barcode;
 
 public class Adv7ActivitySelectLocation extends FragmentActivity implements OnMapReadyCallback {
 
@@ -28,7 +37,8 @@ public class Adv7ActivitySelectLocation extends FragmentActivity implements OnMa
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-      
+
+
     }
 
     /**
@@ -49,8 +59,4 @@ public class Adv7ActivitySelectLocation extends FragmentActivity implements OnMa
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
-
-
-
-
 }

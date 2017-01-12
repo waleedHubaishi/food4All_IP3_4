@@ -28,6 +28,7 @@
     <string name="take_picture">Take picture</string>
     <string name="title_activity_adv7">Adv7Activity</string>
     <string name="title_activity_adv7_select_location">Map</string>
-    <string name="tap_instructions" >Tap to chose your coordinates</string>
+    <string name="tap_instructions">Tap to chose your coordinates</string>
+    <string name="hello" >Hello FoodHero</string>
 
 </resources>

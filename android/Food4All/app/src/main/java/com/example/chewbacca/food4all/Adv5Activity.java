@@ -115,11 +115,17 @@ public class Adv5Activity extends AppCompatActivity {
     final CameraCaptureSession.CaptureCallback captureCallbackListener = new CameraCaptureSession.CaptureCallback() {
         @Override
         public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
+
             super.onCaptureCompleted(session, request, result);
             Toast.makeText(Adv5Activity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
             createCameraPreview();
+//            savePicture(result);
         }
     };
+//        private void savePicture(CaptureRequest result) {
+//            System.out.println(result);
+//        }
+
 
     private HandlerThread mBackgroundThread;
 
