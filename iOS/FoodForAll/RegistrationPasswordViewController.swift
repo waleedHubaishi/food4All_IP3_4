@@ -17,14 +17,6 @@ class RegistrationPasswordViewController: UIViewController {
     
     @IBAction func toCapcha(_ sender: Any) {
         
-//        if ((isValidPassword(passwordString: passwordTF.text!)) && (passwordTF.text! == passwordverificationTF.text!)) {
-//            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "capcha") as! RegistrationCaptchaViewController
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
-//        }
-//        else{displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
-//        }
-        
-        
         if (!(isValidPassword(passwordString: passwordTF.text!))) {
             displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
         }
@@ -35,9 +27,6 @@ class RegistrationPasswordViewController: UIViewController {
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "capcha") as! RegistrationCaptchaViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
-        
-        
-        
         
     }
     
@@ -68,12 +57,12 @@ class RegistrationPasswordViewController: UIViewController {
         self.present(alertController, animated: true, completion:nil)
     }
     
-    //checking password complixity
-    func checkPasswordComplexity(passwordTF: String){
-        if (passwordTF.characters.count < 7) {
-            print("password checked")
-        }
-    }
+//    //checking password complixity
+//    func checkPasswordComplexity(passwordTF: String){
+//        if (passwordTF.characters.count < 7) {
+//            print("password checked")
+//        }
+//    }
     
     
     //password check
