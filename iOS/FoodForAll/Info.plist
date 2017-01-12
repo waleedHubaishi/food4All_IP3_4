@@ -28,6 +28,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>use of location to get your address</string>
+	<key>NSLocationUsageDescription</key>
+	<string>use of your current location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>to show your location</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

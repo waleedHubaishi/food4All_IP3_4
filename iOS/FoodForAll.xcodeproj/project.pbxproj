@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
+		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
 		A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E21DED9A1100F7601F /* ViewController.swift */; };
 		A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0E41DED9A1100F7601F /* Main.storyboard */; };
@@ -39,6 +41,9 @@
 		A47FCDC31DF18A8500F70C1A /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC21DF18A8500F70C1A /* plus.png */; };
 		A47FCDC51DF18CAD00F70C1A /* magnifying-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC41DF18CAD00F70C1A /* magnifying-glass.png */; };
 		A47FCDC71DF1A22F00F70C1A /* myfridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC61DF1A22F00F70C1A /* myfridge.png */; };
+		A4C63D941E276D7000C0D57A /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C63D931E276D7000C0D57A /* location-arrow.png */; };
+		A4C63D971E276EEE00C0D57A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C63D961E276EEE00C0D57A /* CoreLocation.framework */; };
+		A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */; };
 		A4DDC8421DF07805006C94F8 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DDC8401DF07805006C94F8 /* camera.png */; };
 		A4DDC8431DF07805006C94F8 /* gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DDC8411DF07805006C94F8 /* gallery.png */; };
 		A4DDC84C1DF080B8006C94F8 /* frame-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DDC8491DF080B8006C94F8 /* frame-01.png */; };
@@ -79,9 +84,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodCheckPhotoViewController.swift; sourceTree = "<group>"; };
 		A454A0DD1DED9A1100F7601F /* FoodForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A0E01DED9A1100F7601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A454A0E21DED9A1100F7601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +121,9 @@
 		A47FCDC21DF18A8500F70C1A /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		A47FCDC41DF18CAD00F70C1A /* magnifying-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass.png"; sourceTree = "<group>"; };
 		A47FCDC61DF1A22F00F70C1A /* myfridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myfridge.png; sourceTree = "<group>"; };
+		A4C63D931E276D7000C0D57A /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
+		A4C63D961E276EEE00C0D57A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOverviewViewController.swift; sourceTree = "<group>"; };
 		A4DDC8401DF07805006C94F8 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		A4DDC8411DF07805006C94F8 /* gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallery.png; sourceTree = "<group>"; };
 		A4DDC8491DF080B8006C94F8 /* frame-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame-01.png"; sourceTree = "<group>"; };
@@ -141,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C63D971E276EEE00C0D57A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +179,7 @@
 				A454A0F71DED9A1100F7601F /* FoodForAllTests */,
 				A454A1021DED9A1100F7601F /* FoodForAllUITests */,
 				A454A0DE1DED9A1100F7601F /* Products */,
+				A4C63D951E276EEE00C0D57A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +234,7 @@
 		A47299831DEF271C002B3977 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A4C63D931E276D7000C0D57A /* location-arrow.png */,
 				BD024FD41DF99EAF00FC1F06 /* F4ALogo.png */,
 				BD024FD51DF99EAF00FC1F06 /* regOneCircle.png */,
 				BD024FD61DF99EAF00FC1F06 /* regThreeCircles.png */,
@@ -250,6 +263,14 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
+		A4C63D951E276EEE00C0D57A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C63D961E276EEE00C0D57A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD024FE01DF9A48200FC1F06 /* loginAndRegistration */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,8 +293,11 @@
 				A472999E1DF0528D002B3977 /* AddFoodDescriptionViewController.swift */,
 				A47299A21DF052F1002B3977 /* AddFoodPlaceViewController.swift */,
 				A47299A41DF054DA002B3977 /* AddFoodPickUpViewController.swift */,
-				A47299A61DF05503002B3977 /* AddFoodPhotoViewController.swift */,
 				A47299AA1DF05E3E002B3977 /* AdvertiseInfoViewController.swift */,
+				A47299A61DF05503002B3977 /* AddFoodPhotoViewController.swift */,
+				A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */,
+				A41D857D1E0C31A300347D8A /* Food.swift */,
+				A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */,
 			);
 			name = advertise;
 			sourceTree = "<group>";
@@ -407,6 +431,7 @@
 				A47FCDC11DF1818700F70C1A /* next-blue.png in Resources */,
 				A47FCDBB1DF1812200F70C1A /* profile.png in Resources */,
 				A47299971DF02B2D002B3977 /* threeCircles.png in Resources */,
+				A4C63D941E276D7000C0D57A /* location-arrow.png in Resources */,
 				A47FCDC51DF18CAD00F70C1A /* magnifying-glass.png in Resources */,
 				BD024FDB1DF99EAF00FC1F06 /* regTwoCircles.png in Resources */,
 				BD024FDA1DF99EAF00FC1F06 /* regThreeCircles.png in Resources */,
@@ -443,6 +468,7 @@
 			files = (
 				A47299A71DF05503002B3977 /* AddFoodPhotoViewController.swift in Sources */,
 				A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */,
+				A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */,
 				BD024FCD1DF99D0C00FC1F06 /* PasswordForgotViewController.swift in Sources */,
 				BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */,
 				BD024FCB1DF99CD900FC1F06 /* RegistrationCaptchaViewController.swift in Sources */,
@@ -453,7 +479,9 @@
 				A454A0E91DED9A1100F7601F /* FoodForAll.xcdatamodeld in Sources */,
 				BD024FD11DF99E2100FC1F06 /* PasswordForgotResetViewController.swift in Sources */,
 				A47299A51DF054DA002B3977 /* AddFoodPickUpViewController.swift in Sources */,
+				A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */,
 				A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */,
+				A41D857E1E0C31A300347D8A /* Food.swift in Sources */,
 				A472999F1DF0528D002B3977 /* AddFoodDescriptionViewController.swift in Sources */,
 				A47299A31DF052F1002B3977 /* AddFoodPlaceViewController.swift in Sources */,
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,

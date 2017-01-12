@@ -13,22 +13,35 @@ import MobileCoreServices
 class AddFoodPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var photoLbl: UILabel!
-    
     @IBOutlet weak var progressPhoto: UIImageView!
-    
     @IBOutlet weak var takeAPhotoBtn: UIButton!
-    
     @IBOutlet weak var choseFromLibraryBtn: UIButton!
-    
     @IBOutlet weak var finishBtn: UIButton!
-    
     @IBOutlet weak var foodImagePicked: UIImageView!
     
     var newMedia: Bool?
+    var selectedImage:UIImage!
+    var food:Food = Food()
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        let destViewController: AddFoodCheckPhotoViewController = segue.destination as! AddFoodCheckPhotoViewController
+        destViewController.chosenImage = foodImagePicked.image
+
+    }
+  
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        picker .dismiss(animated: true, completion: nil)
+        foodImagePicked.image=info[UIImagePickerControllerOriginalImage] as? UIImage
+        selectedImage = foodImagePicked.image!
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        foodImagePicked.isHidden = true
         // Do any additional setup after loading the view.
         let button = UIButton.init(type: .custom)
         button.setImage(UIImage.init(named: "myfridge.png"), for: UIControlState.normal)
@@ -92,6 +105,8 @@ class AddFoodPhotoViewController: UIViewController, UIImagePickerControllerDeleg
                 // Code to support video here
             }
         }
+        
+        performSegue(withIdentifier: "toPicturePage", sender: AnyObject.self)
     }
     
     func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafeRawPointer) {

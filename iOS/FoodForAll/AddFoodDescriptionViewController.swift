@@ -11,17 +11,15 @@ import UIKit
 class addFoodDescriptionViewController: UIViewController {
     
     @IBOutlet weak var descriptionLbl: UILabel!
-    
     @IBOutlet weak var progressPhoto: UIImageView!
-    
     @IBOutlet weak var descriptoinTV: UITextView!
-    
     @IBOutlet weak var toKeepTilLbl: UILabel!
-    
     @IBOutlet weak var toPickUpBtn: UIButton!
-    
     @IBOutlet weak var toKeepTilTF: UITextField!
- 
+    
+    var food:Food = Food()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,5 +34,16 @@ class addFoodDescriptionViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        food.description = descriptoinTV.text
+        food.expiration = toKeepTilTF.text
+        let destViewController: AddFoodPickUpViewController = segue.destination as! AddFoodPickUpViewController
+        destViewController.food = food
+        
+        
+        
     }
 }

@@ -11,16 +11,13 @@ import UIKit
 class AddFoodPickUpViewController: UIViewController {
     
     @IBOutlet weak var pickUpLbl: UILabel!
-    
     @IBOutlet weak var progressPhoto: UIImageView!
-    
     @IBOutlet weak var pickUPonLbl: UILabel!
-    
     @IBOutlet weak var pickedUpOnTF: UITextField!
-    
     @IBOutlet weak var pickUpAtTF: UITextField!
-    
     @IBOutlet weak var toAddPlaceBtn: UIButton!
+   
+    var food:Food = Food()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,4 +34,15 @@ class AddFoodPickUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        food.pickedUp = pickedUpOnTF.text
+        food.pickedUpAt = pickUpAtTF.text
+        let destViewController: addFoodPlaceViewController = segue.destination as! addFoodPlaceViewController
+        destViewController.food = food
+        
+    }
+    
+    
 }
