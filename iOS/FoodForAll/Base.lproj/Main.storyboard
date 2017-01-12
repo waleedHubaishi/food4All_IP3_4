@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk8-Ak-j8G" id="Ltb-xM-5Fx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-iT-7eR">
@@ -842,9 +842,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="weiter"/>
                                 <connections>
-                                    <segue destination="EAY-2k-tcC" kind="show" id="0DF-KC-lxX">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <action selector="toPasswordVC" destination="spA-24-Qmq" eventType="touchUpInside" id="krK-qT-BeZ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regOneCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="i3P-YX-0iH">
@@ -866,7 +864,7 @@
         <!--REGISTRIEREN-->
         <scene sceneID="bll-fO-kxF">
             <objects>
-                <viewController title="REGISTRIEREN" id="EAY-2k-tcC" customClass="RegistrationPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="passWord" title="REGISTRIEREN" id="EAY-2k-tcC" customClass="RegistrationPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w73-OV-gdr"/>
                         <viewControllerLayoutGuide type="bottom" id="G5H-Gp-qAP"/>
