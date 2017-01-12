@@ -10,9 +10,6 @@ import UIKit
 
 class EmailTextFieldVerficationViewController: UIViewController {
 
-    
-   
-    
     //Email verification
     func emailVerification(emailT: String) {
         
@@ -50,16 +47,5 @@ class EmailTextFieldVerficationViewController: UIViewController {
         }
         
         return  returnValue
-    }
-}
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
     }
 }
