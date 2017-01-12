@@ -17,6 +17,8 @@
         <activity
             android:name=".Startscreen"
             android:label="@string/app_name">
+        </activity>
+        <activity android:name=".Adv1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,6 +28,12 @@
         <activity android:name=".Register2Activity" />
         <activity android:name=".Register3Activity" />
         <activity android:name=".Register4Activity"></activity>
+
+        <activity android:name=".Adv2Activity" />
+        <activity android:name=".Adv3Activity" />
+        <activity android:name=".Adv4Activity" />
+        <activity android:name=".Adv5Activity"></activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
