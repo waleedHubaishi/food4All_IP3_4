@@ -69,11 +69,11 @@ class LoginRegistrationViewController: UIViewController {
     }
     
     //checking password complixity
-    func checkPasswordComplexity(passwordTF: String){
-        if (passwordTF.characters.count < 7) {
-            print("password checked")
-        }
-    }
+//    func checkPasswordComplexity(passwordTF: String){
+//        if (passwordTF.characters.count < 7) {
+//            print("password checked")
+//        }
+//    }
     
     
     //password check
