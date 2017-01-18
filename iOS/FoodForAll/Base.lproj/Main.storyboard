@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk8-Ak-j8G" id="Ltb-xM-5Fx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-iT-7eR">
@@ -505,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="7956" y="1005.2473763118442"/>
         </scene>
-        <!--Add Food Check Photo View Controller-->
+        <!--Teilen-->
         <scene sceneID="oWp-4G-DlI">
             <objects>
-                <viewController id="bCh-Q9-mLq" customClass="AddFoodCheckPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Teilen" id="bCh-Q9-mLq" customClass="AddFoodCheckPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ypi-6V-JEc"/>
                         <viewControllerLayoutGuide type="bottom" id="FXG-Lt-LGw"/>
@@ -551,10 +551,10 @@
             </objects>
             <point key="canvasLocation" x="9081" y="1005"/>
         </scene>
-        <!--Food Overview View Controller-->
+        <!--Teilen-->
         <scene sceneID="j4y-xx-L6V">
             <objects>
-                <viewController id="YRt-C3-Y6x" customClass="FoodOverviewViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Teilen" id="YRt-C3-Y6x" customClass="FoodOverviewViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ZV-ef-CKw"/>
                         <viewControllerLayoutGuide type="bottom" id="3C9-9A-mxf"/>
