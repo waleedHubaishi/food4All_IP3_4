@@ -120,6 +120,8 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
     
     
     @IBAction func textFieldEditing(_ sender: UITextField) {
+                
+        
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .medium
         dateFormatter.dateFormat = "dd.MM.yyyy"

@@ -81,6 +81,11 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func pickUpOn(_ sender: UITextField) {
+        let dateFormatter3 = DateFormatter()
+        dateFormatter3.timeStyle = .medium
+        dateFormatter3.dateFormat = "dd.MM.yyyy"
+        pickedUpOnTF.text = "\(dateFormatter3.string(from: Date() as Date))"
+        
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.minimumDate = NSDate() as Date
         datePickerView.datePickerMode = UIDatePickerMode.date
@@ -99,14 +104,26 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func pickUpAt(_ sender: UITextField) {
-        let timePickerView:UIDatePicker = UIDatePicker()
+       
         
+        let date = NSDate()
+        let calendar = NSCalendar.current
+        let hour = calendar.component(.hour, from: date as Date)
+        let minutes = calendar.component(.minute, from: date as Date)
+        pickUpAtTF.text = String(hour) + ":" + String(minutes)
+        
+        
+        let timePickerView:UIDatePicker = UIDatePicker()
         timePickerView.datePickerMode = UIDatePickerMode.time
         sender.inputView = timePickerView
         timePickerView.addTarget(self, action: #selector(AddFoodPickUpViewController.pickUpAtFunc), for: UIControlEvents.valueChanged)
     }
     
     func pickUpAtFunc(sender: UIDatePicker) {
+        
+
+        
+        
         let dateFormatter1 = DateFormatter()
         dateFormatter1.dateStyle = DateFormatter.Style.medium
         dateFormatter1.timeStyle = DateFormatter.Style.none

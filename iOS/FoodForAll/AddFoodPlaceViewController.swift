@@ -126,7 +126,7 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func toNext()
     {
-        if ((placeTF.text == ""))
+        if ((placeTF.text! == "") || ((placeTF.text?.characters.count)!) > 60)
         {
             warningLbl.text = "please fill all the fields"
             warningLbl.textColor = UIColor.red
