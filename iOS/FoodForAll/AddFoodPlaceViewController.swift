@@ -126,6 +126,8 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func toNext()
     {
+         food.place = placeTF.text
+        
         if ((placeTF.text! == "") || ((placeTF.text?.characters.count)!) > 60)
         {
             warningLbl.text = "please fill all the fields"
@@ -133,6 +135,8 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
         }
         else{
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPhotoChoice") as! AddFoodPhotoViewController
+            secondViewController.food = food
+
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }

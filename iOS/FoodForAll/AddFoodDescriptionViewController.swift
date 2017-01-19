@@ -144,6 +144,9 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
     
     @IBAction func toNext()
     {
+        food.description = descriptoinTV.text
+        food.expiration = toKeepTilTF.text
+        
         if ((descriptoinTV.text == "") || (descriptoinTV.text == "your description here") || (toKeepTilTF.text == "") || ((descriptoinTV.text?.characters.count)!) < 3)
         {
             warningLbl.text = "please fill all the fields"
@@ -151,6 +154,8 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         }
         else{
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDate") as! AddFoodPickUpViewController
+            secondViewController.food = food
+
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }

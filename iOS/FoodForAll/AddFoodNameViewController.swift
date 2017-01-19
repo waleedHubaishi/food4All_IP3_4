@@ -127,7 +127,14 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             warningLbl.textColor = UIColor.red
         }
         else{
+            
+            food.name = nameTF.text
+            food.category = categorieTF.text
+            
+            
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDescription") as! addFoodDescriptionViewController
+            secondViewController.food = food
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }

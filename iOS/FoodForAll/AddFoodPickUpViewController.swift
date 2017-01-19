@@ -134,6 +134,9 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func toNext()
     {
+        food.pickedUp = pickedUpOnTF.text
+        food.pickedUpAt = pickUpAtTF.text
+        
         if ((pickedUpOnTF.text == "") || (pickUpAtTF.text == ""))
         {
             warningLbl.text = "please fill all the fields"
@@ -141,6 +144,8 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
         }
         else{
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! addFoodPlaceViewController
+            secondViewController.food = food
+
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }
