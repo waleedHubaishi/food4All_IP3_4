@@ -25,7 +25,7 @@ class RegistrationNameViewController: UIViewController {
         
         let length = userNameTF.text?.characters.count
 //        checkingEmailFT(emailTF: emailTF.text!)
-        if (!(length! < 20 && length! > 5)){
+        if (!(length! < 21 && length! > 4)){
             displayAlertMessage(messageToDisplay: "Benutzername ist ungültig!")
         }
         
