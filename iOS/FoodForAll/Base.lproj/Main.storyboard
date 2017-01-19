@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk8-Ak-j8G" id="Ltb-xM-5Fx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-iT-7eR">
@@ -175,7 +175,7 @@
         <!--Teilen-->
         <scene sceneID="i0t-hL-8Q1">
             <objects>
-                <viewController title="Teilen" id="uFb-OB-ufA" customClass="addFoodNameViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodName" title="Teilen" id="uFb-OB-ufA" customClass="addFoodNameViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lsu-Ia-8qJ"/>
                         <viewControllerLayoutGuide type="bottom" id="riy-SZ-IYX"/>
@@ -194,6 +194,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uFb-OB-ufA" id="vWx-eU-4pA"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kategorie .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-Ec-ybD">
                                 <rect key="frame" x="43" y="336" width="288" height="30"/>
@@ -201,6 +204,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="categoryPcikerViewFunc:" destination="uFb-OB-ufA" eventType="editingDidBegin" id="e2s-lb-Wno"/>
+                                    <outlet property="delegate" destination="uFb-OB-ufA" id="36c-sF-s2D"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Was Ist Es ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-be-QRg">
                                 <rect key="frame" x="139" y="143" width="97" height="21"/>
@@ -214,9 +221,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="next-blue.png"/>
                                 <connections>
-                                    <segue destination="2Io-0r-JQM" kind="show" id="CtB-iA-fna"/>
+                                    <action selector="toNext" destination="uFb-OB-ufA" eventType="touchUpInside" id="5ZS-tP-5eo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-TK-EnM">
+                                <rect key="frame" x="43" y="374" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -225,6 +239,7 @@
                         <outlet property="nameTF" destination="Bsq-ZZ-I2L" id="Hjb-WJ-UFQ"/>
                         <outlet property="progressPhoto" destination="HKy-7R-ZIF" id="vzN-jZ-jFo"/>
                         <outlet property="toDescriptionBtn" destination="al3-7J-fVn" id="0kR-eX-UgE"/>
+                        <outlet property="warningLbl" destination="Y5X-TK-EnM" id="Mnx-XO-QwN"/>
                         <outlet property="whatIsItLbl" destination="AMY-be-QRg" id="H3E-Lz-DH7"/>
                     </connections>
                 </viewController>
@@ -235,7 +250,7 @@
         <!--Teilen-->
         <scene sceneID="MqF-FR-Z60">
             <objects>
-                <viewController title="Teilen" id="2Io-0r-JQM" customClass="addFoodDescriptionViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodDescription" title="Teilen" id="2Io-0r-JQM" customClass="addFoodDescriptionViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A0L-au-FeK"/>
                         <viewControllerLayoutGuide type="bottom" id="HkG-IG-c2c"/>
@@ -248,23 +263,18 @@
                                 <rect key="frame" x="43" y="146" width="288" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Jr-ea-Son">
-                                <rect key="frame" x="49" y="234" width="277" height="199"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" text="your description here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Jr-ea-Son">
+                                <rect key="frame" x="43" y="283" width="283" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2Io-0r-JQM" id="2OZ-nD-gfU"/>
+                                </connections>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD.MM.YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVH-yM-NdH">
-                                <rect key="frame" x="157" y="465" width="169" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haltbar bis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-v5-vgn">
-                                <rect key="frame" x="49" y="470" width="100" height="21"/>
+                                <rect key="frame" x="43" y="223" width="100" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -282,9 +292,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="next-blue.png"/>
                                 <connections>
-                                    <segue destination="ARd-ua-R7f" kind="show" id="QRh-Uh-b4n"/>
+                                    <action selector="toNext" destination="2Io-0r-JQM" eventType="touchUpInside" id="BIa-am-nVw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rno-8o-wo5">
+                                <rect key="frame" x="157" y="503" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD.MM.YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVH-yM-NdH">
+                                <rect key="frame" x="157" y="218" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditing:" destination="2Io-0r-JQM" eventType="editingDidBegin" id="R3s-1d-0DF"/>
+                                    <outlet property="delegate" destination="2Io-0r-JQM" id="UZQ-8Y-ZgC"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -295,6 +323,7 @@
                         <outlet property="toKeepTilLbl" destination="dWb-v5-vgn" id="E6y-fy-vOB"/>
                         <outlet property="toKeepTilTF" destination="GVH-yM-NdH" id="PoC-m2-WKc"/>
                         <outlet property="toPickUpBtn" destination="GEs-1D-cpG" id="QPE-3i-hgJ"/>
+                        <outlet property="warningLbl" destination="Rno-8o-wo5" id="Xzf-u2-6DE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1u4-qD-HKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,7 +333,7 @@
         <!--Teilen-->
         <scene sceneID="tb4-zT-2Pu">
             <objects>
-                <viewController title="Teilen" id="ARd-ua-R7f" customClass="AddFoodPickUpViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodDate" title="Teilen" id="ARd-ua-R7f" customClass="AddFoodPickUpViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AoJ-bS-wH7"/>
                         <viewControllerLayoutGuide type="bottom" id="Bfg-8g-3PF"/>
@@ -323,6 +352,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickUpAt:" destination="ARd-ua-R7f" eventType="editingDidBegin" id="Obx-Jb-QyL"/>
+                                    <outlet property="delegate" destination="ARd-ua-R7f" id="jM7-4z-sB3"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD.MM.YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwu-li-eYq">
                                 <rect key="frame" x="157" y="226" width="169" height="30"/>
@@ -330,6 +363,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickUpOn:" destination="ARd-ua-R7f" eventType="editingDidBegin" id="1ks-A4-NcN"/>
+                                    <outlet property="delegate" destination="ARd-ua-R7f" id="lCu-zQ-dib"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="abholen am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-6U-h3V">
                                 <rect key="frame" x="49" y="231" width="100" height="21"/>
@@ -350,9 +387,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="next-blue.png"/>
                                 <connections>
-                                    <segue destination="Gc3-Bs-P3l" kind="show" id="dYN-og-PlY"/>
+                                    <action selector="toNext" destination="ARd-ua-R7f" eventType="touchUpInside" id="rIu-dS-JMh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOt-uU-Qfy">
+                                <rect key="frame" x="49" y="323" width="277" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -363,16 +407,17 @@
                         <outlet property="pickedUpOnTF" destination="vwu-li-eYq" id="Z4H-Oz-Wbg"/>
                         <outlet property="progressPhoto" destination="nOg-vc-O0f" id="Os2-Nv-DGi"/>
                         <outlet property="toAddPlaceBtn" destination="Omj-lv-t0D" id="G62-Yn-tsl"/>
+                        <outlet property="warningLbl" destination="cOt-uU-Qfy" id="jlw-CO-2vo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-4r-GhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6062" y="1006"/>
+            <point key="canvasLocation" x="6061.6000000000004" y="1005.2473763118442"/>
         </scene>
         <!--Teilen-->
         <scene sceneID="U7P-bT-r4a">
             <objects>
-                <viewController title="Teilen" id="Gc3-Bs-P3l" customClass="addFoodPlaceViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodPlace" title="Teilen" id="Gc3-Bs-P3l" customClass="addFoodPlaceViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vXr-vJ-YF5"/>
                         <viewControllerLayoutGuide type="bottom" id="gxP-GD-9aE"/>
@@ -411,7 +456,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="next-blue.png"/>
                                 <connections>
-                                    <segue destination="aJ3-gI-cpY" kind="show" identifier="" id="GIw-h9-WYV"/>
+                                    <action selector="toNext" destination="Gc3-Bs-P3l" eventType="touchUpInside" id="xo7-FO-b4G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnQ-1L-Mhh">
@@ -422,6 +467,13 @@
                                     <action selector="findMyLocation:" destination="Gc3-Bs-P3l" eventType="touchUpInside" id="T9d-0e-49H"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-PA-Pn0">
+                                <rect key="frame" x="43" y="318" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -432,6 +484,7 @@
                         <outlet property="placeTF" destination="IlF-SZ-epQ" id="uR4-VA-ffj"/>
                         <outlet property="progressPhoto" destination="bR0-Fe-sJg" id="SbP-GC-Npx"/>
                         <outlet property="toAddPhotoBtn" destination="y64-tL-Ffa" id="og8-YE-mfq"/>
+                        <outlet property="warningLbl" destination="Sab-PA-Pn0" id="GNq-qG-PHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGP-ZK-Yld" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -441,7 +494,7 @@
         <!--Teilen-->
         <scene sceneID="Sev-cb-nz9">
             <objects>
-                <viewController title="Teilen" id="aJ3-gI-cpY" customClass="AddFoodPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodPhotoChoice" title="Teilen" id="aJ3-gI-cpY" customClass="AddFoodPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bKI-C3-4gw"/>
                         <viewControllerLayoutGuide type="bottom" id="PYd-fV-rXN"/>
@@ -508,7 +561,7 @@
         <!--Teilen-->
         <scene sceneID="oWp-4G-DlI">
             <objects>
-                <viewController title="Teilen" id="bCh-Q9-mLq" customClass="AddFoodCheckPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodPhotoConfirm" title="Teilen" id="bCh-Q9-mLq" customClass="AddFoodCheckPhotoViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ypi-6V-JEc"/>
                         <viewControllerLayoutGuide type="bottom" id="FXG-Lt-LGw"/>
@@ -554,7 +607,7 @@
         <!--Teilen-->
         <scene sceneID="j4y-xx-L6V">
             <objects>
-                <viewController title="Teilen" id="YRt-C3-Y6x" customClass="FoodOverviewViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodAllDetails" title="Teilen" id="YRt-C3-Y6x" customClass="FoodOverviewViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ZV-ef-CKw"/>
                         <viewControllerLayoutGuide type="bottom" id="3C9-9A-mxf"/>

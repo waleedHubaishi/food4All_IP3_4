@@ -18,6 +18,7 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var choseMyAddressTF: UITextField!
     @IBOutlet weak var locationIdentifierBtn: UIButton!
     @IBOutlet weak var toAddPhotoBtn: UIButton!
+    @IBOutlet weak var warningLbl: UILabel!
 
     var food:Food = Food()
     var locationManager:CLLocationManager!
@@ -34,7 +35,11 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
         button.frame = CGRect.init(x: 0, y: 0, width: 65, height: 40)
         let barButton = UIBarButtonItem.init(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
+        
+        choseMyAddressTF.isHidden = true
     }
+    
+   
     
 
     override func didReceiveMemoryWarning() {
@@ -119,6 +124,17 @@ class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
         print("Error")
     }
     
-    
+    @IBAction func toNext()
+    {
+        if ((placeTF.text == ""))
+        {
+            warningLbl.text = "please fill all the fields"
+            warningLbl.textColor = UIColor.red
+        }
+        else{
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPhotoChoice") as! AddFoodPhotoViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
     
 }
