@@ -148,6 +148,9 @@
                                 <rect key="frame" x="169" y="541" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="OK" image="next-blue.png"/>
+                                <connections>
+                                    <segue destination="Xq1-ef-OxV" kind="show" id="dsq-Qz-axX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,81 +171,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gn7-Do-QoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3241" y="1123"/>
-        </scene>
-        <!--Teilen-->
-        <scene sceneID="i0t-hL-8Q1">
-            <objects>
-                <viewController title="Teilen" id="uFb-OB-ufA" customClass="addFoodNameViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Lsu-Ia-8qJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="riy-SZ-IYX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NZa-OI-Urx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="HKy-7R-ZIF">
-                                <rect key="frame" x="43" y="172" width="288" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name.. (z.b Cupcake)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bsq-ZZ-I2L">
-                                <rect key="frame" x="43" y="267" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="NZa-OI-Urx" id="hxS-vZ-2db"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kategorie .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-Ec-ybD">
-                                <rect key="frame" x="43" y="336" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="categoryPcikerViewFunc:" destination="uFb-OB-ufA" eventType="editingDidEnd" id="y4c-AY-4x0"/>
-                                    <outlet property="delegate" destination="NZa-OI-Urx" id="cmi-yh-IGY"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Was Ist Es ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-be-QRg">
-                                <rect key="frame" x="139" y="143" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al3-7J-fVn">
-                                <rect key="frame" x="163" y="540" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="next-blue.png"/>
-                                <connections>
-                                    <action selector="toNext" destination="uFb-OB-ufA" eventType="touchUpInside" id="X98-yh-p4B"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-qo-sj6">
-                                <rect key="frame" x="43" y="387" width="169" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="categorieTF" destination="Ooe-Ec-ybD" id="ZRu-tN-n1k"/>
-                        <outlet property="nameTF" destination="Bsq-ZZ-I2L" id="Hjb-WJ-UFQ"/>
-                        <outlet property="progressPhoto" destination="HKy-7R-ZIF" id="vzN-jZ-jFo"/>
-                        <outlet property="toDescriptionBtn" destination="al3-7J-fVn" id="0kR-eX-UgE"/>
-                        <outlet property="warningLbl" destination="ZqE-qo-sj6" id="Wtw-1J-cP3"/>
-                        <outlet property="whatIsItLbl" destination="AMY-be-QRg" id="H3E-Lz-DH7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LTG-Rv-gWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4150" y="1122"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2sQ-XT-Xhr">
@@ -1208,6 +1136,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGR-R8-xJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9950" y="1123"/>
+        </scene>
+        <!--Teilen-->
+        <scene sceneID="kHS-ka-Inx">
+            <objects>
+                <viewController storyboardIdentifier="FoodName" title="Teilen" id="Xq1-ef-OxV" customClass="addFoodNameViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KPA-FT-mya"/>
+                        <viewControllerLayoutGuide type="bottom" id="O2v-CK-dfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LNv-fs-9L7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="G6Z-vz-zdD">
+                                <rect key="frame" x="43" y="172" width="288" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name.. (z.b Cupcake)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09D-x8-MTZ">
+                                <rect key="frame" x="43" y="267" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xq1-ef-OxV" id="Qsp-Cl-YqX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kategorie .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="keH-2C-ibU">
+                                <rect key="frame" x="43" y="336" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="categoryPcikerViewFunc:" destination="Xq1-ef-OxV" eventType="editingDidBegin" id="csV-C4-Yhp"/>
+                                    <outlet property="delegate" destination="Xq1-ef-OxV" id="9UU-r1-ALU"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Was Ist Es ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-zN-GE5">
+                                <rect key="frame" x="139" y="143" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-jU-lX2">
+                                <rect key="frame" x="163" y="540" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="next-blue.png"/>
+                                <connections>
+                                    <action selector="toNext" destination="Xq1-ef-OxV" eventType="touchUpInside" id="Jrk-Bz-NeM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-5t-yjZ">
+                                <rect key="frame" x="43" y="374" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="categorieTF" destination="keH-2C-ibU" id="nFZ-Vo-Rji"/>
+                        <outlet property="nameTF" destination="09D-x8-MTZ" id="OXW-Od-mHQ"/>
+                        <outlet property="progressPhoto" destination="G6Z-vz-zdD" id="82M-Rv-mQS"/>
+                        <outlet property="toDescriptionBtn" destination="CxA-jU-lX2" id="C6a-4r-x9V"/>
+                        <outlet property="warningLbl" destination="yAK-5t-yjZ" id="Ku6-kq-55O"/>
+                        <outlet property="whatIsItLbl" destination="PbD-zN-GE5" id="tCd-hy-mLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bly-sz-8AI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4135" y="1132"/>
         </scene>
     </scenes>
     <resources>
