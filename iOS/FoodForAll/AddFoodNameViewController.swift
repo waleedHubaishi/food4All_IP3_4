@@ -109,8 +109,8 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
     }
     
     @IBAction func categoryPcikerViewFunc(_ sender: UITextField) {
-        let PickerView:UIPickerView = UIPickerView()
         categorieTF.text = pickerDataSoruce[0]
+        let PickerView:UIPickerView = UIPickerView()
         PickerView.dataSource = self
         PickerView.delegate = self
         categorieTF.inputView = PickerView
