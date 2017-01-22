@@ -39,8 +39,7 @@ class RegistrationPasswordViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-<<<<<<< HEAD
-=======
+
     
     
     func displayAlertMessage(messageToDisplay: String)
@@ -59,12 +58,7 @@ class RegistrationPasswordViewController: UIViewController {
         self.present(alertController, animated: true, completion:nil)
     }
     
-//    //checking password complixity
-//    func checkPasswordComplexity(passwordTF: String){
-//        if (passwordTF.characters.count < 7) {
-//            print("password checked")
-//        }
-//    }
+
     
     
     //password check
@@ -93,6 +87,5 @@ class RegistrationPasswordViewController: UIViewController {
     }
 
     
-    
->>>>>>> iOS_loginAndReg
+
 }
