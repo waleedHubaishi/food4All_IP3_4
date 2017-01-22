@@ -42,6 +42,8 @@ class LoginRegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+
     }
     
     override func didReceiveMemoryWarning() {

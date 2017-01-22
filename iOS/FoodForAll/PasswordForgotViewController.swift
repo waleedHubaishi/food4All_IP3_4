@@ -32,6 +32,8 @@ class PasswordForgotViewController: UIViewController {
         emailArray.append(email1)
         emailArray.append(email2)
         // Do any additional setup after loading the view, typically from a nib.
+        self.hideKeyboardWhenTappedAround()
+
     }
     
     override func didReceiveMemoryWarning() {
