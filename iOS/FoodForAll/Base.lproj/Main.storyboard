@@ -1,7 +1,5 @@
-
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
 <device id="retina4_7" orientation="portrait">
 <adaptation id="fullscreen"/>
 </device>
@@ -76,7 +74,7 @@
 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
 <autoresizingMask key="autoresizingMask"/>
 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk8-Ak-j8G" id="Ltb-xM-5Fx">
-<rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+<rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
 <autoresizingMask key="autoresizingMask"/>
 <subviews>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-iT-7eR">
@@ -388,7 +386,7 @@
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 </imageView>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wo .. ?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IlF-SZ-epQ">
-<rect key="frame" x="43" y="223" width="253" height="30"/>
+<rect key="frame" x="43" y="223" width="288" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -413,15 +411,7 @@
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <state key="normal" title="Button" image="next-blue.png"/>
 <connections>
-<segue destination="aJ3-gI-cpY" kind="show" identifier="" id="GIw-h9-WYV"/>
-</connections>
-</button>
-<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnQ-1L-Mhh">
-<rect key="frame" x="304" y="225" width="22" height="26"/>
-<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<state key="normal" image="location-arrow.png"/>
-<connections>
-<action selector="findMyLocation:" destination="Gc3-Bs-P3l" eventType="touchUpInside" id="T9d-0e-49H"/>
+<segue destination="aJ3-gI-cpY" kind="show" id="GIw-h9-WYV"/>
 </connections>
 </button>
 </subviews>
@@ -429,7 +419,6 @@
 </view>
 <connections>
 <outlet property="choseMyAddressTF" destination="gtC-jw-ihe" id="23G-PB-sEj"/>
-<outlet property="locationIdentifierBtn" destination="EnQ-1L-Mhh" id="gg1-j8-6mc"/>
 <outlet property="placeLbl" destination="8pe-f1-o0T" id="RwY-Ol-aBV"/>
 <outlet property="placeTF" destination="IlF-SZ-epQ" id="uR4-VA-ffj"/>
 <outlet property="progressPhoto" destination="bR0-Fe-sJg" id="SbP-GC-Npx"/>
@@ -487,9 +476,6 @@
 <rect key="frame" x="174" y="551" width="92" height="44"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <state key="normal" title="Finish" image="next-blue.png"/>
-<connections>
-<segue destination="bCh-Q9-mLq" kind="show" identifier="toPicturePage" id="54I-92-VYO"/>
-</connections>
 </button>
 </subviews>
 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -506,7 +492,6 @@
 <placeholder placeholderIdentifier="IBFirstResponder" id="TgZ-Nj-n83" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
 <point key="canvasLocation" x="7956" y="1122"/>
-
 </scene>
 <!--View Controller-->
 <scene sceneID="2sQ-XT-Xhr">
@@ -555,11 +540,7 @@
 </tabBarController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbr-7K-4mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
 <point key="canvasLocation" x="1030" y="174"/>
-
-<point key="canvasLocation" x="1030" y="174"/>
-
 </scene>
 <!--Navigation Controller-->
 <scene sceneID="R3e-PB-9Sq">
@@ -637,21 +618,21 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emailadresse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-lt-b6g">
-<rect key="frame" x="16" y="285" width="342" height="30"/>
+<rect key="frame" x="16" y="276" width="342" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits"/>
 </textField>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z40-7Z-ftg">
-<rect key="frame" x="16" y="340" width="343" height="30"/>
+<rect key="frame" x="16" y="331" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
 </textField>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRS-Lq-b2M">
-<rect key="frame" x="16" y="388" width="156" height="30"/>
+<rect key="frame" x="16" y="379" width="156" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <state key="normal" title="Passwort vergessen?">
 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -663,7 +644,7 @@
 </connections>
 </button>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b84-0a-O0v">
-<rect key="frame" x="140" y="565" width="92" height="30"/>
+<rect key="frame" x="140" y="532" width="92" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <state key="normal" title="Registrieren">
 <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -675,7 +656,7 @@
 </connections>
 </button>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="373-hF-L2h">
-<rect key="frame" x="123" y="463" width="127" height="30"/>
+<rect key="frame" x="123" y="454" width="127" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="einloggen"/>
@@ -684,7 +665,7 @@
 </connections>
 </button>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="F4ALogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7C4-Hw-Uau">
-<rect key="frame" x="104" y="110" width="165" height="131"/>
+<rect key="frame" x="104" y="108" width="165" height="131"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 </imageView>
 </subviews>
@@ -701,7 +682,7 @@
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="uoj-k4-kJN" sceneMemberID="firstResponder"/>
 </objects>
-<point key="canvasLocation" x="3241" y="1976"/>
+<point key="canvasLocation" x="2264.8000000000002" y="2548.8755622188905"/>
 </scene>
 <!--PASSWORT-->
 <scene sceneID="WoJ-wK-Oge">
@@ -716,7 +697,7 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emailadresse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtn-MM-UGp">
-<rect key="frame" x="16" y="321" width="343" height="30"/>
+<rect key="frame" x="16" y="276" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -726,7 +707,7 @@
 </connections>
 </textField>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttO-ta-PPh">
-<rect key="frame" x="140" y="397" width="94" height="30"/>
+<rect key="frame" x="140" y="407" width="94" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="bestätigen"/>
@@ -735,7 +716,7 @@
 </connections>
 </button>
 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Passwort zurücksetzen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m36-xG-eh4">
-<rect key="frame" x="98" y="197" width="179" height="21"/>
+<rect key="frame" x="98" y="163" width="179" height="21"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <fontDescription key="fontDescription" type="system" pointSize="17"/>
 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -752,9 +733,6 @@
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="FtB-Gk-dhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="2265" y="3591"/>
-
 <point key="canvasLocation" x="2265" y="3591"/>
 </scene>
 <!--PASSWORT-->
@@ -769,7 +747,7 @@
 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
-<textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="go and check your fucken email for a fucken link!!!!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-XM-yAj">
+<textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please check your email for the password recovery link!!!!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-XM-yAj">
 <rect key="frame" x="67" y="231" width="240" height="128"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -785,9 +763,6 @@
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="lnY-cP-5w2" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="3574" y="3592"/>
-
 <point key="canvasLocation" x="3574" y="3592"/>
 </scene>
 <!--PASSWORT-->
@@ -803,21 +778,21 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Neues Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-is-Zdg">
-<rect key="frame" x="16" y="256" width="343" height="30"/>
+<rect key="frame" x="16" y="276" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits"/>
 </textField>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort bestätigen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYu-bx-GGR">
-<rect key="frame" x="16" y="307" width="343" height="30"/>
+<rect key="frame" x="16" y="331" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits"/>
 </textField>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms1-Ke-wWa">
-<rect key="frame" x="140" y="389" width="94" height="30"/>
+<rect key="frame" x="140" y="407" width="94" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="bestätigen"/>
@@ -833,8 +808,6 @@
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="ScL-y7-fkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="4844" y="3591"/>
 <point key="canvasLocation" x="4844" y="3591"/>
 </scene>
 <!--REGISTRIEREN-->
@@ -850,14 +823,14 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Benutzername" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ZT-qz-ERC">
-<rect key="frame" x="16" y="271" width="343" height="30"/>
+<rect key="frame" x="16" y="276" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits"/>
 </textField>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emailadresse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-MB-7Nx">
-<rect key="frame" x="16" y="326" width="343" height="30"/>
+<rect key="frame" x="16" y="331" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -869,9 +842,7 @@
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="weiter"/>
 <connections>
-<segue destination="EAY-2k-tcC" kind="show" id="0DF-KC-lxX">
-<nil key="action"/>
-</segue>
+<action selector="toPasswordVC" destination="spA-24-Qmq" eventType="touchUpInside" id="krK-qT-BeZ"/>
 </connections>
 </button>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regOneCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="i3P-YX-0iH">
@@ -888,15 +859,12 @@
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="JsJ-CS-yiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="3575" y="2548"/>
-
 <point key="canvasLocation" x="3575" y="2548"/>
 </scene>
 <!--REGISTRIEREN-->
 <scene sceneID="bll-fO-kxF">
 <objects>
-<viewController title="REGISTRIEREN" id="EAY-2k-tcC" customClass="RegistrationPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+<viewController storyboardIdentifier="passWord" title="REGISTRIEREN" id="EAY-2k-tcC" customClass="RegistrationPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
 <layoutGuides>
 <viewControllerLayoutGuide type="top" id="w73-OV-gdr"/>
 <viewControllerLayoutGuide type="bottom" id="G5H-Gp-qAP"/>
@@ -906,54 +874,48 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kbp-wU-9ya">
-<rect key="frame" x="16" y="263" width="343" height="30"/>
+<rect key="frame" x="16" y="276" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
 </textField>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort bestätigen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPB-rX-HZw">
-<rect key="frame" x="16" y="318" width="343" height="30"/>
+<rect key="frame" x="16" y="331" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
 </textField>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-x0-AkF">
-<rect key="frame" x="141" y="395" width="92" height="30"/>
+<rect key="frame" x="141" y="407" width="92" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="weiter"/>
 <connections>
-<segue destination="RJj-94-8zN" kind="show" id="qpK-hQ-yLG">
-<nil key="action"/>
-</segue>
+<action selector="toCapcha:" destination="EAY-2k-tcC" eventType="touchUpInside" id="1Dq-Vn-4kH"/>
 </connections>
 </button>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regTwoCircles.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-J8-YWL">
-<rect key="frame" x="111" y="152" width="153" height="31"/>
+<rect key="frame" x="111" y="157" width="153" height="31"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 </imageView>
 </subviews>
 <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
 </view>
 <connections>
-<outlet property="nextB" destination="MuY-x0-AkF" id="N2A-GG-f4E"/>
 <outlet property="passwordTF" destination="Kbp-wU-9ya" id="bgh-yf-5QM"/>
 <outlet property="passwordverificationTF" destination="HPB-rX-HZw" id="PCj-sF-iW7"/>
 </connections>
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="8nD-FX-f18" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="4844" y="2548"/>
-
 <point key="canvasLocation" x="4844" y="2548"/>
 </scene>
 <!--REGISTRIEREN-->
 <scene sceneID="WVU-zD-brB">
 <objects>
-<viewController title="REGISTRIEREN" id="RJj-94-8zN" customClass="RegistrationCaptchaViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+<viewController storyboardIdentifier="capcha" title="REGISTRIEREN" id="RJj-94-8zN" customClass="RegistrationCaptchaViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
 <layoutGuides>
 <viewControllerLayoutGuide type="top" id="AVV-j1-3tr"/>
 <viewControllerLayoutGuide type="bottom" id="F4U-ee-kkv"/>
@@ -963,43 +925,42 @@
 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <subviews>
 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gib die Zeichen von oben ein" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-gT-pPZ">
-<rect key="frame" x="16" y="329" width="343" height="30"/>
+<rect key="frame" x="16" y="331" width="343" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <nil key="textColor"/>
 <fontDescription key="fontDescription" type="system" pointSize="14"/>
 <textInputTraits key="textInputTraits"/>
 </textField>
 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-hh-Rir">
-<rect key="frame" x="130" y="404" width="115" height="30"/>
+<rect key="frame" x="130" y="407" width="115" height="30"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
 <state key="normal" title="registrieren"/>
+<connections>
+<action selector="goToHome:" destination="RJj-94-8zN" eventType="touchUpInside" id="BYj-MR-pAQ"/>
+</connections>
 </button>
 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="aAJI75BGd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIa-rI-eUK">
-<rect key="frame" x="16" y="279" width="229" height="21"/>
+<rect key="frame" x="16" y="276" width="229" height="21"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 <fontDescription key="fontDescription" type="system" pointSize="17"/>
 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 <nil key="highlightedColor"/>
 </label>
 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regThreeCircles.png" translatesAutoresizingMaskIntoConstraints="NO" id="pXG-uF-84J">
-<rect key="frame" x="111" y="156" width="153" height="31"/>
+<rect key="frame" x="111" y="157" width="153" height="31"/>
 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 </imageView>
 </subviews>
 <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
 </view>
 <connections>
-<outlet property="registrationB" destination="Z6E-hh-Rir" id="dE5-bT-ypw"/>
 <outlet property="verifyL" destination="VIa-rI-eUK" id="Qk7-Lc-ahc"/>
 <outlet property="verifyTF" destination="Kda-gT-pPZ" id="7tW-EN-xU1"/>
 </connections>
 </viewController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="xqI-vt-STc" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="6062" y="2548"/>
-
 <point key="canvasLocation" x="6062" y="2548"/>
 </scene>
 <!--login-->
@@ -1020,8 +981,6 @@
 </navigationController>
 <placeholder placeholderIdentifier="IBFirstResponder" id="3tD-Vg-ma7" userLabel="First Responder" sceneMemberID="firstResponder"/>
 </objects>
-
-<point key="canvasLocation" x="1030" y="1123"/>
 <point key="canvasLocation" x="1030" y="1123"/>
 </scene>
 </scenes>
@@ -1033,7 +992,6 @@
 <image name="fourCircles.png" width="288" height="39"/>
 <image name="gallery.png" width="254" height="254"/>
 <image name="info-01.png" width="133" height="133"/>
-<image name="location-arrow.png" width="512" height="512"/>
 <image name="next-blue.png" width="44" height="44"/>
 <image name="oneCircle.png" width="288" height="39"/>
 <image name="plus.png" width="50" height="50"/>
