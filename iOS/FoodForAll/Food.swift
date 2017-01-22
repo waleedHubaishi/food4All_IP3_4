@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//only to solve the conflict
+
 class Food {
     var name:String!
     var category:String!
@@ -19,7 +21,6 @@ class Food {
     var place:String!
     var foodPhoto:UIImage!
     
-
    }
 
 

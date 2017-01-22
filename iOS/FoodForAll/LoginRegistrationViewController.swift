@@ -20,13 +20,9 @@ class LoginRegistrationViewController: UIViewController {
     
     @IBAction func signIN(_ sender: Any) {
         checkingEmailFT(emailTF: emailTF.text!)
-        if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
-            if (isValidPassword(passwordString: passwordTF.text!)) {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        }
-            else{displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
-        }
+        
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
   
     //defines the header colors
@@ -42,6 +38,15 @@ class LoginRegistrationViewController: UIViewController {
         
         //changes the title color
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     // Take an email address and checking it
@@ -74,42 +79,4 @@ class LoginRegistrationViewController: UIViewController {
             print("password checked")
         }
     }
-    
-    
-    //password check
-    func isValidPassword(passwordString: String) -> Bool {
-        
-        var returnValue = true
-        let passwordRegEx = "([A-Za-z._%+-:/><#]{8,30})([0-9]{1,})"
-        
-        do {
-            let regex = try NSRegularExpression(pattern: passwordRegEx)
-            let nsString = passwordString as NSString
-            let results = regex.matches(in: passwordString, range: NSRange(location: 0, length: nsString.length))
-            
-            if results.count == 0
-            {
-                returnValue = false
-            }
-            
-            
-        } catch let error as NSError {
-            print("invalid regex: \(error.localizedDescription)")
-            returnValue = false
-        }
-        
-        return  returnValue
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }

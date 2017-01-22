@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
-		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
-		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
-		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
 		A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E21DED9A1100F7601F /* ViewController.swift */; };
@@ -64,7 +61,6 @@
 		BD024FDB1DF99EAF00FC1F06 /* regTwoCircles.png in Resources */ = {isa = PBXBuildFile; fileRef = BD024FD71DF99EAF00FC1F06 /* regTwoCircles.png */; };
 		BD024FDD1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */; };
 		BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */; };
-		BDA823AB1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +141,6 @@
 		BD024FD71DF99EAF00FC1F06 /* regTwoCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regTwoCircles.png; sourceTree = "<group>"; };
 		BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationViewController.swift; sourceTree = "<group>"; };
 		BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHomeViewController.swift; sourceTree = "<group>"; };
-		BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldVerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,7 +279,6 @@
 				BD024FD01DF99E2100FC1F06 /* PasswordForgotResetViewController.swift */,
 				BD024FD21DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift */,
 				BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */,
-				BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */,
 			);
 			name = loginAndRegistration;
 			sourceTree = "<group>";
@@ -368,7 +362,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Waleed al-Hubaishi";
 				TargetAttributes = {
 					A454A0DC1DED9A1100F7601F = {
@@ -429,7 +423,6 @@
 				A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */,
 				A4DDC8421DF07805006C94F8 /* camera.png in Resources */,
 				A47299961DF02B2D002B3977 /* oneCircle.png in Resources */,
-				A420898E1DF9AA5800147A3C /* Info.plist in Resources */,
 				A47299951DF02B2D002B3977 /* fourCircles.png in Resources */,
 				A47FCDC11DF1818700F70C1A /* next-blue.png in Resources */,
 				A47FCDBB1DF1812200F70C1A /* profile.png in Resources */,
@@ -450,7 +443,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42089901DF9AA7500147A3C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +450,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42089921DF9AA7E00147A3C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +471,6 @@
 				BD024FCF1DF99DA800FC1F06 /* PasswordForgotMessageViewController.swift in Sources */,
 				A4DDC84F1DF08EB4006C94F8 /* TabBarViewController.swift in Sources */,
 				A454A0E91DED9A1100F7601F /* FoodForAll.xcdatamodeld in Sources */,
-				BDA823AB1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift in Sources */,
 				BD024FD11DF99E2100FC1F06 /* PasswordForgotResetViewController.swift in Sources */,
 				A47299A51DF054DA002B3977 /* AddFoodPickUpViewController.swift in Sources */,
 				A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */,
@@ -564,6 +554,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -613,6 +604,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

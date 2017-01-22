@@ -53,5 +53,14 @@ class AddFoodCheckPhotoViewController: UIViewController {
         
     }
 
+    
+    @IBAction func toNext()
+    {
+        food.foodPhoto = chosenImage
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodAllDetails") as! FoodOverviewViewController
+         secondViewController.food = food
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+    }
 
 }

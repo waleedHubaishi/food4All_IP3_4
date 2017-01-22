@@ -36,6 +36,11 @@ class FoodOverviewViewController: UIViewController {
         expirationDate.text = food.expiration
         descriptionTV.text = food.description
         foodImage.image = food.foodPhoto
+        
+        descriptionTV.layer.borderWidth = 0.5
+        descriptionTV.layer.borderColor = UIColor.gray.cgColor
+        descriptionTV.layer.cornerRadius = 5
+        descriptionTV.clipsToBounds = true
 
     }
 
