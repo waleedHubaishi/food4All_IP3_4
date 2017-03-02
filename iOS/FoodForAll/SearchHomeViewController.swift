@@ -10,9 +10,20 @@ import UIKit
 
 class SearchHomeViewController: UIViewController {
 
+     var foodList = [Food]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if(foodList.isEmpty)
+        {
+            print("empty")
+        }
+        
+        else
+        {
+            print(foodList)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -20,4 +31,5 @@ class SearchHomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }

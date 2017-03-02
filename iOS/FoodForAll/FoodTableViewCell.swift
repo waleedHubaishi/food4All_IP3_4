@@ -9,7 +9,15 @@
 import UIKit
 
 class FoodTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet weak var foodType: UILabel!
+    @IBOutlet weak var pickUpTillHour: UILabel!
+    @IBOutlet weak var donaterName: UILabel!
+    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var bisLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +28,7 @@ class FoodTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
 
 }

@@ -26,7 +26,7 @@ class FoodOverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(food.name)
+       
         // Do any additional setup after loading the view.
         foodName.text = food.name
         foodCategory.text = food.category
@@ -53,6 +53,12 @@ class FoodOverviewViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
+    @IBAction func addFood(_ sender: UIButton) {
+        SearchHomeViewController().foodList.append(food)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
 
     /*
     // MARK: - Navigation
