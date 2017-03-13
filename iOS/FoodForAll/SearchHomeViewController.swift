@@ -23,6 +23,7 @@ class SearchHomeViewController: UIViewController {
         else
         {
             print(foodList)
+            
         }
         // Do any additional setup after loading the view.
     }
@@ -30,6 +31,16 @@ class SearchHomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! FoodTableViewCell
+        
+        let foodName = foodList[indexPath.row]
+        cell.foodName.text = foodName.name
+        
+        
+        return cell
     }
     
 }
