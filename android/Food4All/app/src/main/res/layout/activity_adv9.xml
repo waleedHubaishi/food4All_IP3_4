@@ -23,6 +23,13 @@
     <ImageView
         android:id="@+id/targetimage"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="439dp"
         />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveImage"
+        android:text="save" />
 </LinearLayout>

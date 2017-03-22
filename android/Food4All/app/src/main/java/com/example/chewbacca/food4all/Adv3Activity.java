@@ -38,8 +38,8 @@ public class Adv3Activity extends AppCompatActivity {
 
                 DatePickerDialog mDatePicker=new DatePickerDialog(Adv3Activity.this, new DatePickerDialog.OnDateSetListener() {
                     public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
-                        // TODO Auto-generated method stub
-                        datePicker.setText("" + selectedday + "/" + (selectedmonth+1) + "/" + selectedyear);
+                    // TODO Auto-generated method stub
+                    datePicker.setText("" + selectedday + "/" + (selectedmonth+1) + "/" + selectedyear);
                     }
                 },mYear, mMonth, mDay);
                 mDatePicker.setTitle("Select date");
@@ -82,7 +82,7 @@ public class Adv3Activity extends AppCompatActivity {
 
     /** Called when the user clicks the Login button */
     public void goToAdv4Activity(View view) {
-        Intent intent = new Intent(this, Adv4Activity.class);
+        Intent intent = new Intent(this, Adv6Activity.class);
         startActivity(intent);
     }
 }

@@ -1,8 +1,10 @@
 package com.example.chewbacca.food4all;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,12 +20,16 @@ import android.widget.TextView;
 public class Adv8ActivityGalleryView extends AppCompatActivity {
     TextView textTargetUri;
     ImageView targetImage;
+    Bitmap bitmap;
+    Context context;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adv9);
         Button buttonLoadImage = (Button)findViewById(R.id.loadimage);
+        Button butttonSaveImage = (Button)findViewById(R.id.saveButton);
         textTargetUri = (TextView)findViewById(R.id.targeturi);
         targetImage = (ImageView)findViewById(R.id.targetimage);
 
@@ -36,7 +42,25 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent, 0);
             }});
+
+        butttonSaveImage.setOnClickListener(new Button.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+//                Intent intent = new Intent(Intent.ACTION_PICK,
+//                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                startActivityForResult(intent, 0);
+
+                Intent intent = new Intent(this, .class);
+                startActivity(intent);
+
+            }});
+
+
+
     }
+
 
 
     @Override
@@ -47,7 +71,6 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
         if (resultCode == RESULT_OK){
             Uri targetUri = data.getData();
             textTargetUri.setText(targetUri.toString());
-            Bitmap bitmap;
             try {
                 bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(targetUri));
                 targetImage.setImageBitmap(bitmap);
@@ -55,6 +78,14 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
+        }
+    }
+    public void saveImage() {
+        try {
+            FileOutputStream out = new FileOutputStream(context.getFilesDir().getAbsolutePath()+"/imagename.png");
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

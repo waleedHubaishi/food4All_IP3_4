@@ -1,13 +1,17 @@
 package com.example.chewbacca.food4all;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +40,28 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         // Spinner click listener
         spinner.setOnItemSelectedListener(this);
 
-    }
+
+
+        //Validation of the Edittext"
+//         EditText editText = (EditText)findViewById(R.id.editText);
+//         ImageButton nextPage = (ImageButton)findViewById(R.id.imageButton2);
+
+//        buttonLoadImage.setOnClickListener(new Button.OnClickListener(){
+//        nextPage.setOnClickListener(new EditText.OnKeyListener(){
+
+//            @Override
+//            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+//                if(editText.getText().toString().length() == 0){
+//                    editText.setError("Feld muss gefüllt sein!");
+//                nextPage.setClickable(false);
+//                } else{
+//                    nextPage.setClickable(true);
+//
+//                }
+//                return false;
+//            }
+//            });
+}
 
     /** Called when the user clicks the Login button */
     public void goToAdv2Activity(View view) {
@@ -58,21 +83,22 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         startActivity(intent);
     }
 
+    public void gotoav10 (View view){
+        Intent intent = new Intent(this, adv10Activity.class);
+        startActivity(intent);
+    }
+
     private void loadSpinnerData() {
         //load Spinner elements
         List<String> spinnerelements = new ArrayList<String>();
 
         spinnerelements.add("Früchte");
         spinnerelements.add("Gemüse");
-        spinnerelements.add("Julien");
-        spinnerelements.add("WaleeD<3");
-        spinnerelements.add("Rolenzo");
-        spinnerelements.add("Sandro");
-        spinnerelements.add("Wing");
-        spinnerelements.add("Manuel");
-        spinnerelements.add("Jalil");
-        spinnerelements.add("Hussein");
-        spinnerelements.add("Björn");
+        spinnerelements.add("Tiefgekühltes");
+        spinnerelements.add("Torten");
+        spinnerelements.add("Fertiggerichte");
+        spinnerelements.add("FastFood");
+        spinnerelements.add("Food2Go");
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
@@ -89,17 +115,6 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
 
         // Spinner Drop down elements
         List<String> lables = db.getAllLabels();
-
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, lables);
-
-        // Drop down layout style - list view with radio button
-        dataAdapter
-                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        spinner.setAdapter(dataAdapter);
     */
     }
 
@@ -110,8 +125,8 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         String label = parent.getItemAtPosition(position).toString();
 
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "You selected: " + label,
-                Toast.LENGTH_LONG).show();
+//        Toast.makeText(parent.getContext(), "You selected: " + label,
+//                Toast.LENGTH_LONG).show();
 
     }
 
