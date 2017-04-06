@@ -20,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,6 +36,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -317,6 +324,32 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         private final String mEmail;
         private final String mPassword;
 
+        private static final String url = "jdbc:mysql://86.119.36.198:3306/food4all";
+        private static final String user = "food4all";
+        private static final String pass = "";
+
+        private void validateUser() {
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+
+                Connection con = DriverManager.getConnection(url, user, pass);
+
+                String result = "Database connection success\n";
+                Statement st = con.createStatement();
+                ResultSet rs = st.executeQuery("select * from user");
+                ResultSetMetaData rsmd = rs.getMetaData();
+
+                while(rs.next()) {
+                    result += rsmd.getColumnName(1) + ": " + rs.getInt(1) + "\n";
+                    result += rsmd.getColumnName(2) + ": " + rs.getString(2) + "\n";
+                }
+                Log.d("Food4All", result); // TODO: How can I debug with a console?
+            } catch(Exception e) {
+                e.printStackTrace();
+                //System.out.println(e.toString());
+            }
+        }
+
         UserLoginTask(String email, String password) {
             mEmail = email;
             mPassword = password;
@@ -325,8 +358,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         @Override
         protected Boolean doInBackground(Void... params) {
             // TODO: attempt authentication against a network service.
+            /*new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    insert();
+                }
+            }).start();*/
 
             try {
+                validateUser();
+
                 // Simulate network access.
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
@@ -344,6 +385,30 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // TODO: register the new account here.
             return true;
         }
+
+        /* TODO: check also if insert query works, just for knowledge
+        protected void insert() {
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+
+                Connection con = DriverManager.getConnection(url, user, pass);
+
+                String result = "Database connection success\n";
+                Statement st = con.createStatement();
+                ResultSet rs = st.executeQuery("INSERT INTO `user` (`IDuser`, `Name`, `Email`, `Password`, `Exp`, `Level`, `Rating`, `RatingCounter`, `TimeRegistration`) VALUES ('3', 'test', 'test@test.test', 'test', '123', '123', '1', '123', '2017-03-20 00:00:00');");
+                ResultSetMetaData rsmd = rs.getMetaData();
+
+                while(rs.next()) {
+                    result += rsmd.getColumnName(1) + ": " + rs.getInt(1) + "\n";
+                    result += rsmd.getColumnName(2) + ": " + rs.getString(2) + "\n";
+                }
+                System.out.println(result);
+            } catch (ClassNotFoundException e1) {
+                e1.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } */
 
         @Override
         protected void onPostExecute(final Boolean success) {
