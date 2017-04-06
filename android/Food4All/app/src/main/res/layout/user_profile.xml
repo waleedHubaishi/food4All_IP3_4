@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_intro_overlay_button_background_color"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:text="Profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Benutzername"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_avatar_1"
+            android:id="@+id/imageView"
+            android:layout_height="120dp"
+            android:layout_width="120dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:text="@string/edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="goToRegister3"
+        android:layout_marginTop="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/cast_album_art_placeholder"
+            android:id="@+id/imageButton16"
+            android:layout_weight="1" />
+
+        <ImageButton
+            app:srcCompat="@drawable/cast_album_art_placeholder"
+            android:id="@+id/imageButton15"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
