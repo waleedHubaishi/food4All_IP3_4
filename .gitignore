@@ -38,3 +38,14 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+
+# Android project
+android/Food4All/*.iml
+android/Food4All/.gradle
+android/Food4All/local.properties
+android/Food4All/.DS_Store
+android/Food4All/build
+android/Food4All/captures
+android/Food4All/.externalNativeBuild
+android/Food4All/.idea
+
