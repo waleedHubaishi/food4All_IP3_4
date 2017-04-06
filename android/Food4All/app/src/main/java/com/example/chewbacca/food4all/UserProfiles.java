@@ -6,4 +6,5 @@ package com.example.chewbacca.food4all;
 
 public class UserProfiles {
 
+
 }
