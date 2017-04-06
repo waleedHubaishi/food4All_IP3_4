@@ -48,4 +48,7 @@ android/Food4All/build
 android/Food4All/captures
 android/Food4All/.externalNativeBuild
 android/Food4All/.idea
-
+android/Food4All/build.gradle
+android/Food4All/gradle
+android/Food4All/gradle.properties
+android/Food4All/settings.gradle
