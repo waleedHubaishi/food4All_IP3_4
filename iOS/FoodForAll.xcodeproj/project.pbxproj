@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
+		A43419311E9FA86D00E35C9B /* Pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = A43419301E9FA86D00E35C9B /* Pasta.png */; };
+		A453B0DD1E967D5A00C351EF /* testToBeDeleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A453B0DC1E967D5A00C351EF /* testToBeDeleted.swift */; };
 		A45484D01E3694BC000E5C6D /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45484CF1E3694BC000E5C6D /* FoodTableViewCell.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
 		A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E21DED9A1100F7601F /* ViewController.swift */; };
@@ -95,6 +97,8 @@
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodCheckPhotoViewController.swift; sourceTree = "<group>"; };
+		A43419301E9FA86D00E35C9B /* Pasta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pasta.png; sourceTree = "<group>"; };
+		A453B0DC1E967D5A00C351EF /* testToBeDeleted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testToBeDeleted.swift; sourceTree = "<group>"; };
 		A45484CF1E3694BC000E5C6D /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		A454A0DD1DED9A1100F7601F /* FoodForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A0E01DED9A1100F7601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 		A47299831DEF271C002B3977 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A43419301E9FA86D00E35C9B /* Pasta.png */,
 				A4C63D931E276D7000C0D57A /* location-arrow.png */,
 				BD024FD41DF99EAF00FC1F06 /* F4ALogo.png */,
 				BD024FD51DF99EAF00FC1F06 /* regOneCircle.png */,
@@ -314,6 +319,7 @@
 				BD024FD01DF99E2100FC1F06 /* PasswordForgotResetViewController.swift */,
 				BD024FD21DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift */,
 				BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */,
+				A453B0DC1E967D5A00C351EF /* testToBeDeleted.swift */,
 			);
 			name = loginAndRegistration;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				A47FCDC31DF18A8500F70C1A /* plus.png in Resources */,
 				A4DDC8591DF0913B006C94F8 /* house.png in Resources */,
 				A4DDC8581DF0913B006C94F8 /* fridge.png in Resources */,
+				A43419311E9FA86D00E35C9B /* Pasta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */,
+				A453B0DD1E967D5A00C351EF /* testToBeDeleted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

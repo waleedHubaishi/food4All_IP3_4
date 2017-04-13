@@ -18,6 +18,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
 
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.foodTableview.backgroundColor = UIColor.lightGray
         // Do any additional setup after loading the view.
         
         
@@ -35,7 +36,8 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             temp.pickedUp = "13.05.2017"
             temp.pickedUpAt = "13:13"
             temp.place = "Brugg"
-            
+            var image = 
+            temp.foodPhoto = UIImage(named: "pasta")!
             foodList.append(temp)
             
         }
@@ -60,6 +62,10 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         return foodList.count
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
+    
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! FoodTableViewCell
     
@@ -69,6 +75,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.foodType.text = foodInTable.category
         cell.pickUpTillHour.text = foodInTable.pickedUpAt
         cell.bisLbl.text = foodInTable.pickedUp
+        cell.foodImage.image = foodInTable.foodPhoto
         
         return cell
     }
