@@ -20,6 +20,7 @@
 		A454A0EE1DED9A1100F7601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */; };
 		A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */; };
 		A454A1041DED9A1100F7601F /* FoodForAllUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */; };
+		A46B110C1EA4D94B00216FF3 /* coming-soon.png in Resources */ = {isa = PBXBuildFile; fileRef = A46B110B1EA4D94B00216FF3 /* coming-soon.png */; };
 		A47299941DF02B2D002B3977 /* fiveCircles.png in Resources */ = {isa = PBXBuildFile; fileRef = A472998E1DF02B2D002B3977 /* fiveCircles.png */; };
 		A47299951DF02B2D002B3977 /* fourCircles.png in Resources */ = {isa = PBXBuildFile; fileRef = A472998F1DF02B2D002B3977 /* fourCircles.png */; };
 		A47299961DF02B2D002B3977 /* oneCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = A47299901DF02B2D002B3977 /* oneCircle.png */; };
@@ -111,6 +112,7 @@
 		A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllTests.swift; sourceTree = "<group>"; };
 		A454A0FF1DED9A1100F7601F /* FoodForAllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForAllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllUITests.swift; sourceTree = "<group>"; };
+		A46B110B1EA4D94B00216FF3 /* coming-soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coming-soon.png"; sourceTree = "<group>"; };
 		A472998E1DF02B2D002B3977 /* fiveCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiveCircles.png; sourceTree = "<group>"; };
 		A472998F1DF02B2D002B3977 /* fourCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourCircles.png; sourceTree = "<group>"; };
 		A47299901DF02B2D002B3977 /* oneCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneCircle.png; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		A47299831DEF271C002B3977 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A46B110B1EA4D94B00216FF3 /* coming-soon.png */,
 				A43419301E9FA86D00E35C9B /* Pasta.png */,
 				A4C63D931E276D7000C0D57A /* location-arrow.png */,
 				BD024FD41DF99EAF00FC1F06 /* F4ALogo.png */,
@@ -465,6 +468,7 @@
 				A4DDC8421DF07805006C94F8 /* camera.png in Resources */,
 				A47299961DF02B2D002B3977 /* oneCircle.png in Resources */,
 				A47299951DF02B2D002B3977 /* fourCircles.png in Resources */,
+				A46B110C1EA4D94B00216FF3 /* coming-soon.png in Resources */,
 				A47FCDC11DF1818700F70C1A /* next-blue.png in Resources */,
 				A47FCDBB1DF1812200F70C1A /* profile.png in Resources */,
 				A47299971DF02B2D002B3977 /* threeCircles.png in Resources */,

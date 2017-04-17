@@ -12,6 +12,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
 
      var foodList = [Food]()
      let temp = Food();
+    var indexOfSelectedRow:Int = 0
     
     @IBOutlet weak var foodTableview: UITableView!
     override func viewDidLoad() {
@@ -20,15 +21,12 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.foodTableview.backgroundColor = UIColor.lightGray
         // Do any additional setup after loading the view.
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if(foodList.isEmpty)
         {
             print("empty")
-            
             temp.name = "Pasta";
             temp.category = "cooked";
             temp.description = "delievered hot"
@@ -79,5 +77,19 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indexOfSelectedRow = indexPath.row
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toFoodDetail") {
+            // initialize new view controller and cast it as your view controller
+            let viewController = segue.destination as! ChosenFoodViewController
+            // your new view controller should have property that will store passed value
+            viewController.food = foodList[indexOfSelectedRow]
+        }
+    }
+    
     
 }
