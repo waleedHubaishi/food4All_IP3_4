@@ -1,28 +1,16 @@
 package com.example.chewbacca.food4all;
 
-import android.content.Context;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.InputStream;
 import java.util.ArrayList;
 
 /**
- * Created by Julien on 01.12.2016.
+ * This class manages the description of the food
  */
 
 public class Food {
 
-    private Integer seessionFID;
-    private String title;
-    private String description;
-    private String imageUrl;
-    private String label;
-    private String foodPicked;
-    private String timeReserved;
-    private String dateReserved;
+    private String foodName, foodCategory, description, imageUrl, label, timeReserved, dateReserved;
+    private int sessionFED, foodID, donorId, recieverId;
+    private boolean foodStatus;
 
 
     public static ArrayList<Food> getFoods(){
@@ -31,7 +19,7 @@ public class Food {
             //Initialise new FoodO bjects and add the data inside, at the moment hard coded
             Food foodOne = new Food();
 
-            foodOne.setTitle("Banana");
+            foodOne.setFoodName("Banana");
             foodOne.setDescription("eine Schöne Banane hast du da ;)");
             foodOne.setimageURL("www.google.ch");
             foodOne.setlabel("BananenLabel");
@@ -40,7 +28,7 @@ public class Food {
 
         Food foodTwo = new Food();
 
-        foodOne.setTitle("Apfel");
+        foodOne.setFoodName("Apfel");
         foodOne.setDescription("Apfel abgebissen als feature verkauft sich besser siehe Apple ");
         foodOne.setimageURL("www.apple.com");
         foodOne.setlabel("Apfellabel");
@@ -49,8 +37,8 @@ public class Food {
         return foodList;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
     }
 
     public void setDescription(String description) {
@@ -70,16 +58,16 @@ public class Food {
         return foodInstance;
     }
 
-    public Integer getSeessionFID() {
-        return seessionFID;
+    public Integer getSessionFED() {
+        return sessionFED;
     }
 
-    public void setSeessionFID(Integer seessionFID) {
-        this.seessionFID = seessionFID;
+    public void setSessionFED(int sessionFED) {
+        this.sessionFED = sessionFED;
     }
 
-    public String getTitle() {
-        return title;
+    public String getFoodName() {
+        return foodName;
     }
 
     public String getDescription() {
@@ -102,12 +90,44 @@ public class Food {
         this.label = label;
     }
 
-    public String getFoodPicked() {
-        return foodPicked;
+    public String getFoodCategory() {
+        return foodCategory;
     }
 
-    public void setFoodPicked(String foodPicked) {
-        this.foodPicked = foodPicked;
+    public void setFoodCategory(String foodCategory) {
+        this.foodCategory = foodCategory;
+    }
+
+    public int getFoodID() {
+        return foodID;
+    }
+
+    public void setFoodID(int foodID) {
+        this.foodID = foodID;
+    }
+
+    public int getDonorId() {
+        return donorId;
+    }
+
+    public void setDonorId(int donorId) {
+        this.donorId = donorId;
+    }
+
+    public int getRecieverId() {
+        return recieverId;
+    }
+
+    public void setRecieverId(int recieverId) {
+        this.recieverId = recieverId;
+    }
+
+    public boolean isFoodStatus() {
+        return foodStatus;
+    }
+
+    public void setFoodStatus(boolean foodStatus) {
+        this.foodStatus = foodStatus;
     }
 
     public String getTimeReserved() {
