@@ -260,10 +260,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y0i-8W-Cfg" customClass="TabBarViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dnM-4V-oLy"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="KJl-th-YJs">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" itemPositioning="centered" id="KJl-th-YJs">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="1" green="0.29617895779999998" blue="0.0230791383" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="iSe-o1-INY" kind="relationship" relationship="viewControllers" id="SIL-wo-z3j"/>
@@ -280,7 +282,7 @@
         <scene sceneID="R3e-PB-9Sq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELV-6e-AWO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="plus.png" id="lrB-aI-wJF">
+                    <tabBarItem key="tabBarItem" image="plus_tabbar.png" selectedImage="plus_tabbar.png" id="lrB-aI-wJF">
                         <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -302,7 +304,7 @@
         <scene sceneID="cfb-0d-6A7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iSe-o1-INY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="search.png" id="ZuW-b8-Rra">
+                    <tabBarItem key="tabBarItem" title="" image="search_tabbar.png" selectedImage="search_tabbar.png" id="ZuW-b8-Rra">
                         <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -319,11 +321,13 @@
             </objects>
             <point key="canvasLocation" x="2301.5999999999999" y="-585.1574212893554"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="cgD-hn-TAO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yGc-ig-Ahj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="71i-7C-l60"/>
+                    <tabBarItem key="tabBarItem" title="" image="toplist_tabbar.png" selectedImage="toplist_tabbar.png" id="71i-7C-l60">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k2g-a9-xpj">
@@ -697,11 +701,13 @@
             </objects>
             <point key="canvasLocation" x="6062" y="2548"/>
         </scene>
-        <!--login-->
+        <!--Navigation Controller-->
         <scene sceneID="OSJ-zz-n37">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnO-f1-qek" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="login" id="0M0-Rl-PGS"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile_tabbar.png" selectedImage="profile_tabbar.png" id="0M0-Rl-PGS">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wnY-tc-qCn">
@@ -1932,16 +1938,18 @@ verdiene 2 Hero Points!</string>
         <image name="location-arrow.png" width="512" height="512"/>
         <image name="next-blue.png" width="44" height="44"/>
         <image name="oneCircle.png" width="288" height="39"/>
-        <image name="plus.png" width="50" height="50"/>
+        <image name="plus_tabbar.png" width="30" height="30"/>
+        <image name="profile_tabbar.png" width="28" height="30"/>
         <image name="regOneCircle.png" width="153" height="31"/>
         <image name="regThreeCircles.png" width="153" height="31"/>
         <image name="regTwoCircles.png" width="153" height="31"/>
-        <image name="search.png" width="50" height="50"/>
+        <image name="search_tabbar.png" width="30" height="30"/>
         <image name="threeCircles.png" width="288" height="39"/>
+        <image name="toplist_tabbar.png" width="30" height="30"/>
         <image name="twoCircles.png" width="288" height="39"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F9f-ct-FeA"/>
+        <segue reference="V4b-yb-G7s"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
