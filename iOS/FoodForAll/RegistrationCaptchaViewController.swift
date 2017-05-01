@@ -14,11 +14,17 @@ class RegistrationCaptchaViewController: UIViewController {
     
     @IBOutlet weak var verifyTF: UITextField!
     
+    var person:Person = Person()
+    
     
     @IBAction func goToHome(_ sender: Any) {
         if (verifyL.text! == verifyTF.text!) {
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            print(person.email)
+            print(person.userName)
+            print(person.password)
+
         }
         else{
             displayAlertMessage(messageToDisplay: " Versuchen Sie wieder!")

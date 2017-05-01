@@ -10,6 +10,7 @@
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A43419311E9FA86D00E35C9B /* Pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = A43419301E9FA86D00E35C9B /* Pasta.png */; };
+		A447D0271EB783630033C260 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447D0261EB783630033C260 /* Person.swift */; };
 		A453B0DD1E967D5A00C351EF /* testToBeDeleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = A453B0DC1E967D5A00C351EF /* testToBeDeleted.swift */; };
 		A45484D01E3694BC000E5C6D /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45484CF1E3694BC000E5C6D /* FoodTableViewCell.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
@@ -99,6 +100,7 @@
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodCheckPhotoViewController.swift; sourceTree = "<group>"; };
 		A43419301E9FA86D00E35C9B /* Pasta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pasta.png; sourceTree = "<group>"; };
+		A447D0261EB783630033C260 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A453B0DC1E967D5A00C351EF /* testToBeDeleted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testToBeDeleted.swift; sourceTree = "<group>"; };
 		A45484CF1E3694BC000E5C6D /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		A454A0DD1DED9A1100F7601F /* FoodForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A447D0251EB7833E0033C260 /* instances */ = {
+			isa = PBXGroup;
+			children = (
+				A41D857D1E0C31A300347D8A /* Food.swift */,
+				A447D0261EB783630033C260 /* Person.swift */,
+			);
+			name = instances;
+			sourceTree = "<group>";
+		};
 		A45484CE1E369296000E5C6D /* search */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +245,7 @@
 		A454A0DF1DED9A1100F7601F /* FoodForAll */ = {
 			isa = PBXGroup;
 			children = (
+				A447D0251EB7833E0033C260 /* instances */,
 				A45484CE1E369296000E5C6D /* search */,
 				BD024FE11DF9A4A100FC1F06 /* advertise */,
 				BD024FE01DF9A48200FC1F06 /* loginAndRegistration */,
@@ -337,7 +349,6 @@
 				A47299AA1DF05E3E002B3977 /* AdvertiseInfoViewController.swift */,
 				A47299A61DF05503002B3977 /* AddFoodPhotoViewController.swift */,
 				A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */,
-				A41D857D1E0C31A300347D8A /* Food.swift */,
 				A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */,
 			);
 			name = advertise;
@@ -536,6 +547,7 @@
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,
 				A4CF6E8E1E6857A1000E3E9B /* SearchresultsViewController.swift in Sources */,
 				BD024FC71DF99C5D00FC1F06 /* RegistrationPasswordViewController.swift in Sources */,
+				A447D0271EB783630033C260 /* Person.swift in Sources */,
 				A472999B1DF0520E002B3977 /* AddFoodNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,8 @@ class RegistrationNameViewController: UIViewController {
     
     @IBOutlet weak var nextB: UIButton!
     
+    var person:Person = Person()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,9 +37,14 @@ class RegistrationNameViewController: UIViewController {
             displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")}
             
         else{
+            person.userName = userNameTF.text
+            person.email = emailTF.text
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "passWord") as! RegistrationPasswordViewController
+            secondViewController.person = person
             self.navigationController?.pushViewController(secondViewController, animated: true)}
     }
+    
     
     func displayAlertMessage(messageToDisplay: String)
     {

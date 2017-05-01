@@ -14,6 +14,7 @@ class RegistrationPasswordViewController: UIViewController {
     
     @IBOutlet weak var passwordverificationTF: UITextField!
     
+    var person:Person = Person()
     
     @IBAction func toCapcha(_ sender: Any) {
         
@@ -24,7 +25,9 @@ class RegistrationPasswordViewController: UIViewController {
             displayAlertMessage(messageToDisplay: "Beide Passworte stimmen nicht überein!")
         }
         else{
+            person.password = passwordTF.text
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "capcha") as! RegistrationCaptchaViewController
+            secondViewController.person = person
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
         
