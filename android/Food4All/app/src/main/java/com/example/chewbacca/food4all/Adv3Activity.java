@@ -11,7 +11,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 
+import java.sql.Time;
 import java.util.Calendar;
+import java.util.StringTokenizer;
 
 public class Adv3Activity extends AppCompatActivity {
     EditText datePicker;
@@ -53,18 +55,25 @@ public class Adv3Activity extends AppCompatActivity {
             public void onClick(View view) {
                 // Get Current time
                 final Calendar c = Calendar.getInstance();
-                int hour = c.get(Calendar.HOUR_OF_DAY);
+                final int hour = c.get(Calendar.HOUR_OF_DAY);
                 int minute = c.get(Calendar.MINUTE);
+                final String blubber = "lol";
 
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(Adv3Activity.this,
                         new TimePickerDialog.OnTimeSetListener() {
 
                             @Override
-                            public void onTimeSet(TimePicker view, int hourOfDay,
-                                                  int minute) {
+                            public void onTimeSet(TimePicker view, int hour, int minute) {
+                                String hourText=String.valueOf(hour), minuteText=String.valueOf(minute);
+                                if(hour<10) {
+                                    hourText = "0"+hour;
 
-                                timePicker.setText(hourOfDay + ":" + minute);
+                                } if(minute<10) {
+                                    minuteText = "0"+minute;
+
+                                }
+                                timePicker.setText(hourText + ":" + minuteText);
                             }
                         }, hour, minute, false);
                 timePickerDialog.show();

@@ -1,8 +1,11 @@
 package com.example.chewbacca.food4all;
 
 import android.content.Context;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
@@ -24,6 +27,7 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
     Context context;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,23 +46,52 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent, 0);
             }});
-
+//
         butttonSaveImage.setOnClickListener(new Button.OnClickListener(){
-
+//
             @Override
             public void onClick(View arg0) {
-                // TODO Auto-generated method stub
-//                Intent intent = new Intent(Intent.ACTION_PICK,
-//                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//                startActivityForResult(intent, 0);
+//                // TODO Auto-generated method stub
+                //Get Image URL
 
-                Intent intent = new Intent(this, .class);
-                startActivity(intent);
+                // Call Image
 
+                // create  a copy instance of
+
+                //Write in
+
+////                Intent intent = new Intent(Intent.ACTION_PICK,
+////                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+////                startActivityForResult(intent, 0);
+//
+//                Intent intent = new Intent(this, .class);
+//                startActivity(intent);
+//
             }});
 
+    }
 
+    private void createDirectoryAndSaveFile(Bitmap imageToSave, String fileName) {
 
+        File direct = new File(Environment.getExternalStorageDirectory() + "/DirName");
+
+        if (!direct.exists()) {
+            File wallpaperDirectory = new File("/sdcard/DirName/");
+            wallpaperDirectory.mkdirs();
+        }
+
+        File file = new File(new File("/sdcard/DirName/"), fileName);
+        if (file.exists()) {
+            file.delete();
+        }
+        try {
+            FileOutputStream out = new FileOutputStream(file);
+            imageToSave.compress(Bitmap.CompressFormat.JPEG, 100, out);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -81,11 +114,11 @@ public class Adv8ActivityGalleryView extends AppCompatActivity {
         }
     }
     public void saveImage() {
-        try {
-            FileOutputStream out = new FileOutputStream(context.getFilesDir().getAbsolutePath()+"/imagename.png");
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            FileOutputStream out = new FileOutputStream(context.getFilesDir().getAbsolutePath()+"/imagename.png");
+//            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
