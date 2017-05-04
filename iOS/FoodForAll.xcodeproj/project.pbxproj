@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D56B4B91E968A5F002993BE /* loginAndRegistrationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
@@ -63,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1D6C5CB31EA684F000A00437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A454A0D51DED9A1100F7601F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A454A0DC1DED9A1100F7601F;
+			remoteInfo = FoodForAll;
+		};
 		A454A0F51DED9A1100F7601F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A454A0D51DED9A1100F7601F /* Project object */;
@@ -80,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginAndRegistrationTesting.swift; sourceTree = "<group>"; };
+		1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvertiseTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +149,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D6C5CAB1EA684F000A00437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A454A0DA1DED9A1100F7601F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +180,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DAF6DC51E96758700241F42 /* loginAndRegistrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */,
+			);
+			name = loginAndRegistrationTests;
+			sourceTree = "<group>";
+		};
 		A454A0D41DED9A1100F7601F = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +204,7 @@
 				A454A0DD1DED9A1100F7601F /* FoodForAll.app */,
 				A454A0F41DED9A1100F7601F /* FoodForAllTests.xctest */,
 				A454A0FF1DED9A1100F7601F /* FoodForAllUITests.xctest */,
+				1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +232,7 @@
 		A454A0F71DED9A1100F7601F /* FoodForAllTests */ = {
 			isa = PBXGroup;
 			children = (
+				1DAF6DC51E96758700241F42 /* loginAndRegistrationTests */,
 				A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */,
 				A420898F1DF9AA7500147A3C /* Info.plist */,
 			);
@@ -284,6 +311,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D6C5CAD1EA684F000A00437 /* AdvertiseTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6C5CB71EA684F000A00437 /* Build configuration list for PBXNativeTarget "AdvertiseTesting" */;
+			buildPhases = (
+				1D6C5CAA1EA684F000A00437 /* Sources */,
+				1D6C5CAB1EA684F000A00437 /* Frameworks */,
+				1D6C5CAC1EA684F000A00437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6C5CB41EA684F000A00437 /* PBXTargetDependency */,
+			);
+			name = AdvertiseTesting;
+			productName = AdvertiseTesting;
+			productReference = 1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A454A0DC1DED9A1100F7601F /* FoodForAll */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A454A1081DED9A1100F7601F /* Build configuration list for PBXNativeTarget "FoodForAll" */;
@@ -343,10 +388,15 @@
 		A454A0D51DED9A1100F7601F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Waleed al-Hubaishi";
 				TargetAttributes = {
+					1D6C5CAD1EA684F000A00437 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A454A0DC1DED9A1100F7601F;
+					};
 					A454A0DC1DED9A1100F7601F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ME5R9795TJ;
@@ -380,11 +430,19 @@
 				A454A0DC1DED9A1100F7601F /* FoodForAll */,
 				A454A0F31DED9A1100F7601F /* FoodForAllTests */,
 				A454A0FE1DED9A1100F7601F /* FoodForAllUITests */,
+				1D6C5CAD1EA684F000A00437 /* AdvertiseTesting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D6C5CAC1EA684F000A00437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A454A0DB1DED9A1100F7601F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +498,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D6C5CAA1EA684F000A00437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A454A0D91DED9A1100F7601F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */,
+				1D56B4B91E968A5F002993BE /* loginAndRegistrationTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +552,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1D6C5CB41EA684F000A00437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A454A0DC1DED9A1100F7601F /* FoodForAll */;
+			targetProxy = 1D6C5CB31EA684F000A00437 /* PBXContainerItemProxy */;
+		};
 		A454A0F61DED9A1100F7601F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A454A0DC1DED9A1100F7601F /* FoodForAll */;
@@ -518,6 +589,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1D6C5CB51EA684F000A00437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = AdvertiseTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.AdvertiseTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Debug;
+		};
+		1D6C5CB61EA684F000A00437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = AdvertiseTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.AdvertiseTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Release;
+		};
 		A454A1061DED9A1100F7601F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -692,6 +795,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D6C5CB71EA684F000A00437 /* Build configuration list for PBXNativeTarget "AdvertiseTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6C5CB51EA684F000A00437 /* Debug */,
+				1D6C5CB61EA684F000A00437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A454A0D81DED9A1100F7601F /* Build configuration list for PBXProject "FoodForAll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
