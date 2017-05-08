@@ -1787,7 +1787,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-0j-fyy">
                                 <rect key="frame" x="125" y="529" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="bearbeiten"/>
+                                <state key="normal" title="Bearbeiten"/>
                                 <connections>
                                     <segue destination="D5y-Wc-QpU" kind="show" id="wER-bB-KNX">
                                         <nil key="action"/>
@@ -1893,7 +1893,7 @@
         <!--EditMail-->
         <scene sceneID="1Pe-dr-k8M">
             <objects>
-                <viewController title="EditMail" id="bbZ-Af-Nsz" sceneMemberID="viewController">
+                <viewController title="EditMail" id="bbZ-Af-Nsz" customClass="ChangeMailViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QgU-KV-g3E"/>
                         <viewControllerLayoutGuide type="bottom" id="BSL-mF-87b"/>
@@ -1937,7 +1937,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-J8-gVM">
                                 <rect key="frame" x="125" y="529" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="bearbeiten"/>
+                                <state key="normal" title="Bearbeiten"/>
                                 <connections>
                                     <segue destination="kHx-D2-aMS" kind="show" id="OO1-Lp-Og5">
                                         <nil key="action"/>
@@ -1947,6 +1947,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ActualMailAdress" destination="m7i-zU-5Ic" id="KGY-az-GBI"/>
+                        <outlet property="EditButton" destination="G9S-J8-gVM" id="Cf5-KY-9h9"/>
+                        <outlet property="NameLabel" destination="lQM-FG-Ztl" id="lOQ-I6-Puw"/>
+                        <outlet property="NewMailAdress" destination="oTM-l2-Qhb" id="bkF-15-fSA"/>
+                        <outlet property="ProfilePicture" destination="jv3-bz-3J3" id="3nq-ZU-URW"/>
+                        <outlet property="RankLabel" destination="MKt-nA-2iP" id="sN5-df-4yv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJL-HG-GrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
