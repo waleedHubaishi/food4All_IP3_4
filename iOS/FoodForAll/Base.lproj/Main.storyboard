@@ -2091,7 +2091,7 @@
         <!--PlusMinusAdress-->
         <scene sceneID="J0h-Op-ZeZ">
             <objects>
-                <viewController title="PlusMinusAdress" id="XHO-Yp-YdE" sceneMemberID="viewController">
+                <viewController title="PlusMinusAdress" id="XHO-Yp-YdE" customClass="PlusMinusViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fhg-qb-Qau"/>
                         <viewControllerLayoutGuide type="bottom" id="358-jL-I2x"/>
@@ -2157,6 +2157,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Abort" destination="r8r-BZ-JOM" id="Ew4-Jk-c1v"/>
+                        <outlet property="AddAdress" destination="TCw-ld-9Wn" id="SJO-pJ-2Br"/>
+                        <outlet property="Confirm" destination="9Lv-1r-KY9" id="SKA-QN-Vvc"/>
+                        <outlet property="DeleteAdress" destination="ztS-3B-pte" id="SQ9-gQ-Qio"/>
+                        <outlet property="NameLabel" destination="T4F-aC-pfc" id="6ei-rj-sQo"/>
+                        <outlet property="NewAdress" destination="BjS-3M-7fk" id="gy9-ak-YlT"/>
+                        <outlet property="OldAdress" destination="xCF-lq-tAp" id="l2S-FT-zHn"/>
+                        <outlet property="Profilepicture" destination="zRW-zy-K85" id="Wbc-Rx-izV"/>
+                        <outlet property="RankLabel" destination="PGB-rT-mG0" id="t24-IJ-qo2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQn-qG-0i7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
