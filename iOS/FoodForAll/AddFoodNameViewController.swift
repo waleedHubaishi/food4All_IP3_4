@@ -115,13 +115,22 @@ class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
         PickerView.delegate = self
         categorieTF.inputView = PickerView
    }
-    
+    func isInputValid(inputString:String) -> Bool
+    {
+        if((inputString.isEmpty) || (inputString.characters.count < 2))
+        {
+            
+            return false
+        }
+        
+        return true
+    }
     
     @IBAction func toNext()
     {
         
         
-        if ((nameTF.text! == "") || (categorieTF.text! == "") || ((nameTF.text?.characters.count)!) < 3)
+       if ((isInputValid(inputString: nameTF.text!) == false) || (categorieTF.text! == ""))
         {
             warningLbl.text = "please fill all the fields"
             warningLbl.textColor = UIColor.red
