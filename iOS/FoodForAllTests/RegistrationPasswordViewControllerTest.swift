@@ -35,21 +35,19 @@ class RegistrationPasswordViewControllerTest: XCTestCase {
         
         
         XCTAssertFalse(registrationPasswordViewController.isValidPassword(passwordString: "sieben7"))
-        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "achtach8"))
+        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "Achtach8"))
         
-        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "neunneun9"))
-        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "feuf5feuf5feuf5feuf5feuf5feuf5feuf5feuf5feuf5feuf5"))
+        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "Neunneun9"))
         
         
-    
+        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "Zweineun29zweineun29zweineun2"))
+        
+        XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "Zweineun29zweineun29zweineun29"))
+        
+        XCTAssertFalse(registrationPasswordViewController.isValidPassword(passwordString: "Zweineun29zweineun29zweineun293"))
         
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testEx2() {
-        
-    XCTAssertTrue(registrationPasswordViewController.isValidPassword(passwordString: "feuf5feuf5feuf5feuf5feuf5feuf5feuf5feuffghfjfgzkgukgfzk5feuf5feuf51"))
     }
     
     func testPerformanceExample() {

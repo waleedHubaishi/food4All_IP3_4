@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DB59EDB1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */; };
+		1DB59EE71EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */; };
+		1DB59EE91EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
@@ -106,6 +108,8 @@
 		1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodForAllTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		1DB59ECF1EC070AF006A10C4 /* RegistTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewControllerTest.swift; sourceTree = "<group>"; };
+		1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextFieldVerficationViewControllerTest.swift; sourceTree = "<group>"; };
+		1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewControllerTest.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */,
+				1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */,
+				1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */,
 			);
 			name = LoginAndRegistrationTest;
 			sourceTree = "<group>";
@@ -644,6 +650,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB59EE71EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift in Sources */,
+				1DB59EE91EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift in Sources */,
 				1DB59EDB1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -997,6 +1005,7 @@
 				1DB59EC71EC06A2C006A10C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DB59ED61EC070AF006A10C4 /* Build configuration list for PBXNativeTarget "RegistTest" */ = {
 			isa = XCConfigurationList;
@@ -1005,6 +1014,7 @@
 				1DB59ED81EC070AF006A10C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A454A0D81DED9A1100F7601F /* Build configuration list for PBXProject "FoodForAll" */ = {
 			isa = XCConfigurationList;

@@ -21,11 +21,24 @@ class RegistrationNameViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    // 
+    
+    func isInputValid(inputLength:Int) -> Bool
+    {
+        if((inputLength < 5) || (inputLength > 20))
+        {
+            
+            return false
+        }
+        
+        return true
+    }
+    
     @IBAction func toPasswordVC(){
         
         let length = userNameTF.text?.characters.count
 //        checkingEmailFT(emailTF: emailTF.text!)
-        if (!(length! < 21 && length! > 4)){
+        if (isInputValid(inputLength: length!) == false){
             displayAlertMessage(messageToDisplay: "Benutzername ist ungültig!")
         }
         
