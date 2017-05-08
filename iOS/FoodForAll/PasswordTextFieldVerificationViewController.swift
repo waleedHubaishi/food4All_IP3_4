@@ -25,7 +25,7 @@ class PasswordTextFieldVerificationViewController: UIViewController {
     func isValidPassword(passwordString: String) -> Bool {
         
         var returnValue = true
-        let passwordRegEx = "[A-Z0-9a-z._%+-:/><#]{8,30}"
+        let passwordRegEx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,30}$"
         
         do {
             let regex = try NSRegularExpression(pattern: passwordRegEx)

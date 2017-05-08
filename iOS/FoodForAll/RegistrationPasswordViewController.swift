@@ -91,7 +91,7 @@ class RegistrationPasswordViewController: UIViewController {
     func isValidPassword(passwordString: String) -> Bool {
         
         var returnValue = true
-        let passwordRegEx = "([A-Za-z._%+-:/><#]{7,30})([0-9]{1,})"
+        let passwordRegEx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,30}$"
         
         do {
             let regex = try NSRegularExpression(pattern: passwordRegEx)
