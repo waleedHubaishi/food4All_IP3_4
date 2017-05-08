@@ -55,9 +55,14 @@ class FoodOverviewViewController: UIViewController {
     
     
     @IBAction func addFood(_ sender: UIButton) {
-        SearchHomeViewController().foodList.append(food)
-        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
-        self.navigationController?.pushViewController(secondViewController, animated: true)
+        foodList.append(food)
+        //self.navigationController?.pushViewController(secondViewController, animated: true)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as! UITabBarController
+        vc.selectedIndex = 0
+        self.present(vc, animated: true, completion: nil)
+        print("hello i am the new")
+        print(food)
     }
 
     /*

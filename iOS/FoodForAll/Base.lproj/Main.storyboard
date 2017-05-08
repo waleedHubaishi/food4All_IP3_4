@@ -257,7 +257,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="3Zw-qD-BMt">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y0i-8W-Cfg" customClass="TabBarViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0i-8W-Cfg" customClass="TabBarViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dnM-4V-oLy"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" itemPositioning="centered" id="KJl-th-YJs">
@@ -282,7 +282,7 @@
         <scene sceneID="R3e-PB-9Sq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELV-6e-AWO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" image="plus_tabbar.png" selectedImage="plus_tabbar.png" id="lrB-aI-wJF">
+                    <tabBarItem key="tabBarItem" tag="2" image="plus_tabbar.png" selectedImage="plus_tabbar.png" id="lrB-aI-wJF">
                         <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -325,7 +325,7 @@
         <scene sceneID="cgD-hn-TAO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yGc-ig-Ahj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="toplist_tabbar.png" selectedImage="toplist_tabbar.png" id="71i-7C-l60">
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="toplist_tabbar.png" selectedImage="toplist_tabbar.png" id="71i-7C-l60">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -705,7 +705,7 @@
         <scene sceneID="OSJ-zz-n37">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnO-f1-qek" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="profile_tabbar.png" selectedImage="profile_tabbar.png" id="0M0-Rl-PGS">
+                    <tabBarItem key="tabBarItem" tag="4" title="" image="profile_tabbar.png" selectedImage="profile_tabbar.png" id="0M0-Rl-PGS">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1139,7 +1139,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="add it !"/>
                                 <connections>
-                                    <action selector="addFood:" destination="jGo-gk-wyN" eventType="touchUpInside" id="zTy-3n-buN"/>
+                                    <action selector="addFood:" destination="jGo-gk-wyN" eventType="touchUpInside" id="Hln-bn-pEN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3E-r8-Xju">
@@ -1185,10 +1185,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="confirmBtn" destination="sx0-2F-f2u" id="qKp-yc-erb"/>
+                        <outlet property="confirmBtn" destination="Seh-gN-oJI" id="oh2-5Z-ZeN"/>
                         <outlet property="descriptionTV" destination="a4r-k6-AYf" id="ajI-m4-qrr"/>
                         <outlet property="donaterName" destination="G0o-dK-bnE" id="IEC-aQ-XIA"/>
-                        <outlet property="editBtn" destination="Seh-gN-oJI" id="P81-Pe-9PA"/>
+                        <outlet property="editBtn" destination="sx0-2F-f2u" id="j7w-LK-We9"/>
                         <outlet property="expirationDate" destination="b5N-Df-h1a" id="1vm-lH-fz6"/>
                         <outlet property="foodCategory" destination="6Hz-cu-MQC" id="W6b-xz-Ec4"/>
                         <outlet property="foodImage" destination="p3E-r8-Xju" id="S1W-gD-gcJ"/>

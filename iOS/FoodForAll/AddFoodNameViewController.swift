@@ -121,7 +121,7 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
     {
         
         
-        if ((nameTF.text! == "") || (categorieTF.text! == "") || ((nameTF.text?.characters.count)!) < 3)
+        if ((nameTF.text! == "") || (categorieTF.text! == "") || ((nameTF.text?.characters.count)!) < 2)
         {
             warningLbl.text = "please fill all the fields"
             warningLbl.textColor = UIColor.red

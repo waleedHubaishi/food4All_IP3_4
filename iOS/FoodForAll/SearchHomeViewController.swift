@@ -8,12 +8,13 @@
 
 import UIKit
 
+var foodList = [Food]()
+
+
 class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-     var foodList = [Food]()
      let temp = Food();
     var indexOfSelectedRow:Int = 0
-    
     @IBOutlet weak var foodTableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         else
         {
             print(foodList)
+
         }
     }
 
@@ -79,13 +81,17 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        indexOfSelectedRow = indexPath.row
+        indexOfSelectedRow = (indexPath.row)
+        print("index path is")
+        print(indexOfSelectedRow)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toFoodDetail") {
             // initialize new view controller and cast it as your view controller
             let viewController = segue.destination as! ChosenFoodViewController
+            print("index path is in prepare ")
+            print(indexOfSelectedRow)
             // your new view controller should have property that will store passed value
             viewController.food = foodList[indexOfSelectedRow]
         }
