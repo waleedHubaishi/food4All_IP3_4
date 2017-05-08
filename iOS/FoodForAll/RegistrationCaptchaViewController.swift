@@ -17,6 +17,7 @@ class RegistrationCaptchaViewController: UIViewController {
     
     @IBAction func goToHome(_ sender: Any) {
         if (verifyL.text! == verifyTF.text!) {
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }

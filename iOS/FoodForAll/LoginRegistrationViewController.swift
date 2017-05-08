@@ -66,21 +66,13 @@ class LoginRegistrationViewController: UIViewController {
         alertController.addAction(OKAction)
         
         self.present(alertController, animated: true, completion:nil)
-    }
-    
-    //checking password complixity
-//    func checkPasswordComplexity(passwordTF: String){
-//        if (passwordTF.characters.count < 7) {
-//            print("password checked")
-//        }
-//    }
-    
+    }   
     
     //password check
     func isValidPassword(passwordString: String) -> Bool {
         
         var returnValue = true
-        let passwordRegEx = "([A-Za-z._%+-:/><#]{7,30})([0-9]{1,})"
+        let passwordRegEx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,30}$"
         
         do {
             let regex = try NSRegularExpression(pattern: passwordRegEx)
