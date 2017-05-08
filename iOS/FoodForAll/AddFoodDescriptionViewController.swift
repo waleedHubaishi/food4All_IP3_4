@@ -9,7 +9,7 @@
 import UIKit
 
 
-class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
@@ -42,7 +42,7 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         
         //textfield tag
         toKeepTilTF.tag = 1
-        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(addFoodDescriptionViewController().dismissPicker))
+        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(AddFoodDescriptionViewController().dismissPicker))
         toKeepTilTF.inputAccessoryView = toolBar
 
     }
@@ -131,7 +131,7 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         datePickerView.minimumDate = NSDate() as Date
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: #selector(addFoodDescriptionViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+        datePickerView.addTarget(self, action: #selector(AddFoodDescriptionViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
     }
     
     func datePickerValueChanged(sender:UIDatePicker) {

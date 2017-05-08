@@ -75,7 +75,7 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
         
         food.pickedUp = pickedUpOnTF.text
         food.pickedUpAt = pickUpAtTF.text
-        let destViewController: addFoodPlaceViewController = segue.destination as! addFoodPlaceViewController
+        let destViewController: AddFoodPlaceViewController = segue.destination as! AddFoodPlaceViewController
         destViewController.food = food
         
     }
@@ -143,7 +143,7 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
             warningLbl.textColor = UIColor.red
         }
         else{
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! addFoodPlaceViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! AddFoodPlaceViewController
             secondViewController.food = food
 
             self.navigationController?.pushViewController(secondViewController, animated: true)

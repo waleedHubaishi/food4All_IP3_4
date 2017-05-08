@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 
-class addFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
+class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var placeLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!

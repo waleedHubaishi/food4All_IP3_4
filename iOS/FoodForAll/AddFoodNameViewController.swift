@@ -8,7 +8,7 @@
 
 import UIKit
 
-class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var whatIsItLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
@@ -52,7 +52,7 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             food.name = nameTF.text
             food.category = categorieTF.text
             
-            let destViewController: addFoodDescriptionViewController = segue.destination as! addFoodDescriptionViewController
+            let destViewController: AddFoodDescriptionViewController = segue.destination as! AddFoodDescriptionViewController
             
             destViewController.food = food
         
@@ -133,7 +133,7 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             
             
             
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDescription") as! addFoodDescriptionViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDescription") as! AddFoodDescriptionViewController
             secondViewController.food = food
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
