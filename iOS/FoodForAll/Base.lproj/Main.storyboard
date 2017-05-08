@@ -2165,7 +2165,7 @@
         <!--PlusAdress-->
         <scene sceneID="IOM-WR-g5Y">
             <objects>
-                <viewController title="PlusAdress" id="pXs-YF-A11" sceneMemberID="viewController">
+                <viewController title="PlusAdress" id="pXs-YF-A11" customClass="PlusAdressViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zmO-n2-AYk"/>
                         <viewControllerLayoutGuide type="bottom" id="xXM-fb-Ftu"/>
@@ -2195,12 +2195,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsT-p9-mMv">
                                 <rect key="frame" x="206" y="546" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Bestätigen"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMv-IK-PU6">
                                 <rect key="frame" x="82" y="546" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Abrechen "/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SET-kj-66e">
                                 <rect key="frame" x="50" y="350" width="53" height="30"/>
@@ -2213,7 +2213,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mC5-tQ-NjP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse hinzufügen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mC5-tQ-NjP">
                                 <rect key="frame" x="111" y="350" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -2223,6 +2223,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Abort" destination="cMv-IK-PU6" id="Jrp-qG-3lz"/>
+                        <outlet property="AddedAdress" destination="mC5-tQ-NjP" id="tLg-Oe-V3h"/>
+                        <outlet property="Confirm" destination="PsT-p9-mMv" id="Jfy-6F-MHb"/>
+                        <outlet property="NameLabel" destination="Hta-Me-UMG" id="KnW-uc-O5i"/>
+                        <outlet property="PlusAdressButton" destination="SET-kj-66e" id="xi0-zS-c6Q"/>
+                        <outlet property="Profilepicture" destination="dUC-wH-qt8" id="cfh-pY-Cou"/>
+                        <outlet property="RankLabel" destination="UzF-0f-Mt9" id="3CZ-5u-AtV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f38-8U-hE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

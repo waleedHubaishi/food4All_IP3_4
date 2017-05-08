@@ -14,6 +14,7 @@
 		0892FE5E1EC0770700F5431B /* ConfirmMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */; };
 		0892FE601EC0794600F5431B /* EditTelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE5F1EC0794600F5431B /* EditTelViewController.swift */; };
 		0892FE621EC0860C00F5431B /* ConfirmTelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE611EC0860C00F5431B /* ConfirmTelViewController.swift */; };
+		0892FE641EC089ED00F5431B /* PlusAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE631EC089ED00F5431B /* PlusAdressViewController.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
@@ -95,6 +96,7 @@
 		0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmMailViewController.swift; sourceTree = "<group>"; };
 		0892FE5F1EC0794600F5431B /* EditTelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTelViewController.swift; sourceTree = "<group>"; };
 		0892FE611EC0860C00F5431B /* ConfirmTelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmTelViewController.swift; sourceTree = "<group>"; };
+		0892FE631EC089ED00F5431B /* PlusAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusAdressViewController.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */,
 				0892FE5F1EC0794600F5431B /* EditTelViewController.swift */,
 				0892FE611EC0860C00F5431B /* ConfirmTelViewController.swift */,
+				0892FE631EC089ED00F5431B /* PlusAdressViewController.swift */,
 			);
 			name = profile;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				A472999F1DF0528D002B3977 /* AddFoodDescriptionViewController.swift in Sources */,
 				A47299A31DF052F1002B3977 /* AddFoodPlaceViewController.swift in Sources */,
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,
+				0892FE641EC089ED00F5431B /* PlusAdressViewController.swift in Sources */,
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,
 				BD024FC71DF99C5D00FC1F06 /* RegistrationPasswordViewController.swift in Sources */,
 				0892FE5A1EC0716A00F5431B /* ConfirmPasswordViewController.swift in Sources */,
