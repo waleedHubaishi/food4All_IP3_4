@@ -2203,7 +2203,7 @@
         <!--EditTel-->
         <scene sceneID="0WZ-sg-M5H">
             <objects>
-                <viewController title="EditTel" id="4FF-HB-5ir" sceneMemberID="viewController">
+                <viewController title="EditTel" id="4FF-HB-5ir" customClass="EditTelViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dQB-QG-qyM"/>
                         <viewControllerLayoutGuide type="bottom" id="ys8-Zj-o2m"/>
@@ -2223,7 +2223,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-Lh-e8F">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="079 123 45 99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-Lh-e8F">
                                 <rect key="frame" x="40" y="342" width="294" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -2240,7 +2240,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waF-HT-8SN">
                                 <rect key="frame" x="206" y="543" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Bestätigen"/>
                                 <connections>
                                     <segue destination="CWn-W2-LXi" kind="show" id="7XZ-Wi-xs6">
                                         <nil key="action"/>
@@ -2250,11 +2250,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpF-dJ-bzp">
                                 <rect key="frame" x="82" y="543" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Abbrechen"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="AbortButton" destination="QpF-dJ-bzp" id="3Ha-Kz-uHN"/>
+                        <outlet property="ConfirmButton" destination="waF-HT-8SN" id="n1u-A9-sRv"/>
+                        <outlet property="ConfirmNewTel" destination="6Dd-Lh-e8F" id="nI7-YG-2Di"/>
+                        <outlet property="NameLabel" destination="7xc-Vb-r0V" id="bTv-oQ-hjO"/>
+                        <outlet property="Profilepicture" destination="zdF-9d-kE7" id="7JH-wF-TJE"/>
+                        <outlet property="RankLabel" destination="P2F-G6-VHG" id="yRC-wq-VQK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLq-cq-kUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
