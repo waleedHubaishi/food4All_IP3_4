@@ -11,6 +11,7 @@
 		0892FE581EC0709000F5431B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE571EC0709000F5431B /* EditProfileViewController.swift */; };
 		0892FE5A1EC0716A00F5431B /* ConfirmPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE591EC0716A00F5431B /* ConfirmPasswordViewController.swift */; };
 		0892FE5C1EC074F000F5431B /* ChangeMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE5B1EC074F000F5431B /* ChangeMailViewController.swift */; };
+		0892FE5E1EC0770700F5431B /* ConfirmMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 		0892FE571EC0709000F5431B /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		0892FE591EC0716A00F5431B /* ConfirmPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPasswordViewController.swift; sourceTree = "<group>"; };
 		0892FE5B1EC074F000F5431B /* ChangeMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMailViewController.swift; sourceTree = "<group>"; };
+		0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmMailViewController.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				086A1D671EC0661500F630FA /* EditPasswordViewController.swift */,
 				0892FE591EC0716A00F5431B /* ConfirmPasswordViewController.swift */,
 				0892FE5B1EC074F000F5431B /* ChangeMailViewController.swift */,
+				0892FE5D1EC0770700F5431B /* ConfirmMailViewController.swift */,
 			);
 			name = profile;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A47299A71DF05503002B3977 /* AddFoodPhotoViewController.swift in Sources */,
+				0892FE5E1EC0770700F5431B /* ConfirmMailViewController.swift in Sources */,
 				A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */,
 				A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */,
 				BD024FCD1DF99D0C00FC1F06 /* PasswordForgotViewController.swift in Sources */,

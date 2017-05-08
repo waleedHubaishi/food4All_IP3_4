@@ -1963,7 +1963,7 @@
         <!--ConfirmMail-->
         <scene sceneID="eHj-02-XnV">
             <objects>
-                <viewController title="ConfirmMail" id="kHx-D2-aMS" sceneMemberID="viewController">
+                <viewController title="ConfirmMail" id="kHx-D2-aMS" customClass="ConfirmMailViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rwr-If-Abv"/>
                         <viewControllerLayoutGuide type="bottom" id="PVa-5z-CXd"/>
@@ -2017,6 +2017,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="AbortButton" destination="paO-5w-Ced" id="xET-qu-5vn"/>
+                        <outlet property="ConfActualMailAdress" destination="EbC-iY-SHT" id="bGd-Bk-C9u"/>
+                        <outlet property="ConfNewMailAdress" destination="lnD-2w-p57" id="DI6-4A-JvJ"/>
+                        <outlet property="ConfirmButton" destination="smd-VF-m5C" id="edc-M9-aWB"/>
+                        <outlet property="NameLabel" destination="Zb2-cd-Pqq" id="2uv-vV-mlc"/>
+                        <outlet property="Profilepicture" destination="d2C-0W-4y1" id="4cx-to-7vq"/>
+                        <outlet property="RankLabel" destination="wJV-sS-bMq" id="A56-B4-HMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1x-VU-MKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
