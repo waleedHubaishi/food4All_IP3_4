@@ -10,7 +10,7 @@ import UIKit
 
 class EditPasswordViewController: UIViewController {
 
-    
+    //new project deleted
     @IBOutlet var NameLabel: UILabel!
     
     @IBOutlet var Profilepicture: UIImageView!
@@ -30,7 +30,7 @@ class EditPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("hi");
         // Do any additional setup after loading the view.
     }
 
