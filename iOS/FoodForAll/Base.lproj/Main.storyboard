@@ -1213,7 +1213,7 @@
         <!--ConfirmPassword-->
         <scene sceneID="sps-1T-FnZ">
             <objects>
-                <viewController title="ConfirmPassword" id="h5Z-0N-ngL" sceneMemberID="viewController">
+                <viewController title="ConfirmPassword" id="h5Z-0N-ngL" customClass="ConfirmPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="75i-8H-GEn"/>
                         <viewControllerLayoutGuide type="bottom" id="SM2-rQ-GPZ"/>
@@ -1719,13 +1719,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="EditProfile" id="DpJ-Z0-RhJ"/>
                     <connections>
-                        <outlet property="EmailChangeLabel" destination="t5x-9A-dGM" id="cbz-vI-psn"/>
-                        <outlet property="NameLabel" destination="BBr-fl-zmG" id="ICC-K6-rRn"/>
-                        <outlet property="PlaceAddLabel" destination="QzF-CE-Ltg" id="KHx-uh-uNV"/>
-                        <outlet property="Profilepicture" destination="QcH-oq-og0" id="YMK-Ex-g9e"/>
-                        <outlet property="PwChangeLabel" destination="ysB-z6-QAr" id="W2D-7a-eUp"/>
-                        <outlet property="RankLabel" destination="ZmM-H1-m8O" id="dpX-qg-IFx"/>
+                        <outlet property="EmailChangeLabel" destination="t5x-9A-dGM" id="r3d-uT-Q5o"/>
+                        <outlet property="NameLabel" destination="BBr-fl-zmG" id="dzn-qm-mCH"/>
+                        <outlet property="PlaceAddLabel" destination="QzF-CE-Ltg" id="mTq-Yz-aD4"/>
+                        <outlet property="Profilepicture" destination="QcH-oq-og0" id="mLG-i1-STo"/>
+                        <outlet property="PwChangeLabel" destination="ysB-z6-QAr" id="yiq-Fs-uue"/>
+                        <outlet property="RankLabel" destination="ZmM-H1-m8O" id="8bF-7c-EgJ"/>
                         <outlet property="TelNumbAdd" destination="6r4-YB-c3r" id="0tm-bN-kNY"/>
+                        <outlet property="TelnumbAdd" destination="6r4-YB-c3r" id="v22-8p-Bzm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm7-aB-G8b" sceneMemberID="firstResponder"/>
@@ -1755,21 +1756,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Bh-1n-n5G">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Altes Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Bh-1n-n5G">
                                 <rect key="frame" x="40" y="342" width="294" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UwB-ea-3FQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Neues Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UwB-ea-3FQ">
                                 <rect key="frame" x="40" y="400" width="294" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcm-TN-BXY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Neues Passwort bestätigen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcm-TN-BXY">
                                 <rect key="frame" x="40" y="458" width="294" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -1786,7 +1787,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-0j-fyy">
                                 <rect key="frame" x="125" y="529" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="bearbeiten"/>
                                 <connections>
                                     <segue destination="D5y-Wc-QpU" kind="show" id="wER-bB-KNX">
                                         <nil key="action"/>
@@ -1813,7 +1814,7 @@
         <!--ConfirmPassword-->
         <scene sceneID="Bj8-LG-ce2">
             <objects>
-                <viewController title="ConfirmPassword" id="D5y-Wc-QpU" sceneMemberID="viewController">
+                <viewController title="ConfirmPassword" id="D5y-Wc-QpU" customClass="ConfirmPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GJS-Et-sam"/>
                         <viewControllerLayoutGuide type="bottom" id="tDv-v9-2Gi"/>
@@ -1874,6 +1875,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Abort" destination="ssA-3f-ntF" id="RWS-lt-YV3"/>
+                        <outlet property="Confirm" destination="CjR-74-ySd" id="6bA-qI-fqb"/>
+                        <outlet property="NameLabel" destination="lXE-xs-T72" id="v51-4T-y2s"/>
+                        <outlet property="NewPasswordConf" destination="J3T-2q-WoV" id="wUT-DN-5UN"/>
+                        <outlet property="NewPasswordConf2" destination="UCM-KM-d3e" id="KiO-q1-FAz"/>
+                        <outlet property="OldPasswordConf" destination="3EF-hw-Jn1" id="u2w-cS-58g"/>
+                        <outlet property="Profilepicture" destination="wOl-I5-LIc" id="fgX-Hg-7V8"/>
+                        <outlet property="RankLabel" destination="zgr-UF-4eO" id="djS-zj-cDl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZM-wL-RwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

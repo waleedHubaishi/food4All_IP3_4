@@ -1,5 +1,5 @@
 //
-//  EditProfileViewController.swift
+//  ConfirmPasswordViewController.swift
 //  FoodForAll
 //
 //  Created by Alessandro Calcagno on 08.05.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class ConfirmPasswordViewController: UIViewController {
 
     @IBOutlet var NameLabel: UILabel!
     
@@ -16,13 +16,15 @@ class EditProfileViewController: UIViewController {
     
     @IBOutlet var RankLabel: UILabel!
     
-    @IBOutlet var PwChangeLabel: UIButton!
+    @IBOutlet var OldPasswordConf: UITextField!
     
-    @IBOutlet var EmailChangeLabel: UIButton!
+    @IBOutlet var NewPasswordConf: UITextField!
     
-    @IBOutlet var PlaceAddLabel: UIButton!
+    @IBOutlet var NewPasswordConf2: UITextField!
     
-    @IBOutlet var TelnumbAdd: UIButton!
+    @IBOutlet var Abort: UIButton!
+    
+    @IBOutlet var Confirm: UIButton!
     
     
     override func viewDidLoad() {
