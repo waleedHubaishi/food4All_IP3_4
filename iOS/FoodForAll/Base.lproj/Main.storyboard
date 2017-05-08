@@ -2034,7 +2034,7 @@
         <!--ConfirmTel-->
         <scene sceneID="5LC-wC-EMG">
             <objects>
-                <viewController title="ConfirmTel" id="CWn-W2-LXi" sceneMemberID="viewController">
+                <viewController title="ConfirmTel" id="CWn-W2-LXi" customClass="ConfirmTelViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4s1-g1-NJz"/>
                         <viewControllerLayoutGuide type="bottom" id="KT9-7b-YLl"/>
@@ -2076,6 +2076,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Confirm" destination="xPs-9r-kYx" id="rQF-lM-OP9"/>
+                        <outlet property="NameLabel" destination="f4I-HT-PAl" id="ry3-MD-29G"/>
+                        <outlet property="Profilepicture" destination="Iwi-d5-Dep" id="fnS-Uy-G0l"/>
+                        <outlet property="RankLabel" destination="mg4-SK-dVG" id="ell-LI-kGm"/>
+                        <outlet property="RealConfirmNewTel" destination="Sgf-cl-TI2" id="RHU-V0-JZy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKB-vH-o3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
