@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D56B4B91E968A5F002993BE /* loginAndRegistrationTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */; };
+		1DB59EDB1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
@@ -17,7 +17,6 @@
 		A454A0E91DED9A1100F7601F /* FoodForAll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E71DED9A1100F7601F /* FoodForAll.xcdatamodeld */; };
 		A454A0EB1DED9A1100F7601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A454A0EA1DED9A1100F7601F /* Assets.xcassets */; };
 		A454A0EE1DED9A1100F7601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */; };
-		A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */; };
 		A454A1041DED9A1100F7601F /* FoodForAllUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */; };
 		A47299941DF02B2D002B3977 /* fiveCircles.png in Resources */ = {isa = PBXBuildFile; fileRef = A472998E1DF02B2D002B3977 /* fiveCircles.png */; };
 		A47299951DF02B2D002B3977 /* fourCircles.png in Resources */ = {isa = PBXBuildFile; fileRef = A472998F1DF02B2D002B3977 /* fourCircles.png */; };
@@ -71,6 +70,20 @@
 			remoteGlobalIDString = A454A0DC1DED9A1100F7601F;
 			remoteInfo = FoodForAll;
 		};
+		1DB59EC31EC06A2C006A10C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A454A0D51DED9A1100F7601F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A454A0DC1DED9A1100F7601F;
+			remoteInfo = FoodForAll;
+		};
+		1DB59ED41EC070AF006A10C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A454A0D51DED9A1100F7601F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A454A0DC1DED9A1100F7601F;
+			remoteInfo = FoodForAll;
+		};
 		A454A0F51DED9A1100F7601F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A454A0D51DED9A1100F7601F /* Project object */;
@@ -88,8 +101,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginAndRegistrationTesting.swift; sourceTree = "<group>"; };
 		1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvertiseTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB59EBE1EC06A2C006A10C4 /* LoginResgistrationTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginResgistrationTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodForAllTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1DB59ECF1EC070AF006A10C4 /* RegistTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewControllerTest.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +117,6 @@
 		A454A0EA1DED9A1100F7601F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A454A0ED1DED9A1100F7601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A454A0F41DED9A1100F7601F /* FoodForAllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForAllTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllTests.swift; sourceTree = "<group>"; };
 		A454A0FF1DED9A1100F7601F /* FoodForAllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodForAllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A1031DED9A1100F7601F /* FoodForAllUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForAllUITests.swift; sourceTree = "<group>"; };
 		A472998E1DF02B2D002B3977 /* fiveCircles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiveCircles.png; sourceTree = "<group>"; };
@@ -156,6 +171,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DB59EBB1EC06A2C006A10C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB59ECC1EC070AF006A10C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A454A0DA1DED9A1100F7601F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,12 +209,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DAF6DC51E96758700241F42 /* loginAndRegistrationTests */ = {
+		1DB59ED91EC07105006A10C4 /* LoginAndRegistrationTest */ = {
 			isa = PBXGroup;
 			children = (
-				1D56B4B81E968A5F002993BE /* loginAndRegistrationTesting.swift */,
+				1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */,
 			);
-			name = loginAndRegistrationTests;
+			name = LoginAndRegistrationTest;
 			sourceTree = "<group>";
 		};
 		A454A0D41DED9A1100F7601F = {
@@ -205,6 +234,8 @@
 				A454A0F41DED9A1100F7601F /* FoodForAllTests.xctest */,
 				A454A0FF1DED9A1100F7601F /* FoodForAllUITests.xctest */,
 				1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */,
+				1DB59EBE1EC06A2C006A10C4 /* LoginResgistrationTest.xctest */,
+				1DB59ECF1EC070AF006A10C4 /* RegistTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,8 +263,7 @@
 		A454A0F71DED9A1100F7601F /* FoodForAllTests */ = {
 			isa = PBXGroup;
 			children = (
-				1DAF6DC51E96758700241F42 /* loginAndRegistrationTests */,
-				A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */,
+				1DB59ED91EC07105006A10C4 /* LoginAndRegistrationTest */,
 				A420898F1DF9AA7500147A3C /* Info.plist */,
 			);
 			path = FoodForAllTests;
@@ -291,6 +321,7 @@
 				BD024FD21DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift */,
 				BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */,
 				BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */,
+				1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.h */,
 			);
 			name = loginAndRegistration;
 			sourceTree = "<group>";
@@ -327,6 +358,42 @@
 			name = AdvertiseTesting;
 			productName = AdvertiseTesting;
 			productReference = 1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DB59EBD1EC06A2C006A10C4 /* LoginResgistrationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB59EC51EC06A2C006A10C4 /* Build configuration list for PBXNativeTarget "LoginResgistrationTest" */;
+			buildPhases = (
+				1DB59EBA1EC06A2C006A10C4 /* Sources */,
+				1DB59EBB1EC06A2C006A10C4 /* Frameworks */,
+				1DB59EBC1EC06A2C006A10C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB59EC41EC06A2C006A10C4 /* PBXTargetDependency */,
+			);
+			name = LoginResgistrationTest;
+			productName = LoginResgistrationTest;
+			productReference = 1DB59EBE1EC06A2C006A10C4 /* LoginResgistrationTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DB59ECE1EC070AF006A10C4 /* RegistTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB59ED61EC070AF006A10C4 /* Build configuration list for PBXNativeTarget "RegistTest" */;
+			buildPhases = (
+				1DB59ECB1EC070AF006A10C4 /* Sources */,
+				1DB59ECC1EC070AF006A10C4 /* Frameworks */,
+				1DB59ECD1EC070AF006A10C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB59ED51EC070AF006A10C4 /* PBXTargetDependency */,
+			);
+			name = RegistTest;
+			productName = RegistTest;
+			productReference = 1DB59ECF1EC070AF006A10C4 /* RegistTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A454A0DC1DED9A1100F7601F /* FoodForAll */ = {
@@ -397,6 +464,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = A454A0DC1DED9A1100F7601F;
 					};
+					1DB59EBD1EC06A2C006A10C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A454A0DC1DED9A1100F7601F;
+					};
+					1DB59ECE1EC070AF006A10C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A454A0DC1DED9A1100F7601F;
+					};
 					A454A0DC1DED9A1100F7601F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ME5R9795TJ;
@@ -404,6 +481,7 @@
 					};
 					A454A0F31DED9A1100F7601F = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A454A0DC1DED9A1100F7601F;
 					};
@@ -431,12 +509,28 @@
 				A454A0F31DED9A1100F7601F /* FoodForAllTests */,
 				A454A0FE1DED9A1100F7601F /* FoodForAllUITests */,
 				1D6C5CAD1EA684F000A00437 /* AdvertiseTesting */,
+				1DB59EBD1EC06A2C006A10C4 /* LoginResgistrationTest */,
+				1DB59ECE1EC070AF006A10C4 /* RegistTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D6C5CAC1EA684F000A00437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB59EBC1EC06A2C006A10C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB59ECD1EC070AF006A10C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,6 +599,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DB59EBA1EC06A2C006A10C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB59ECB1EC070AF006A10C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A454A0D91DED9A1100F7601F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,8 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */,
-				1D56B4B91E968A5F002993BE /* loginAndRegistrationTesting.swift in Sources */,
+				1DB59EDB1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +663,16 @@
 			isa = PBXTargetDependency;
 			target = A454A0DC1DED9A1100F7601F /* FoodForAll */;
 			targetProxy = 1D6C5CB31EA684F000A00437 /* PBXContainerItemProxy */;
+		};
+		1DB59EC41EC06A2C006A10C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A454A0DC1DED9A1100F7601F /* FoodForAll */;
+			targetProxy = 1DB59EC31EC06A2C006A10C4 /* PBXContainerItemProxy */;
+		};
+		1DB59ED51EC070AF006A10C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A454A0DC1DED9A1100F7601F /* FoodForAll */;
+			targetProxy = 1DB59ED41EC070AF006A10C4 /* PBXContainerItemProxy */;
 		};
 		A454A0F61DED9A1100F7601F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -615,6 +732,70 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.AdvertiseTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Release;
+		};
+		1DB59EC61EC06A2C006A10C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = LoginResgistrationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.LoginResgistrationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Debug;
+		};
+		1DB59EC71EC06A2C006A10C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = LoginResgistrationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.LoginResgistrationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Release;
+		};
+		1DB59ED71EC070AF006A10C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RegistTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.RegistTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
+			};
+			name = Debug;
+		};
+		1DB59ED81EC070AF006A10C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = RegistTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcodetour.RegistTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
@@ -743,10 +924,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodForAllTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hubaishi.FoodForAllTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodForAll/FoodForAllTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
 			};
@@ -757,10 +941,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodForAllTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hubaishi.FoodForAllTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodForAll/FoodForAllTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodForAll.app/FoodForAll";
 			};
@@ -800,6 +986,23 @@
 			buildConfigurations = (
 				1D6C5CB51EA684F000A00437 /* Debug */,
 				1D6C5CB61EA684F000A00437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB59EC51EC06A2C006A10C4 /* Build configuration list for PBXNativeTarget "LoginResgistrationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB59EC61EC06A2C006A10C4 /* Debug */,
+				1DB59EC71EC06A2C006A10C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1DB59ED61EC070AF006A10C4 /* Build configuration list for PBXNativeTarget "RegistTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB59ED71EC070AF006A10C4 /* Debug */,
+				1DB59ED81EC070AF006A10C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

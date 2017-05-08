@@ -18,10 +18,32 @@ class RegistrationPasswordViewController: UIViewController {
     @IBAction func toCapcha(_ sender: Any) {
         
         if (!(isValidPassword(passwordString: passwordTF.text!))) {
-            displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
+            //displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
+            let alertController = UIAlertController(title: "Fehler", message: "Passwort ist ungültig!", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+                
+                // Code in this block will trigger when OK button tapped.
+                print("Ok button tapped");
+            }
+            
+            alertController.addAction(OKAction)
+            
+            self.present(alertController, animated: true, completion:nil)
         }
         if(!(passwordTF.text! == passwordverificationTF.text!)){
-            displayAlertMessage(messageToDisplay: "Beide Passworte stimmen nicht überein!")
+            //displayAlertMessage(messageToDisplay: "Beide Passworte stimmen nicht überein!")
+            let alertController = UIAlertController(title: "Fehler", message: "Beide Passworte stimmen nicht überein!", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+                
+                // Code in this block will trigger when OK button tapped.
+                print("Ok button tapped");
+            }
+            
+            alertController.addAction(OKAction)
+            
+            self.present(alertController, animated: true, completion:nil)
         }
         else{
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "capcha") as! RegistrationCaptchaViewController
