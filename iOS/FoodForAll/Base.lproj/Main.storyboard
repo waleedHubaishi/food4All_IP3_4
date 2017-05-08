@@ -1719,10 +1719,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="EditProfile" id="DpJ-Z0-RhJ"/>
                     <connections>
+                        <outlet property="EmailChangeLabel" destination="t5x-9A-dGM" id="cbz-vI-psn"/>
                         <outlet property="NameLabel" destination="BBr-fl-zmG" id="ICC-K6-rRn"/>
-                        <outlet property="Profilepicture" destination="QcH-oq-og0" id="xiE-bf-oV7"/>
-                        <outlet property="RankLabel" destination="ZmM-H1-m8O" id="Ouk-uU-N30"/>
-                        <outlet property="TelNumbAdd" destination="6r4-YB-c3r" id="tlG-Fi-e7w"/>
+                        <outlet property="PlaceAddLabel" destination="QzF-CE-Ltg" id="KHx-uh-uNV"/>
+                        <outlet property="Profilepicture" destination="QcH-oq-og0" id="YMK-Ex-g9e"/>
+                        <outlet property="PwChangeLabel" destination="ysB-z6-QAr" id="W2D-7a-eUp"/>
+                        <outlet property="RankLabel" destination="ZmM-H1-m8O" id="dpX-qg-IFx"/>
+                        <outlet property="TelNumbAdd" destination="6r4-YB-c3r" id="0tm-bN-kNY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm7-aB-G8b" sceneMemberID="firstResponder"/>
@@ -1732,7 +1735,7 @@
         <!--EditPassword-->
         <scene sceneID="IHn-UW-xGj">
             <objects>
-                <viewController title="EditPassword" id="wE9-sL-DlE" sceneMemberID="viewController">
+                <viewController title="EditPassword" id="wE9-sL-DlE" customClass="EditPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zuE-KE-vfz"/>
                         <viewControllerLayoutGuide type="bottom" id="NNC-WJ-O7x"/>
@@ -1745,7 +1748,7 @@
                                 <rect key="frame" x="16" y="136" width="133" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpc-i6-1iN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpc-i6-1iN" customClass="EditPasswortViewController">
                                 <rect key="frame" x="61" y="107" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1793,6 +1796,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="CommitButton" destination="NDw-0j-fyy" id="xfd-FT-oo0"/>
+                        <outlet property="ConfirmNewPassword" destination="kcm-TN-BXY" id="lj5-eb-G1C"/>
+                        <outlet property="NameLabel" destination="Wpc-i6-1iN" id="j6k-Hf-cZs"/>
+                        <outlet property="NewPassword" destination="UwB-ea-3FQ" id="h0h-Tz-ND2"/>
+                        <outlet property="OldPassword" destination="8Bh-1n-n5G" id="fcB-xP-nFa"/>
+                        <outlet property="Profilepicture" destination="WSJ-l1-doZ" id="pAm-Y2-h7g"/>
+                        <outlet property="RankLabel" destination="h81-DV-Wfg" id="CVd-AV-Z1O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFq-TP-SjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

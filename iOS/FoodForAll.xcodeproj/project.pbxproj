@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		086A1D651EC0612900F630FA /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A1D631EC0612900F630FA /* EditProfileViewController.swift */; };
-		086A1D661EC0612900F630FA /* ChangePasswortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A1D641EC0612900F630FA /* ChangePasswortViewController.swift */; };
+		086A1D681EC0661500F630FA /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A1D671EC0661500F630FA /* EditPasswordViewController.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
@@ -84,7 +84,7 @@
 
 /* Begin PBXFileReference section */
 		086A1D631EC0612900F630FA /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = newProject/newProject/EditProfileViewController.swift; sourceTree = "<group>"; };
-		086A1D641EC0612900F630FA /* ChangePasswortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswortViewController.swift; path = newProject/newProject/ChangePasswortViewController.swift; sourceTree = "<group>"; };
+		086A1D671EC0661500F630FA /* EditPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				086A1D631EC0612900F630FA /* EditProfileViewController.swift */,
-				086A1D641EC0612900F630FA /* ChangePasswortViewController.swift */,
+				086A1D671EC0661500F630FA /* EditPasswordViewController.swift */,
 			);
 			name = profile;
 			sourceTree = "<group>";
@@ -491,12 +491,12 @@
 				A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */,
 				A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */,
 				A41D857E1E0C31A300347D8A /* Food.swift in Sources */,
-				086A1D661EC0612900F630FA /* ChangePasswortViewController.swift in Sources */,
 				A472999F1DF0528D002B3977 /* AddFoodDescriptionViewController.swift in Sources */,
 				A47299A31DF052F1002B3977 /* AddFoodPlaceViewController.swift in Sources */,
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,
 				BD024FC71DF99C5D00FC1F06 /* RegistrationPasswordViewController.swift in Sources */,
+				086A1D681EC0661500F630FA /* EditPasswordViewController.swift in Sources */,
 				A472999B1DF0520E002B3977 /* AddFoodNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
