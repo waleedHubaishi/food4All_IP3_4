@@ -87,7 +87,9 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
         pickedUpOnTF.text = "\(dateFormatter3.string(from: Date() as Date))"
         
         let datePickerView:UIDatePicker = UIDatePicker()
+        let maxDate = dateFormatter3.date(from: food.expiration)
         datePickerView.minimumDate = NSDate() as Date
+        datePickerView.maximumDate = maxDate
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(AddFoodPickUpViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
@@ -120,10 +122,6 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     func pickUpAtFunc(sender: UIDatePicker) {
-        
-
-        
-        
         let dateFormatter1 = DateFormatter()
         dateFormatter1.dateStyle = DateFormatter.Style.medium
         dateFormatter1.timeStyle = DateFormatter.Style.none

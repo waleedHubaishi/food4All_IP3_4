@@ -129,6 +129,12 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.minimumDate = NSDate() as Date
+        
+        let maxDate = Date()
+        let inOneYear = Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
+        
+        datePickerView.maximumDate = inOneYear
+        
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(AddFoodDescriptionViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
