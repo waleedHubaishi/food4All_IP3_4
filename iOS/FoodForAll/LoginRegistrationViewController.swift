@@ -6,6 +6,7 @@
 //  Copyright © 2016 Waleed al-Hubaishi. All rights reserved.
 //
 
+// dummy email and password for verification
 let tempEmail = "jalil.hashemi@students.fhnw.ch"
 let tempPass = "123Password"
 
