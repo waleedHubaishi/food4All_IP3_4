@@ -1144,7 +1144,7 @@
         <!--EditPassword-->
         <scene sceneID="Vfp-Fi-PEb">
             <objects>
-                <viewController title="EditPassword" id="m2j-R6-deQ" sceneMemberID="viewController">
+                <viewController title="EditPassword" id="m2j-R6-deQ" customClass="EditPasswordViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ivZ-eW-TJI"/>
                         <viewControllerLayoutGuide type="bottom" id="xu7-X5-Syt"/>
@@ -1195,7 +1195,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aok-6s-ZrN">
                                 <rect key="frame" x="125" y="529" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Bearbeiten"/>
                                 <connections>
                                     <segue destination="h5Z-0N-ngL" kind="show" id="YLp-pb-MsI">
                                         <nil key="action"/>
@@ -1264,12 +1264,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvh-M6-eRA">
                                 <rect key="frame" x="206" y="553" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Bestätigen"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmm-k0-CUF">
                                 <rect key="frame" x="82" y="553" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Abbrechen"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1282,7 +1282,7 @@
         <!--PlusMinusAdress-->
         <scene sceneID="ZJZ-U1-IQk">
             <objects>
-                <viewController title="PlusMinusAdress" id="iKF-7Q-3Jd" sceneMemberID="viewController">
+                <viewController title="PlusMinusAdress" id="iKF-7Q-3Jd" customClass="PlusMinusViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mpa-1p-xSW"/>
                         <viewControllerLayoutGuide type="bottom" id="vqZ-aK-dlZ"/>
@@ -1324,12 +1324,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHf-mm-0QL">
                                 <rect key="frame" x="206" y="543" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Bestätigen"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZf-I0-ZX1">
                                 <rect key="frame" x="82" y="543" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Abbrechen"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1475,7 +1475,7 @@
         <!--EditMail-->
         <scene sceneID="bDy-J6-8H7">
             <objects>
-                <viewController title="EditMail" id="X3N-Y1-FsE" sceneMemberID="viewController">
+                <viewController title="EditMail" id="X3N-Y1-FsE" customClass="ChangeMailViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1gt-Zs-8Gh"/>
                         <viewControllerLayoutGuide type="bottom" id="LkM-4x-aT9"/>
