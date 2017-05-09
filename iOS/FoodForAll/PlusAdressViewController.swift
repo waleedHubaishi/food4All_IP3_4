@@ -39,6 +39,17 @@ class PlusAdressViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "EditProfile") as! UITabBarController
+        vc.selectedIndex = 3
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
+    
+    
 
     /*
     // MARK: - Navigation
