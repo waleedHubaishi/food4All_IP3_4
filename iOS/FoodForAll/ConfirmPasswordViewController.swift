@@ -24,7 +24,15 @@ class ConfirmPasswordViewController: UIViewController {
     
     @IBOutlet var Abort: UIButton!
     
+  
+    
+    
+    
+    
     @IBOutlet var Confirm: UIButton!
+    
+   
+    
     
     
     override func viewDidLoad() {

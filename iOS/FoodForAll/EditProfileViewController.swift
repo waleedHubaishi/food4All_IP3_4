@@ -25,6 +25,9 @@ class EditProfileViewController: UIViewController {
     @IBOutlet var TelnumbAdd: UIButton!
     
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

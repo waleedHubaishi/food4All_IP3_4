@@ -1279,56 +1279,6 @@
             </objects>
             <point key="canvasLocation" x="7482" y="-1349"/>
         </scene>
-        <!--ConfirmTel-->
-        <scene sceneID="qAh-PQ-sFq">
-            <objects>
-                <viewController title="ConfirmTel" id="awG-I3-8nd" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6SX-S2-4s7"/>
-                        <viewControllerLayoutGuide type="bottom" id="KF4-GJ-9FN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Q6r-Kx-pLb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-y6-e3k">
-                                <rect key="frame" x="16" y="136" width="133" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH7-0U-yuw">
-                                <rect key="frame" x="61" y="107" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qI3-W8-y4w">
-                                <rect key="frame" x="37" y="342" width="297" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMs-ee-GUb">
-                                <rect key="frame" x="284" y="174" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-NZ-S4C">
-                                <rect key="frame" x="125" y="529" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HFQ-iu-Hmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7535" y="177"/>
-        </scene>
         <!--PlusMinusAdress-->
         <scene sceneID="ZJZ-U1-IQk">
             <objects>
@@ -1582,7 +1532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZH-wJ-zcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4706" y="177"/>
+            <point key="canvasLocation" x="4519" y="424"/>
         </scene>
         <!--ConfirmMail-->
         <scene sceneID="Vo0-XK-VLa">
@@ -1644,7 +1594,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoG-Ea-Uip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5498" y="177"/>
+            <point key="canvasLocation" x="5311" y="424"/>
         </scene>
         <!--EditProfile-->
         <scene sceneID="Lj5-BC-HAM">
@@ -1958,7 +1908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJL-HG-GrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4706" y="177"/>
+            <point key="canvasLocation" x="4519" y="424"/>
         </scene>
         <!--ConfirmMail-->
         <scene sceneID="eHj-02-XnV">
@@ -2029,7 +1979,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1x-VU-MKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5498" y="177"/>
+            <point key="canvasLocation" x="5311" y="424"/>
         </scene>
         <!--ConfirmTel-->
         <scene sceneID="5LC-wC-EMG">
@@ -2086,7 +2036,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKB-vH-o3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7535" y="177"/>
+            <point key="canvasLocation" x="7156" y="249"/>
         </scene>
         <!--PlusMinusAdress-->
         <scene sceneID="J0h-Op-ZeZ">
@@ -2314,7 +2264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLq-cq-kUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6786" y="178"/>
+            <point key="canvasLocation" x="6316" y="249"/>
         </scene>
     </scenes>
     <resources>
