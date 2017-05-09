@@ -86,4 +86,22 @@
         android:layout_marginTop="22dp"
         android:id="@+id/editText4"
         android:text="Uhrzeit" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Location"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText4" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_mylocation"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_toEndOf="@+id/editText4" />
 </RelativeLayout>

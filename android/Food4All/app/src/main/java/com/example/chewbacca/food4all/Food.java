@@ -21,6 +21,7 @@ public class Food {
 
             foodOne.setFoodName("Banana");
             foodOne.setDescription("eine Schöne Banane hast du da ;)");
+
             foodOne.setimageURL("www.google.ch");
             foodOne.setlabel("BananenLabel");
 
@@ -30,6 +31,7 @@ public class Food {
 
         foodOne.setFoodName("Apfel");
         foodOne.setDescription("Apfel abgebissen als feature verkauft sich besser siehe Apple ");
+
         foodOne.setimageURL("www.apple.com");
         foodOne.setlabel("Apfellabel");
         foodList.add(foodTwo);

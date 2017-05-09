@@ -30,36 +30,27 @@
         android:id="@+id/textView11" />
 
     <ImageButton
+        android:id="@+id/imageButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textView11"
-        android:layout_toEndOf="@+id/textView11"
+        android:layout_marginBottom="57dp"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:layout_marginBottom="57dp"
-        android:id="@+id/imageButton8"
-        android:onClick="goToAdv5Activity"/>
-
-    <ProgressBar
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView10"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/progressBar4" />
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:onClick="goToAdv5Activity"
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal"
-        android:layout_marginTop="54dp"
         android:id="@+id/imageButton10"
-        android:layout_below="@+id/progressBar4"
-        android:layout_toStartOf="@+id/imageButton8"
-        android:onClick="gotoadv7Activity"/>
+        android:onClick="gotoadv7Activity"
+        android:layout_above="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -72,5 +63,24 @@
         android:layout_marginEnd="33dp"
         android:id="@+id/imageButton9"
         android:onClick="goToAdv3Activity"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/imageButton9" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageButton9" />
 
 </RelativeLayout>

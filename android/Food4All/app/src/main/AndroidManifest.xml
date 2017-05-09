@@ -20,6 +20,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -85,6 +86,11 @@
             android:name=".Adv7ActivitySelectLocation"
             android:label="@string/title_activity_adv7_select_location" />
         <activity android:name=".Adv8ActivityGalleryView"></activity>
+
+
+
+        <activity android:name=".adv10Activity"/>
+
     </application>
 
 </manifest>
