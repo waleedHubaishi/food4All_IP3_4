@@ -6,6 +6,9 @@
 //  Copyright © 2016 Waleed al-Hubaishi. All rights reserved.
 //
 
+let tempEmail = "jalil.hashemi@students.fhnw.ch"
+let tempPass = "123Password"
+
 import UIKit
 
 class LoginRegistrationViewController: UIViewController {
@@ -21,7 +24,7 @@ class LoginRegistrationViewController: UIViewController {
     @IBAction func signIN(_ sender: Any) {
         checkingEmailFT(emailTF: emailTF.text!)
         if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
-            if (isValidPassword(passwordString: passwordTF.text!)) {
+            if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
