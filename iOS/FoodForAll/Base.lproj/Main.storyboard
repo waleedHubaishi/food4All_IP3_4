@@ -1737,7 +1737,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-0j-fyy">
                                 <rect key="frame" x="125" y="529" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bearbeiten"/>
+                                <state key="normal" title="Abschicken"/>
                                 <connections>
                                     <segue destination="D5y-Wc-QpU" kind="show" id="wER-bB-KNX">
                                         <nil key="action"/>
@@ -1747,6 +1747,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CommitButton" destination="NDw-0j-fyy" id="xfd-FT-oo0"/>
                         <outlet property="ConfirmNewPassword" destination="kcm-TN-BXY" id="lj5-eb-G1C"/>
