@@ -139,6 +139,8 @@ class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
 
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
+        
+        print(food.place)
     }
     
 }

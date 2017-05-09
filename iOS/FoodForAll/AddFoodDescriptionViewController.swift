@@ -16,7 +16,7 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
     @IBOutlet weak var descriptoinTV: UITextView!
     @IBOutlet weak var toKeepTilLbl: UILabel!
     @IBOutlet weak var toPickUpBtn: UIButton!
-    @IBOutlet weak var toKeepTilTF: UITextField!
+    @IBOutlet weak var toKeepTilTF: NMTextField!
     @IBOutlet weak var warningLbl: UILabel!
     
     var food:Food = Food()

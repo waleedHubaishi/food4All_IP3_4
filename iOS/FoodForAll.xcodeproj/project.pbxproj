@@ -41,6 +41,7 @@
 		A47FCDC31DF18A8500F70C1A /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC21DF18A8500F70C1A /* plus.png */; };
 		A47FCDC51DF18CAD00F70C1A /* magnifying-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC41DF18CAD00F70C1A /* magnifying-glass.png */; };
 		A47FCDC71DF1A22F00F70C1A /* myfridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A47FCDC61DF1A22F00F70C1A /* myfridge.png */; };
+		A4A8BCA61EC1BE660052CA28 /* NMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8BCA51EC1BE660052CA28 /* NMTextField.swift */; };
 		A4C63D941E276D7000C0D57A /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C63D931E276D7000C0D57A /* location-arrow.png */; };
 		A4C63D971E276EEE00C0D57A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C63D961E276EEE00C0D57A /* CoreLocation.framework */; };
 		A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */; };
@@ -121,6 +122,7 @@
 		A47FCDC21DF18A8500F70C1A /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		A47FCDC41DF18CAD00F70C1A /* magnifying-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass.png"; sourceTree = "<group>"; };
 		A47FCDC61DF1A22F00F70C1A /* myfridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myfridge.png; sourceTree = "<group>"; };
+		A4A8BCA51EC1BE660052CA28 /* NMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMTextField.swift; sourceTree = "<group>"; };
 		A4C63D931E276D7000C0D57A /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
 		A4C63D961E276EEE00C0D57A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOverviewViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				A454A0E21DED9A1100F7601F /* ViewController.swift */,
 				A4DDC84E1DF08EB4006C94F8 /* TabBarViewController.swift */,
 				BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */,
+				A4A8BCA51EC1BE660052CA28 /* NMTextField.swift */,
 				A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */,
 				A420898D1DF9AA5800147A3C /* Info.plist */,
 				A454A0E71DED9A1100F7601F /* FoodForAll.xcdatamodeld */,
@@ -469,6 +472,7 @@
 				A47299A71DF05503002B3977 /* AddFoodPhotoViewController.swift in Sources */,
 				A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */,
 				A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */,
+				A4A8BCA61EC1BE660052CA28 /* NMTextField.swift in Sources */,
 				BD024FCD1DF99D0C00FC1F06 /* PasswordForgotViewController.swift in Sources */,
 				BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */,
 				BD024FCB1DF99CD900FC1F06 /* RegistrationCaptchaViewController.swift in Sources */,

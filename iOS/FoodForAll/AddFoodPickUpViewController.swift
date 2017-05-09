@@ -35,8 +35,8 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var pickUpLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var pickUPonLbl: UILabel!
-    @IBOutlet weak var pickedUpOnTF: UITextField!
-    @IBOutlet weak var pickUpAtTF: UITextField!
+    @IBOutlet weak var pickedUpOnTF: NMTextField!
+    @IBOutlet weak var pickUpAtTF: NMTextField!
     @IBOutlet weak var toAddPlaceBtn: UIButton!
     @IBOutlet weak var warningLbl: UILabel!
    

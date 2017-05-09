@@ -13,7 +13,7 @@ class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
     @IBOutlet weak var whatIsItLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
-    @IBOutlet weak var categorieTF: UITextField!
+    @IBOutlet weak var categorieTF: NMTextField!
     @IBOutlet weak var toDescriptionBtn: UIButton!
     @IBOutlet weak var warningLbl: UILabel!
     
