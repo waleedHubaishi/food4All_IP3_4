@@ -117,7 +117,7 @@ class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
    }
     func isInputValid(inputString:String) -> Bool
     {
-        if((inputString.isEmpty) || (inputString.characters.count < 2))
+        if((inputString.isEmpty) || (inputString.characters.count < 2) || (inputString.characters.count > 20))
         {
             
             return false
