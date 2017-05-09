@@ -49,6 +49,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+    private static final String TAG = LoginActivity.class.getSimpleName(); // used for debugging messages
 
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -329,6 +330,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         private static final String pass = "";
 
         private void validateUser() {
+            Log.d(TAG, "validateUser() started");
             try {
                 Class.forName("com.mysql.jdbc.Driver");
 
@@ -343,7 +345,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     result += rsmd.getColumnName(1) + ": " + rs.getInt(1) + "\n";
                     result += rsmd.getColumnName(2) + ": " + rs.getString(2) + "\n";
                 }
-                Log.d("Food4All", result); // TODO: How can I debug with a console?
+                Log.d(TAG, result);
             } catch(Exception e) {
                 e.printStackTrace();
                 //System.out.println(e.toString());
