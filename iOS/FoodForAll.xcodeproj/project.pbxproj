@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DB59EEC1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
@@ -85,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodNameViewControllerTest.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB59EEA1EC1A686006A10C4 /* advertise */ = {
+			isa = PBXGroup;
+			children = (
+				1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */,
+			);
+			name = advertise;
+			sourceTree = "<group>";
+		};
 		A454A0D41DED9A1100F7601F = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 		A454A0F71DED9A1100F7601F /* FoodForAllTests */ = {
 			isa = PBXGroup;
 			children = (
+				1DB59EEA1EC1A686006A10C4 /* advertise */,
 				A454A0F81DED9A1100F7601F /* FoodForAllTests.swift */,
 				A420898F1DF9AA7500147A3C /* Info.plist */,
 			);
@@ -500,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */,
+				1DB59EEC1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
