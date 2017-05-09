@@ -45,4 +45,13 @@
     <string name="title_activity_adv7_select_location">Map</string>
     <string name="tap_instructions">Tap to chose your coordinates</string>
     <string name="hello" >Hello FoodHero</string>
+    <string name="Bezeichnung">Bezeichnung</string>
+    <string name="Category">Kategorie</string>
+    <string name="CategoryName">Bezeichnung</string>
+    <string name="Abholen">Abholen bis:</string>
+    <string name="Haltbar">Haltbar bis:</string>
+    <string name="Description">Bezeichnung:</string>
+    <string name="Reserve">Reservieren</string>
+    <string name="Popup3">Der Artikel wurde für dich reserviert.</string>
+    <string name="Date">Datum</string>
 </resources>
