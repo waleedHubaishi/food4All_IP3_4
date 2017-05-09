@@ -1,5 +1,6 @@
 package com.example.chewbacca.food4all;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 /**
@@ -8,33 +9,55 @@ import java.util.ArrayList;
 
 public class Food {
 
-    private String foodName, foodCategory, description, imageUrl, label, timeReserved, dateReserved;
-    private int sessionFED, foodID, donorId, recieverId;
-    private boolean foodStatus;
+    private String foodName, foodCategory, description, imageUrl, label;
+    private int foodID, donorId, recieverId;
+    private boolean statusResv, statusPickup;
+    private Date expTimestamp, pickupTimestamp;
+    private Person donor;
 
+
+    public boolean isStatusResv() {
+        return statusResv;
+    }
+
+    public void setStatusResv(boolean statusResv) {
+        this.statusResv = statusResv;
+    }
+
+    public boolean isStatusPickup() {
+        return statusPickup;
+    }
+
+    public void setStatusPickup(boolean statusPickup) {
+        this.statusPickup = statusPickup;
+    }
+
+    public Person getDonor() {
+        return donor;
+    }
+
+    public void setDonor(Person donor) {
+        this.donor = donor;
+    }
+
+    public Date getExpTimestamp() {
+        return expTimestamp;
+    }
+
+    public void setExpTimestamp(Date expTimestamp) {
+        this.expTimestamp = expTimestamp;
+    }
+
+    public Date getPickupTimestamp() {
+        return pickupTimestamp;
+    }
+
+    public void setPickupTimestamp(Date pickupTimestamp) {
+        this.pickupTimestamp = pickupTimestamp;
+    }
 
     public static ArrayList<Food> getFoods(){
-        final ArrayList<Food> foodList = new ArrayList<>();
-
-            //Initialise new FoodO bjects and add the data inside, at the moment hard coded
-            Food foodOne = new Food();
-
-            foodOne.setFoodName("Banana");
-            foodOne.setDescription("eine Schöne Banane hast du da ;)");
-
-            foodOne.setimageURL("www.google.ch");
-            foodOne.setlabel("BananenLabel");
-
-        foodList.add(foodOne);
-
-        Food foodTwo = new Food();
-
-        foodOne.setFoodName("Apfel");
-        foodOne.setDescription("Apfel abgebissen als feature verkauft sich besser siehe Apple ");
-
-        foodOne.setimageURL("www.apple.com");
-        foodOne.setlabel("Apfellabel");
-        foodList.add(foodTwo);
+        ArrayList<Food> foodList = new ArrayList<>();
 
         return foodList;
     }
@@ -53,19 +76,6 @@ public class Food {
 
     public void setlabel(String label) {
         this.label = label;
-    }
-
-    public Food createNewFoodInstance() {
-        Food foodInstance = new Food();
-        return foodInstance;
-    }
-
-    public Integer getSessionFED() {
-        return sessionFED;
-    }
-
-    public void setSessionFED(int sessionFED) {
-        this.sessionFED = sessionFED;
     }
 
     public String getFoodName() {
@@ -122,29 +132,5 @@ public class Food {
 
     public void setRecieverId(int recieverId) {
         this.recieverId = recieverId;
-    }
-
-    public boolean isFoodStatus() {
-        return foodStatus;
-    }
-
-    public void setFoodStatus(boolean foodStatus) {
-        this.foodStatus = foodStatus;
-    }
-
-    public String getTimeReserved() {
-        return timeReserved;
-    }
-
-    public void setTimeReserved(String timeReserved) {
-        this.timeReserved = timeReserved;
-    }
-
-    public String getDateReserved() {
-        return dateReserved;
-    }
-
-    public void setDateReserved(String dateReserved) {
-        this.dateReserved = dateReserved;
     }
 }
