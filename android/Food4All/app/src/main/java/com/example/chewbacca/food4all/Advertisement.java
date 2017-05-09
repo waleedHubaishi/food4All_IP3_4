@@ -57,12 +57,6 @@ public class Advertisement {
         this.pickupTimestamp = pickupTimestamp;
     }
 
-    public static ArrayList<Food> getFoods(){
-        ArrayList<Food> foodList = new ArrayList<>();
-
-        return foodList;
-    }
-
     public void setFoodName(String foodName) {
         this.foodName = foodName;
     }
