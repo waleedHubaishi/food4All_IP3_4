@@ -10,12 +10,19 @@ import java.util.ArrayList;
 public class Advertisement {
 
 
-    private String foodName, foodCategory, description, imageUrl, label;
-    private int foodID, donorId, recieverId;
+    private String foodName, foodCategory, description, imageUrl;
+    private int foodID;
     private boolean statusResv, statusPickup;
     private Date expTimestamp, pickupTimestamp;
-    private Person donor;
+    private Person donor, receiver;
 
+    public Person getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(Person receiver) {
+        this.receiver = receiver;
+    }
 
     public boolean isStatusResv() {
         return statusResv;
@@ -69,10 +76,6 @@ public class Advertisement {
         this.imageUrl = imageURL;
     }
 
-    public void setlabel(String label) {
-        this.label = label;
-    }
-
     public String getFoodName() {
         return foodName;
     }
@@ -89,14 +92,6 @@ public class Advertisement {
         this.imageUrl = imageUrl;
     }
 
-    public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
     public String getFoodCategory() {
         return foodCategory;
     }
@@ -111,21 +106,5 @@ public class Advertisement {
 
     public void setFoodID(int foodID) {
         this.foodID = foodID;
-    }
-
-    public int getDonorId() {
-        return donorId;
-    }
-
-    public void setDonorId(int donorId) {
-        this.donorId = donorId;
-    }
-
-    public int getRecieverId() {
-        return recieverId;
-    }
-
-    public void setRecieverId(int recieverId) {
-        this.recieverId = recieverId;
     }
 }
