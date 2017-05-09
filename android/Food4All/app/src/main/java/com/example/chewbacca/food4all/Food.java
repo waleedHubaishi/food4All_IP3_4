@@ -32,7 +32,7 @@ public class Food {
             Food foodOne = new Food();
 
             foodOne.setTitle("Banana");
-            foodOne.setDescription("eine Schöne Banane hast du da ;)");
+            foodOne.setDescription("eine Schöne banana :)");
             foodOne.setimageURL("www.google.ch");
             foodOne.setlabel("BananenLabel");
 
@@ -41,7 +41,7 @@ public class Food {
         Food foodTwo = new Food();
 
         foodOne.setTitle("Apfel");
-        foodOne.setDescription("Apfel abgebissen als feature verkauft sich besser siehe Apple ");
+        foodOne.setDescription("Apfel abgebissen als feature verkauft sich besser (siehe Apple) ");
         foodOne.setimageURL("www.apple.com");
         foodOne.setlabel("Apfellabel");
         foodList.add(foodTwo);

@@ -3,12 +3,18 @@ package com.example.chewbacca.food4all;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationManager;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TimePicker;
 
 import java.sql.Time;
@@ -25,8 +31,6 @@ public class Adv3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_adv3);
 
         datePicker = (EditText) findViewById(R.id.editText2);
-
-
         datePicker.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -81,6 +85,43 @@ public class Adv3Activity extends AppCompatActivity {
 
         });
 
+        final ImageButton nextPage = (ImageButton)findViewById(R.id.imageButton);
+        final EditText editText2 = (EditText) findViewById(R.id.editText2);
+        final EditText editText4 = (EditText) findViewById(R.id.editText4);
+        nextPage.setEnabled(false);
+//        nextPage.setOnClickListener();
+
+        ((EditText)findViewById(R.id.editText2)).addTextChangedListener(new TextWatcher() {
+            boolean fieldsOK=validate(new EditText[]{editText2, editText4});
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                if(fieldsOK == true) {
+                    nextPage.setEnabled(true);
+                } else {
+                    nextPage.setEnabled(false);
+                }
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(fieldsOK == true) {
+                    nextPage.setEnabled(true);
+                } else {
+                    nextPage.setEnabled(false);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(fieldsOK == true) {
+                    nextPage.setEnabled(true);
+                } else {
+                    nextPage.setEnabled(false);
+                }
+            }
+        });
+
     }
 
     /** Called when the user clicks the Login button */
@@ -93,5 +134,20 @@ public class Adv3Activity extends AppCompatActivity {
     public void goToAdv4Activity(View view) {
         Intent intent = new Intent(this, Adv6Activity.class);
         startActivity(intent);
+    }
+
+    private boolean validate(EditText[] fields){
+        for(int i=0; i<fields.length; i++){
+            EditText currentField=fields[i];
+            if(currentField.getText().toString().length()<=0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void getUserLocation() {
+
+
     }
 }
