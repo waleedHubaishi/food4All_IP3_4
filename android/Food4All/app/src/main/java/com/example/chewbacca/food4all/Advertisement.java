@@ -4,10 +4,11 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 /**
- * This class manages the description of the food
+ * This class manages the description of the advertisement
  */
 
-public class Food {
+public class Advertisement {
+
 
     private String foodName, foodCategory, description, imageUrl, label;
     private int foodID, donorId, recieverId;
