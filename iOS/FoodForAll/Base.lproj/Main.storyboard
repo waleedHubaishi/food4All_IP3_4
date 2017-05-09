@@ -520,6 +520,25 @@
             </objects>
             <point key="canvasLocation" x="5073" y="174"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="MPH-Uu-7lZ">
+            <objects>
+                <viewController id="pOA-Ua-2T1" customClass="EditProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AYO-eE-DZl"/>
+                        <viewControllerLayoutGuide type="bottom" id="XMp-kQ-StM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nL5-eY-vIV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cOJ-tP-cBG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eew-Cj-oZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="1925"/>
+        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="3Zw-qD-BMt">
             <objects>

@@ -10,6 +10,8 @@
 		1DB59EDB1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */; };
 		1DB59EE71EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */; };
 		1DB59EE91EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */; };
+		91BF5B561EC1C783006736A5 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */; };
+		91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile in Sources */ = {isa = PBXBuildFile; fileRef = 91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
@@ -105,11 +107,13 @@
 /* Begin PBXFileReference section */
 		1D6C5CAE1EA684F000A00437 /* AdvertiseTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvertiseTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB59EBE1EC06A2C006A10C4 /* LoginResgistrationTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginResgistrationTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodForAllTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodForAllTests-Bridging-Header.swift"; sourceTree = "<group>"; };
 		1DB59ECF1EC070AF006A10C4 /* RegistTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB59EDA1EC07141006A10C4 /* RegistrationPasswordViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewControllerTest.swift; sourceTree = "<group>"; };
 		1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextFieldVerficationViewControllerTest.swift; sourceTree = "<group>"; };
 		1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewControllerTest.swift; sourceTree = "<group>"; };
+		91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TabBarControllerLonginOrProfile; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -327,7 +331,9 @@
 				BD024FD21DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift */,
 				BD024FDC1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift */,
 				BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */,
-				1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.h */,
+				1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.swift */,
+				91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */,
+				91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */,
 			);
 			name = loginAndRegistration;
 			sourceTree = "<group>";
@@ -638,11 +644,13 @@
 				A47299A51DF054DA002B3977 /* AddFoodPickUpViewController.swift in Sources */,
 				A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */,
 				A472999F1DF0528D002B3977 /* AddFoodDescriptionViewController.swift in Sources */,
+				91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile in Sources */,
 				A47299A31DF052F1002B3977 /* AddFoodPlaceViewController.swift in Sources */,
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,
 				BD024FC71DF99C5D00FC1F06 /* RegistrationPasswordViewController.swift in Sources */,
 				A472999B1DF0520E002B3977 /* AddFoodNameViewController.swift in Sources */,
+				91BF5B561EC1C783006736A5 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

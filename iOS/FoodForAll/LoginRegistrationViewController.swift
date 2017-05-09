@@ -29,7 +29,7 @@ class LoginRegistrationViewController: UIViewController {
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
                 let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as!
                 UITabBarController
-                vc.selectedIndex = 0
+                //vc.selectedIndex = 0
                 self.present(vc, animated: true, completion: nil)
         }
             else{displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
