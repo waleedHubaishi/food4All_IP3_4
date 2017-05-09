@@ -523,7 +523,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="3Zw-qD-BMt">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y0i-8W-Cfg" customClass="TabBarViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0i-8W-Cfg" customClass="TabBarViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dnM-4V-oLy"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="KJl-th-YJs">
@@ -551,7 +551,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FsR-jr-waX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FsR-jr-waX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -572,7 +572,7 @@
                         <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="I4S-p4-fSg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I4S-p4-fSg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -592,7 +592,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="71i-7C-l60"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="k2g-a9-xpj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k2g-a9-xpj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -970,7 +970,7 @@
                     <tabBarItem key="tabBarItem" title="login" id="0M0-Rl-PGS"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wnY-tc-qCn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wnY-tc-qCn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

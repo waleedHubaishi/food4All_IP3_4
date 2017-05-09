@@ -26,8 +26,11 @@ class LoginRegistrationViewController: UIViewController {
         checkingEmailFT(emailTF: emailTF.text!)
         if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
             if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as!
+                UITabBarController
+                vc.selectedIndex = 0
+                self.present(vc, animated: true, completion: nil)
         }
             else{displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
         }
