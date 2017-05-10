@@ -38,5 +38,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:10.2.0'
     compile 'com.google.android.gms:play-services-location:10.2.0'
     testCompile 'junit:junit:4.12'
-    compile files('libs/mysql-connector-java-5.1.41-bin.jar')
+    compile files('libs/mysql-connector-java-5.0.8-bin.jar')
 }
