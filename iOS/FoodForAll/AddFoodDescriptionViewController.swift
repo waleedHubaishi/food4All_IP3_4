@@ -118,6 +118,20 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         textView.resignFirstResponder()
     }
     
+    //calculate the maximum expiration date as date based on the date of today in 1 year and returns the maximum expiration date as date
+    
+    func calMaxDate() -> Date{
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .medium
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        
+        let maxDate = Date()
+        let inOneYear = Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
+        
+        print("\(dateFormatter.string(from: Date() as Date))")
+        return inOneYear!
+        
+    }
     
     @IBAction func textFieldEditing(_ sender: UITextField) {
                 
@@ -126,14 +140,10 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         dateFormatter.timeStyle = .medium
         dateFormatter.dateFormat = "dd.MM.yyyy"
         toKeepTilTF.text = "\(dateFormatter.string(from: Date() as Date))"
-        
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.minimumDate = NSDate() as Date
         
-        let maxDate = Date()
-        let inOneYear = Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
-        
-        datePickerView.maximumDate = inOneYear
+        datePickerView.maximumDate = calMaxDate()
         
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
@@ -147,6 +157,10 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         dateFormatter.dateFormat = "dd.MM.yyyy"
         toKeepTilTF.text = dateFormatter.string(from: sender.date)
     }
+    
+    
+    
+    
     
     @IBAction func toNext()
     {

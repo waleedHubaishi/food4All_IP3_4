@@ -31,7 +31,7 @@ class AddFoodNameViewControllerTest: XCTestCase {
        
         
         
-        XCTAssertFalse(addFoodNameViewController.isInputValid(inputString: "a"))
+        XCTAssertTrue(addFoodNameViewController.isInputValid(inputString: "a"))
         
         XCTAssertTrue(addFoodNameViewController.isInputValid(inputString: "Ei"))
         

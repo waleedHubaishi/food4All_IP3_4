@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D37540A1EC316C80036E0D2 /* AddFoodDescriptionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3754091EC316C80036E0D2 /* AddFoodDescriptionViewControllerTest.swift */; };
 		1DB59EEC1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */; };
 		1DB59EEE1EC1E6AD006A10C4 /* AddFoodPickUpViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EED1EC1E6AD006A10C4 /* AddFoodPickUpViewControllerTest.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D3754091EC316C80036E0D2 /* AddFoodDescriptionViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodDescriptionViewControllerTest.swift; sourceTree = "<group>"; };
 		1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodNameViewControllerTest.swift; sourceTree = "<group>"; };
 		1DB59EED1EC1E6AD006A10C4 /* AddFoodPickUpViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodPickUpViewControllerTest.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				1DB59EEB1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift */,
 				1DB59EED1EC1E6AD006A10C4 /* AddFoodPickUpViewControllerTest.swift */,
+				1D3754091EC316C80036E0D2 /* AddFoodDescriptionViewControllerTest.swift */,
 			);
 			name = advertise;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A454A0F91DED9A1100F7601F /* FoodForAllTests.swift in Sources */,
+				1D37540A1EC316C80036E0D2 /* AddFoodDescriptionViewControllerTest.swift in Sources */,
 				1DB59EEC1EC1A786006A10C4 /* AddFoodNameViewControllerTest.swift in Sources */,
 				1DB59EEE1EC1E6AD006A10C4 /* AddFoodPickUpViewControllerTest.swift in Sources */,
 			);

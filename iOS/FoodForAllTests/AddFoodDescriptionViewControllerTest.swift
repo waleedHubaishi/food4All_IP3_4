@@ -1,17 +1,17 @@
 //
-//  AddFoodPickUpViewControllerTest.swift
+//  AddFoodDescriptionViewControllerTest.swift
 //  FoodForAll
 //
-//  Created by Wing Kha on 09.05.17.
+//  Created by Wing Kha on 10.05.17.
 //  Copyright © 2017 Waleed al-Hubaishi. All rights reserved.
 //
 
 import XCTest
 @testable import FoodForAll
 
-class AddFoodPickUpViewControllerTest: XCTestCase {
+class AddFoodDescriptionViewControllerTest: XCTestCase {
     
-    let addFoodPickUpViewController = AddFoodPickUpViewController()
+    let addFoodDescriptionViewController = AddFoodDescriptionViewController()
     
     override func setUp() {
         super.setUp()
@@ -29,25 +29,17 @@ class AddFoodPickUpViewControllerTest: XCTestCase {
         dateFormatter3.timeStyle = .medium
         dateFormatter3.dateFormat = "dd.MM.yyyy"
         
-        let maxDateAsDate = addFoodPickUpViewController.calMaxDate(expirationDate: "11.11.2017")
+        let maxDateAsDate = addFoodDescriptionViewController.calMaxDate()
         
-    let maxDateAsString = dateFormatter3.string(from: maxDateAsDate)
+        let maxDateAsString = dateFormatter3.string(from: maxDateAsDate as Date)
+        XCTAssertEqual(maxDateAsString,"10.05.2018")
         
-        XCTAssertNotEqual(maxDateAsString, "10.11.2017")
+        //Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
         
-        XCTAssertEqual(maxDateAsString, "11.11.2017")
-        Te
-        XCTAssertNotEqual(maxDateAsString, "12.11.2017")
-        
-        
-      
-        
-
         
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
