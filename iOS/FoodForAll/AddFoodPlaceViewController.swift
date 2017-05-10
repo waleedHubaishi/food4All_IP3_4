@@ -26,6 +26,7 @@ class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     var locationValue:CLLocationCoordinate2D!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
