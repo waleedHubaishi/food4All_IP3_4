@@ -1,6 +1,7 @@
 package com.example.chewbacca.food4all;
 
 import android.content.Intent;
+import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -71,7 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private boolean isUsernameValid(String uname) {
         // Ensure that it starts with a letter or underscore, 3 to 12 chars long
-        Pattern p = Pattern.compile("^[A-Za-z_][A-Za-z0-9_]{2,11}$");
+        Pattern p = Pattern.compile("^[A-Za-z_][A-Za-z0-9_]{4,19}$");
         Matcher m = p.matcher(uname);
         return m.matches();
     }
