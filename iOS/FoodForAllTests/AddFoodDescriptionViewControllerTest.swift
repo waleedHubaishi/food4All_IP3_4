@@ -32,9 +32,12 @@ class AddFoodDescriptionViewControllerTest: XCTestCase {
         let maxDateAsDate = addFoodDescriptionViewController.calMaxDate()
         
         let maxDateAsString = dateFormatter3.string(from: maxDateAsDate as Date)
+        
+        XCTAssertNotEqual(maxDateAsString,"09.05.2018")
+        
         XCTAssertEqual(maxDateAsString,"10.05.2018")
         
-        XCTAssertNotEqual(maxDateAsString,"10.05.2019")
+        XCTAssertNotEqual(maxDateAsString,"11.05.2018")
         
         // not Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
         
