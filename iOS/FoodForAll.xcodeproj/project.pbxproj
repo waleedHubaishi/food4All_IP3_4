@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91C7C6D41EC3092D0099F43B /* CategoryViewControllerTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7C6D31EC3092D0099F43B /* CategoryViewControllerTempo.swift */; };
+		91C7C6D61EC318D40099F43B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7C6D51EC318D40099F43B /* CategoryTableViewCell.swift */; };
 		A41D857E1E0C31A300347D8A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D857D1E0C31A300347D8A /* Food.swift */; };
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A43419311E9FA86D00E35C9B /* Pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = A43419301E9FA86D00E35C9B /* Pasta.png */; };
@@ -46,7 +48,6 @@
 		A4C63D941E276D7000C0D57A /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C63D931E276D7000C0D57A /* location-arrow.png */; };
 		A4C63D971E276EEE00C0D57A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C63D961E276EEE00C0D57A /* CoreLocation.framework */; };
 		A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */; };
-		A4CF6E861E6854DB000E3E9B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF6E811E6854DB000E3E9B /* CategoryViewController.swift */; };
 		A4CF6E871E6854DB000E3E9B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF6E821E6854DB000E3E9B /* FilterViewController.swift */; };
 		A4CF6E881E6854DB000E3E9B /* PlzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF6E831E6854DB000E3E9B /* PlzViewController.swift */; };
 		A4CF6E891E6854DB000E3E9B /* UserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF6E841E6854DB000E3E9B /* UserNameViewController.swift */; };
@@ -94,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91C7C6D31EC3092D0099F43B /* CategoryViewControllerTempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewControllerTempo.swift; path = ../../../../../.Trash/CategoryViewControllerTempo.swift; sourceTree = "<group>"; };
+		91C7C6D51EC318D40099F43B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ../CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		A41D857D1E0C31A300347D8A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,7 +142,6 @@
 		A4C63D931E276D7000C0D57A /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
 		A4C63D961E276EEE00C0D57A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4C63D981E2787FE00C0D57A /* FoodOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodOverviewViewController.swift; sourceTree = "<group>"; };
-		A4CF6E811E6854DB000E3E9B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A4CF6E821E6854DB000E3E9B /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		A4CF6E831E6854DB000E3E9B /* PlzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlzViewController.swift; sourceTree = "<group>"; };
 		A4CF6E841E6854DB000E3E9B /* UserNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameViewController.swift; sourceTree = "<group>"; };
@@ -207,9 +209,10 @@
 		A45484CE1E369296000E5C6D /* search */ = {
 			isa = PBXGroup;
 			children = (
-				A4CF6E811E6854DB000E3E9B /* CategoryViewController.swift */,
+				91C7C6D51EC318D40099F43B /* CategoryTableViewCell.swift */,
 				A4CF6E821E6854DB000E3E9B /* FilterViewController.swift */,
 				A4CF6E831E6854DB000E3E9B /* PlzViewController.swift */,
+				91C7C6D31EC3092D0099F43B /* CategoryViewControllerTempo.swift */,
 				A4CF6E841E6854DB000E3E9B /* UserNameViewController.swift */,
 				A4CF6E851E6854DB000E3E9B /* ProximityKmViewController.swift */,
 				BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */,
@@ -521,7 +524,6 @@
 				A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */,
 				A4C63D991E2787FE00C0D57A /* FoodOverviewViewController.swift in Sources */,
 				BD024FCD1DF99D0C00FC1F06 /* PasswordForgotViewController.swift in Sources */,
-				A4CF6E861E6854DB000E3E9B /* CategoryViewController.swift in Sources */,
 				A4CF6E921E685866000E3E9B /* ConfirmationAndContactInfoViewController.swift in Sources */,
 				BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */,
 				BD024FCB1DF99CD900FC1F06 /* RegistrationCaptchaViewController.swift in Sources */,
@@ -535,6 +537,7 @@
 				A4CF6E901E6857D5000E3E9B /* ChosenFoodViewController.swift in Sources */,
 				A47299A51DF054DA002B3977 /* AddFoodPickUpViewController.swift in Sources */,
 				A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */,
+				91C7C6D61EC318D40099F43B /* CategoryTableViewCell.swift in Sources */,
 				A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */,
 				A4CF6E881E6854DB000E3E9B /* PlzViewController.swift in Sources */,
 				A41D857E1E0C31A300347D8A /* Food.swift in Sources */,
@@ -546,6 +549,7 @@
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,
 				A4CF6E8E1E6857A1000E3E9B /* SearchresultsViewController.swift in Sources */,
+				91C7C6D41EC3092D0099F43B /* CategoryViewControllerTempo.swift in Sources */,
 				BD024FC71DF99C5D00FC1F06 /* RegistrationPasswordViewController.swift in Sources */,
 				A447D0271EB783630033C260 /* Person.swift in Sources */,
 				A472999B1DF0520E002B3977 /* AddFoodNameViewController.swift in Sources */,
