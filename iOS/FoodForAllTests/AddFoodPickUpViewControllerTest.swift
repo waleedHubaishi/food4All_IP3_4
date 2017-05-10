@@ -36,7 +36,7 @@ class AddFoodPickUpViewControllerTest: XCTestCase {
         XCTAssertNotEqual(maxDateAsString, "10.11.2017")
         
         XCTAssertEqual(maxDateAsString, "11.11.2017")
-        Te
+        
         XCTAssertNotEqual(maxDateAsString, "12.11.2017")
         
         

@@ -34,7 +34,9 @@ class AddFoodDescriptionViewControllerTest: XCTestCase {
         let maxDateAsString = dateFormatter3.string(from: maxDateAsDate as Date)
         XCTAssertEqual(maxDateAsString,"10.05.2018")
         
-        //Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
+        XCTAssertNotEqual(maxDateAsString,"10.05.2019")
+        
+        // not Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
         
         
         // This is an example of a functional test case.
