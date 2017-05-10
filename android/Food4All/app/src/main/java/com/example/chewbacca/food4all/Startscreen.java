@@ -27,4 +27,10 @@ public class Startscreen extends AppCompatActivity {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
+
+    /** provisional Activiy to get to the advertisement views */
+    public void goToFirstAdvertisementPage(View view) {
+        Intent intent = new Intent(this, Adv1Activity.class);
+        startActivity(intent);
+    }
 }

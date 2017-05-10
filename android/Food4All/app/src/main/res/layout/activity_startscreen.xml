@@ -69,4 +69,18 @@
         android:gravity="center"
         android:textSize="18sp" />
 
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:onClick="goToFirstAdvertisementPage"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Advertise"
+        android:textAlignment="textStart" />
+
 </LinearLayout>
