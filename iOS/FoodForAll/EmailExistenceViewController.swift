@@ -33,4 +33,29 @@ class EmailExistenceViewController: UIViewController {
         }
         return result
     }
+    
+    
+    
+    func existPassword(passwordString: String) -> Bool {
+        
+        var result = true
+        
+        var request = URLRequest(url: url! as URL)
+        request.httpMethod = "POST"
+        
+        let dataString = "&Paaword=\(passwordString)"
+        let dataDB = dataString.data(using: .utf8)
+        
+        do {
+            let task = URLSession.shared.uploadTask(with: request, from: dataDB) {
+                data, response, error in
+                if error != nil {
+                    result = false
+                }
+            }
+            task.resume()
+        }
+        return result
+    }
+    
 }

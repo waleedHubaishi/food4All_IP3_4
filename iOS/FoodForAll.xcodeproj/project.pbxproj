@@ -11,7 +11,7 @@
 		1DB59EE71EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */; };
 		1DB59EE91EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */; };
 		91BF5B561EC1C783006736A5 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */; };
-		91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile in Sources */ = {isa = PBXBuildFile; fileRef = 91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */; };
+		91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile.swift */; };
 		A420898E1DF9AA5800147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898D1DF9AA5800147A3C /* Info.plist */; };
 		A42089901DF9AA7500147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A420898F1DF9AA7500147A3C /* Info.plist */; };
 		A42089921DF9AA7E00147A3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42089911DF9AA7E00147A3C /* Info.plist */; };
@@ -115,7 +115,7 @@
 		1DB59EE61EC0AA8D006A10C4 /* EmailTextFieldVerficationViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextFieldVerficationViewControllerTest.swift; sourceTree = "<group>"; };
 		1DB59EE81EC0AEDE006A10C4 /* RegistrationNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewControllerTest.swift; sourceTree = "<group>"; };
 		91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TabBarControllerLonginOrProfile; sourceTree = "<group>"; };
+		91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerLonginOrProfile.swift; sourceTree = "<group>"; };
 		A420898D1DF9AA5800147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A420898F1DF9AA7500147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42089911DF9AA7E00147A3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 				BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */,
 				1DB59EC81EC0708E006A10C4 /* FoodForAllTests-Bridging-Header.swift */,
 				91BF5B551EC1C783006736A5 /* EditProfileViewController.swift */,
-				91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile */,
+				91BF5B571EC1ED73006736A5 /* TabBarControllerLonginOrProfile.swift */,
 				BDB31FE31EC262B400C55962 /* EmailExistenceViewController.swift */,
 			);
 			name = loginAndRegistration;
@@ -659,7 +659,7 @@
 				A47299A51DF054DA002B3977 /* AddFoodPickUpViewController.swift in Sources */,
 				A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */,
 				A472999F1DF0528D002B3977 /* AddFoodDescriptionViewController.swift in Sources */,
-				91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile in Sources */,
+				91BF5B581EC1ED73006736A5 /* TabBarControllerLonginOrProfile.swift in Sources */,
 				A47299A31DF052F1002B3977 /* AddFoodPlaceViewController.swift in Sources */,
 				BD024FD31DF99E7600FC1F06 /* EmailTextFieldVerficationViewController.swift in Sources */,
 				A47299AB1DF05E3E002B3977 /* AdvertiseInfoViewController.swift in Sources */,

@@ -13,6 +13,8 @@ let tempPass = "123Password"
 import UIKit
 
 class LoginRegistrationViewController: UIViewController {
+    
+    var person: Person = Person()
 
     @IBOutlet weak var emailTF: UITextField!
     
@@ -23,19 +25,67 @@ class LoginRegistrationViewController: UIViewController {
     @IBOutlet weak var signUpB: UIButton!
     
     @IBAction func signIN(_ sender: Any) {
-        checkingEmailFT(emailTF: emailTF.text!)
-        if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
-            if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
+//        checkingEmailFT(emailTF: emailTF.text!)
+//        if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
+//            if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
+        if ((EmailExistenceViewController().existEmailAddress(emailAddressString: emailTF.text!))  && (EmailExistenceViewController().existPassword(passwordString: passwordTF.text!))){
+//            displayAlertMessage(messageToDisplay: "Emailadresse existiert!")
+//            if (EmailExistenceViewController().existPassword(passwordString: passwordTF.text!)) {
+//                displayAlertMessage(messageToDisplay: "Password existiert!")
+           
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
                 let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as!
                 UITabBarController
                 //vc.selectedIndex = 0
                 self.present(vc, animated: true, completion: nil)
+            
         }
-            else{displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
+            else{displayAlertMessage(messageToDisplay: "Passwort oder Email-Adresse ist ungültig!")
         }
     }
-  
+    
+//    let baseURLSecureString = "http://86.119.36.198/select.php"
+//    let loginMethod = "authentication/token/validate_with_login"
+//    
+//    func loginWithToken(requestToken: String) {
+//        let parameters = "&Email=\(self.emailTF.text!)&Password=\(self.passwordTF.text!)"
+//        let urlString = baseURLSecureString + loginMethod + parameters
+//        let url = NSURL(string: urlString)!
+//        let request = NSMutableURLRequest(url: url as URL)
+//        request.addValue("application/json", forHTTPHeaderField: "Accept")
+//        let session = NSURLSession.sharedSession()
+//        let task = session.dataTaskWithRequest(request) { data, response, downloadError in
+//            if let error = downloadError {
+//                dispatch_async(dispatch_get_main_queue()) {
+//                    self.debugTextLabel.text = "Login Failed. (Login Step.)"
+//                }
+//                print("Could not complete the request \(error)")
+//            } else {
+//                let parsedResult = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+//                if let success = parsedResult["success"] as? Bool {
+//                    // we will soon replace this successful block with a method call
+//                    
+//                    dispatch_async(dispatch_get_main_queue()) {
+//                        self.debugTextLabel.text = "Login status: \(success)"
+//                    }
+//                } else {
+//                    if let status_code = parsedResult["status_code"] as? Int {
+//                        dispatch_async(dispatch_get_main_queue()) {
+//                            let message = parsedResult["status_message"]
+//                            self.debugTextLabel.text = "\(status_code): \(message!)"
+//                        }
+//                    } else {
+//                        dispatch_async(dispatch_get_main_queue()) {
+//                            self.debugTextLabel.text = "Login Failed. (Login Step.)"
+//                        }
+//                        print("Could not find success in \(parsedResult)")
+//                    }
+//                }
+//            }
+//        }
+//        task.resume()
+//    }
+    
     //defines the header colors
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

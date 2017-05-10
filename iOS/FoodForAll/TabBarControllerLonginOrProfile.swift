@@ -11,13 +11,13 @@ import UIKit
 
 class TabBarControllerLonginOrProfile: UIViewController {
         
-        func longin() {
-            setViewControllers(LoginRegistrationViewController, animated: false)
-        }
-        
-        func profile() {
-            setViewControllers(EditProfileViewController, animated: true)
-        }
+//        func longin() {
+//            setViewControllers(LoginRegistrationViewController, animated: false)
+//        }
+//        
+//        func profile() {
+//            setViewControllers(EditProfileViewController, animated: true)
+//        }
    
     
     @IBOutlet weak var messageTW: UITextView!
