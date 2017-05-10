@@ -115,9 +115,34 @@ public class DbHandler {
         return true;
     }*/
 
+    // TODO:
     boolean delAdv(Advertisement adver) {
         return true;
     }
+
+    boolean checkUname(String uname) {
+        try {
+            String SelectUserSQL = "select * from user where Name=?";
+            preparedStatement = con.prepareStatement(SelectUserSQL);
+            preparedStatement.setString(1, uname);
+            resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()) {
+                Log.d(TAG, "Username exists!");
+                return true;
+            } else {
+                Log.d(TAG, "Username does not exist!");
+                return false;
+            }
+        } catch (SQLException e) {
+            Log.e(TAG, "ERROR: Something went wrong while checking for the username!", e);
+            return false;
+        }
+    }
+
+    // TODO:
+    /*boolean checkEmail(String email) {
+
+    }*/
 
     /* This fct creates a list of all Advertisement items in the DB */
     /*TODO: public List<Advertisement> getAllAdv() {
