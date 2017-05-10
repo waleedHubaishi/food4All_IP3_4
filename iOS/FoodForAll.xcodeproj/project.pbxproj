@@ -65,6 +65,7 @@
 		BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */; };
 		BDA823AB1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */; };
 		BDB31FE41EC262B400C55962 /* EmailExistenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB31FE31EC262B400C55962 /* EmailExistenceViewController.swift */; };
+		BDB31FE71EC3023500C55962 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB31FE61EC3023500C55962 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		BD024FDE1DF9A07700FC1F06 /* SearchHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHomeViewController.swift; sourceTree = "<group>"; };
 		BDA823AA1E0C133400D9AD45 /* PasswordTextFieldVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldVerificationViewController.swift; sourceTree = "<group>"; };
 		BDB31FE31EC262B400C55962 /* EmailExistenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailExistenceViewController.swift; sourceTree = "<group>"; };
+		BDB31FE61EC3023500C55962 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 		A454A0DF1DED9A1100F7601F /* FoodForAll */ = {
 			isa = PBXGroup;
 			children = (
+				BDB31FE51EC301F700C55962 /* classes */,
 				BD024FE11DF9A4A100FC1F06 /* advertise */,
 				BD024FE01DF9A48200FC1F06 /* loginAndRegistration */,
 				A47299831DEF271C002B3977 /* icons */,
@@ -352,6 +355,14 @@
 				A47299AA1DF05E3E002B3977 /* AdvertiseInfoViewController.swift */,
 			);
 			name = advertise;
+			sourceTree = "<group>";
+		};
+		BDB31FE51EC301F700C55962 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDB31FE61EC3023500C55962 /* Person.swift */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,6 +649,7 @@
 				BD024FDF1DF9A07700FC1F06 /* SearchHomeViewController.swift in Sources */,
 				BD024FCB1DF99CD900FC1F06 /* RegistrationCaptchaViewController.swift in Sources */,
 				BD024FC91DF99C8600FC1F06 /* RegistrationNameViewController.swift in Sources */,
+				BDB31FE71EC3023500C55962 /* Person.swift in Sources */,
 				BD024FDD1DF99F1D00FC1F06 /* LoginRegistrationViewController.swift in Sources */,
 				BD024FCF1DF99DA800FC1F06 /* PasswordForgotMessageViewController.swift in Sources */,
 				A4DDC84F1DF08EB4006C94F8 /* TabBarViewController.swift in Sources */,

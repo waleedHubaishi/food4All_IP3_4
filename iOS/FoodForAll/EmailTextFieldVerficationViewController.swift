@@ -9,23 +9,19 @@
 import UIKit
 
 class EmailTextFieldVerficationViewController: UIViewController {
-
-    
    
-    
     //Email verification
     func emailVerification(emailT: String) {
         
         let providedEmailAddress = emailT
-        
         let isEmailAddressValid = isValidEmailAddress(emailAddressString: providedEmailAddress)
-        if isEmailAddressValid
-        {
+        
+        if isEmailAddressValid {
             print("Email address is valid")
-        } else {
+        }
+        else {
             print("Email address is not valid")
         }
-        
     }
     
     //Email verification
@@ -39,21 +35,20 @@ class EmailTextFieldVerficationViewController: UIViewController {
             let nsString = emailAddressString as NSString
             let results = regex.matches(in: emailAddressString, range: NSRange(location: 0, length: nsString.length))
             
-            if results.count == 0
-            {
+            if results.count == 0 {
                 returnValue = false
             }
-            
-        } catch let error as NSError {
+        }
+        catch let error as NSError {
             print("invalid regex: \(error.localizedDescription)")
             returnValue = false
         }
-        
         return  returnValue
     }
 }
 
 extension UIViewController {
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)

@@ -10,19 +10,50 @@ import UIKit
 
 class RegistrationCaptchaViewController: UIViewController {
 
+    var person: Person = Person()
+    
     @IBOutlet weak var verifyL: UILabel!
     
     @IBOutlet weak var verifyTF: UITextField!
     
-    
     @IBAction func goToHome(_ sender: Any) {
+        
         if (verifyL.text! == verifyTF.text!) {
             
+            let url = NSURL(string: "http://86.119.36.198/register.php")
+            
+            var request = URLRequest(url: url! as URL)
+            request.httpMethod = "POST"
+            
+            let dataString = "&Name=\(person.userName)" +
+                             "&Email=\(person.email)" +
+                             "&Password=\(person.password)"
+            let dataDB = dataString.data(using: .utf8)
+            do {
+                let uploadTask = URLSession.shared.uploadTask(with: request, from: dataDB) {
+                    data, response, error in
+                    if error != nil {
+                        DispatchQueue.main.async {
+                            let alert = UIAlertController(title: "Fehler", message: "Verbindung zum Server ist unterbrochen. Überprüfen Sie Ihre Internetverbindung!", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                    else {
+                        DispatchQueue.main.async {
+                            let alert = UIAlertController(title: "Bestätigung", message: "Sie sind erfolgreich registeriert!", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                }
+                uploadTask.resume()
+            }
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchHome") as! SearchHomeViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
-        else{
-            displayAlertMessage(messageToDisplay: " Versuchen Sie wieder!")
+        else {
+            displayAlertMessage(messageToDisplay: "Versuchen Sie nochmal!")
         }
     }
     
