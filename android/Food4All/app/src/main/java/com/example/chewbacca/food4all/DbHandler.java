@@ -83,21 +83,44 @@ public class DbHandler {
         return true;
     }
 
-    /* This fct should only delete the current user! */
+    /* TODO: This fct should only delete the current user! */
     boolean delUser() {
         return true;
     }
 
-    boolean addFood(String name, String category, String descr, Date expire, Date pickup) {
+    // TODO:
+    /*boolean addAdv(Advertisement adver) {
+        try {
+            String insertTableSQL = "INSERT INTO advertisement "
+                    + "(Name, Description, ExpTimestamp, PickupTimestamp, IDAdv, IDUser, IDAddr, IDResv, IDCity) values"
+                    + "(?,?,?,?,?,?,?,?,?)";
+            preparedStatement = con.prepareStatement(insertTableSQL);
+            preparedStatement.setString(1, adver.getFoodName());
+            preparedStatement.setString(2, adver.getDescription());
+            preparedStatement.setDate(3, adver.getExpTimestamp());
+            preparedStatement.setDate(4, adver.getPickupTimestamp());
+            preparedStatement.setInt(5, getCatIdByName(adver.getFoodCategory()));
+            preparedStatement.setInt(6, getCatIdByName(adver));
+            preparedStatement.setInt(7, getCatIdByName(adver.()));
+            preparedStatement.setInt(8, getCatIdByName(adver.()));
+            preparedStatement.setInt(9, getCatIdByName(adver.()));
+
+
+            preparedStatement.executeUpdate();
+            Log.d(TAG, "User successfully added!");
+        } catch (SQLException e) {
+            Log.e(TAG, "ERROR: User could not be added!", e);
+            return false;
+        }
+        return true;
+    }*/
+
+    boolean delAdv(Advertisement adver) {
         return true;
     }
 
-    boolean delFood(Food food) {
-        return true;
-    }
-
-    /* This fct creates a list of all food items */
-    /*TODO: List<Food> getFood() {
+    /* This fct creates a list of all Advertisement items in the DB */
+    /*TODO: public List<Advertisement> getAllAdv() {
 
     } */
 }

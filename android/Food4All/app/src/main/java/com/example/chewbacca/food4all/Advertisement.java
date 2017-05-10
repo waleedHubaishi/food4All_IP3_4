@@ -10,11 +10,20 @@ import java.util.ArrayList;
 public class Advertisement {
 
 
-    private String foodName, foodCategory, description, imageUrl;
+    private String foodName, description, imageUrl;
+    private String[] foodCategory;
     private int foodID;
     private boolean statusResv, statusPickup;
     private Date expTimestamp, pickupTimestamp;
     private Person donor, receiver;
+
+    public String[] getFoodCategory() {
+        return foodCategory;
+    }
+
+    public void setFoodCategory(String[] foodCategory) {
+        this.foodCategory = foodCategory;
+    }
 
     public Person getReceiver() {
         return receiver;
@@ -90,14 +99,6 @@ public class Advertisement {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
-
-    public String getFoodCategory() {
-        return foodCategory;
-    }
-
-    public void setFoodCategory(String foodCategory) {
-        this.foodCategory = foodCategory;
     }
 
     public int getFoodID() {
