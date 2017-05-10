@@ -29,6 +29,15 @@ public class DbHandler {
     private static PreparedStatement preparedStatement = null;
     private static ResultSet resultSet = null;
 
+    private static final DbHandler ourInstance = new DbHandler();
+
+    public static DbHandler getInstance() {
+        return ourInstance;
+    }
+
+    private DbHandler() {
+    }
+
     boolean connect() throws Exception {
         try {
             // This will load the MySQL driver, each DB has its own driver
@@ -139,10 +148,24 @@ public class DbHandler {
         }
     }
 
-    // TODO:
-    /*boolean checkEmail(String email) {
-
-    }*/
+    boolean checkEmail(String email) {
+        try {
+            String SelectUserSQL = "select * from user where Name=?";
+            preparedStatement = con.prepareStatement(SelectUserSQL);
+            preparedStatement.setString(1, email);
+            resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()) {
+                Log.d(TAG, "Email exists!");
+                return true;
+            } else {
+                Log.d(TAG, "Email does not exist!");
+                return false;
+            }
+        } catch (SQLException e) {
+            Log.e(TAG, "ERROR: Something went wrong while checking for the email!", e);
+            return false;
+        }
+    }
 
     /* This fct creates a list of all Advertisement items in the DB */
     /*TODO: public List<Advertisement> getAllAdv() {

@@ -104,6 +104,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+        // Get DbHandler instance
+        DbHandler dbHandler = DbHandler.getInstance( );
+        try {
+            dbHandler.connect();
+        } catch (Exception e) {
+            Log.e(TAG, "ERROR: Could not connect to database!", e);
+        }
     }
 
     private void populateAutoComplete() {
