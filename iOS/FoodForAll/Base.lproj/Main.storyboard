@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0i-8W-Cfg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk8-Ak-j8G" id="Ltb-xM-5Fx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-iT-7eR">
@@ -175,7 +175,11 @@
         <!--View Controller-->
         <scene sceneID="2sQ-XT-Xhr">
             <objects>
+<<<<<<< HEAD
                 <viewController id="kgG-SD-lwY" sceneMemberID="viewController">
+=======
+                <viewController storyboardIdentifier="FoodName" title="Teilen" id="uFb-OB-ufA" customClass="AddFoodNameViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> iOS_advertise
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0vC-Fc-FoW"/>
                         <viewControllerLayoutGuide type="bottom" id="zMM-zy-RT7"/>
@@ -184,8 +188,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pry-YG-1aZ">
                                 <rect key="frame" x="166" y="234" width="39" height="21"/>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="HKy-7R-ZIF">
+                                <rect key="frame" x="43" y="172" width="288" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name.. (z.b Cupcake)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bsq-ZZ-I2L">
+                                <rect key="frame" x="43" y="267" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uFb-OB-ufA" id="vWx-eU-4pA"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kategorie .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-Ec-ybD" customClass="NMTextField" customModule="FoodForAll" customModuleProvider="target">
+                                <rect key="frame" x="43" y="336" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="categoryPcikerViewFunc:" destination="uFb-OB-ufA" eventType="editingDidBegin" id="e2s-lb-Wno"/>
+                                    <outlet property="delegate" destination="uFb-OB-ufA" id="36c-sF-s2D"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Was Ist Es ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-be-QRg">
+                                <rect key="frame" x="139" y="143" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al3-7J-fVn">
+                                <rect key="frame" x="163" y="540" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="next-blue.png"/>
+                                <connections>
+                                    <action selector="toNext" destination="uFb-OB-ufA" eventType="touchUpInside" id="5ZS-tP-5eo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-TK-EnM">
+                                <rect key="frame" x="43" y="374" width="288" height="21"/>
+>>>>>>> iOS_advertise
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -211,10 +260,19 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="iSe-o1-INY" kind="relationship" relationship="viewControllers" id="SIL-wo-z3j"/>
                         <segue destination="ELV-6e-AWO" kind="relationship" relationship="viewControllers" id="h6H-lw-Nfw"/>
                         <segue destination="yGc-ig-Ahj" kind="relationship" relationship="viewControllers" id="CSB-ey-aqF"/>
                         <segue destination="fnO-f1-qek" kind="relationship" relationship="viewControllers" id="KnB-KV-Yr9"/>
+=======
+                        <outlet property="categorieTF" destination="Ooe-Ec-ybD" id="zxk-mb-zcm"/>
+                        <outlet property="nameTF" destination="Bsq-ZZ-I2L" id="Hjb-WJ-UFQ"/>
+                        <outlet property="progressPhoto" destination="HKy-7R-ZIF" id="vzN-jZ-jFo"/>
+                        <outlet property="toDescriptionBtn" destination="al3-7J-fVn" id="0kR-eX-UgE"/>
+                        <outlet property="warningLbl" destination="Y5X-TK-EnM" id="Mnx-XO-QwN"/>
+                        <outlet property="whatIsItLbl" destination="AMY-be-QRg" id="H3E-Lz-DH7"/>
+>>>>>>> iOS_advertise
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbr-7K-4mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,6 +282,7 @@
         <!--Navigation Controller-->
         <scene sceneID="R3e-PB-9Sq">
             <objects>
+<<<<<<< HEAD
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ELV-6e-AWO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="plus.png" id="lrB-aI-wJF">
                         <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
@@ -288,6 +347,9 @@
         <scene sceneID="qyy-Se-cj1">
             <objects>
                 <viewController storyboardIdentifier="ViewController" title="ANMELDEN" useStoryboardIdentifierAsRestorationIdentifier="YES" id="88P-Ky-3N3" customClass="LoginRegistrationViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController storyboardIdentifier="FoodDescription" title="Teilen" id="2Io-0r-JQM" customClass="AddFoodDescriptionViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> iOS_advertise
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sOb-46-myV"/>
                         <viewControllerLayoutGuide type="bottom" id="0IW-Tb-ZwS"/>
@@ -325,6 +387,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b84-0a-O0v">
                                 <rect key="frame" x="140" y="532" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                 <state key="normal" title="Registrieren">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
@@ -336,6 +399,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="373-hF-L2h">
                                 <rect key="frame" x="123" y="454" width="127" height="30"/>
+=======
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD.MM.YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVH-yM-NdH" customClass="NMTextField" customModule="FoodForAll" customModuleProvider="target">
+                                <rect key="frame" x="157" y="218" width="169" height="30"/>
+>>>>>>> iOS_advertise
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="einloggen"/>
@@ -375,8 +446,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emailadresse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtn-MM-UGp">
                                 <rect key="frame" x="16" y="276" width="343" height="30"/>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="threeCircles.png" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-vc-O0f">
+                                <rect key="frame" x="43" y="137" width="288" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="um 18:00 Uhr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-pg-PIK" customClass="NMTextField" customModule="FoodForAll" customModuleProvider="target">
+                                <rect key="frame" x="43" y="290" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickUpAt:" destination="ARd-ua-R7f" eventType="editingDidBegin" id="Obx-Jb-QyL"/>
+                                    <outlet property="delegate" destination="ARd-ua-R7f" id="jM7-4z-sB3"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD.MM.YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwu-li-eYq" customClass="NMTextField" customModule="FoodForAll" customModuleProvider="target">
+                                <rect key="frame" x="157" y="226" width="169" height="30"/>
+>>>>>>> iOS_advertise
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -417,7 +508,11 @@
         <!--PASSWORT-->
         <scene sceneID="M6a-tF-znF">
             <objects>
+<<<<<<< HEAD
                 <viewController storyboardIdentifier="PasswordForgot1" title="PASSWORT" id="rkF-J8-zxX" customClass="PasswordForgotMessageViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController storyboardIdentifier="FoodPlace" title="Teilen" id="Gc3-Bs-P3l" customClass="AddFoodPlaceViewController" customModule="FoodForAll" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> iOS_advertise
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jaP-A1-yNo"/>
                         <viewControllerLayoutGuide type="bottom" id="ZWo-4A-UyL"/>
@@ -426,8 +521,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please check your email for the password recovery link!!!!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-XM-yAj">
                                 <rect key="frame" x="67" y="231" width="240" height="128"/>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fourCircles.png" translatesAutoresizingMaskIntoConstraints="NO" id="bR0-Fe-sJg">
+                                <rect key="frame" x="43" y="134" width="288" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wo .. ?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IlF-SZ-epQ" customClass="AutoCompleteTextField">
+                                <rect key="frame" x="43" y="223" width="253" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pe-f1-o0T">
+                                <rect key="frame" x="171" y="105" width="32" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meine Adresse wählen " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-jw-ihe">
+                                <rect key="frame" x="43" y="280" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y64-tL-Ffa">
+                                <rect key="frame" x="171" y="547" width="99" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="next-blue.png"/>
+                                <connections>
+                                    <action selector="toNext" destination="Gc3-Bs-P3l" eventType="touchUpInside" id="xo7-FO-b4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnQ-1L-Mhh">
+                                <rect key="frame" x="304" y="225" width="22" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="location-arrow.png"/>
+                                <connections>
+                                    <action selector="findMyLocation:" destination="Gc3-Bs-P3l" eventType="touchUpInside" id="T9d-0e-49H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-PA-Pn0">
+                                <rect key="frame" x="43" y="318" width="288" height="21"/>
+>>>>>>> iOS_advertise
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -473,8 +614,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms1-Ke-wWa">
                                 <rect key="frame" x="140" y="407" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="bestätigen"/>
+=======
+                                <state key="normal" title="Finish" image="next-blue.png"/>
+                                <connections>
+                                    <segue destination="bCh-Q9-mLq" kind="show" id="Gax-kz-CEi"/>
+                                </connections>
+>>>>>>> iOS_advertise
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>

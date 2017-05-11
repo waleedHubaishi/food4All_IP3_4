@@ -9,14 +9,14 @@
 import UIKit
 
 
-class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var descriptoinTV: UITextView!
     @IBOutlet weak var toKeepTilLbl: UILabel!
     @IBOutlet weak var toPickUpBtn: UIButton!
-    @IBOutlet weak var toKeepTilTF: UITextField!
+    @IBOutlet weak var toKeepTilTF: NMTextField!
     @IBOutlet weak var warningLbl: UILabel!
     
     var food:Food = Food()
@@ -42,7 +42,7 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         
         //textfield tag
         toKeepTilTF.tag = 1
-        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(addFoodDescriptionViewController().dismissPicker))
+        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(AddFoodDescriptionViewController().dismissPicker))
         toKeepTilTF.inputAccessoryView = toolBar
 
     }
@@ -118,6 +118,20 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         textView.resignFirstResponder()
     }
     
+    //calculate the maximum expiration date as date based on the date of today in 1 year and returns the maximum expiration date as date
+    
+    func calMaxDate() -> Date{
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .medium
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        
+        let maxDate = Date()
+        let inOneYear = Calendar.current.date(byAdding: .year, value: 1, to: maxDate)
+        
+        print("\(dateFormatter.string(from: Date() as Date))")
+        return inOneYear!
+        
+    }
     
     @IBAction func textFieldEditing(_ sender: UITextField) {
                 
@@ -126,12 +140,14 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         dateFormatter.timeStyle = .medium
         dateFormatter.dateFormat = "dd.MM.yyyy"
         toKeepTilTF.text = "\(dateFormatter.string(from: Date() as Date))"
-        
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.minimumDate = NSDate() as Date
+        
+        datePickerView.maximumDate = calMaxDate()
+        
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: #selector(addFoodDescriptionViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
+        datePickerView.addTarget(self, action: #selector(AddFoodDescriptionViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
     }
     
     func datePickerValueChanged(sender:UIDatePicker) {
@@ -141,6 +157,10 @@ class addFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         dateFormatter.dateFormat = "dd.MM.yyyy"
         toKeepTilTF.text = dateFormatter.string(from: sender.date)
     }
+    
+    
+    
+    
     
     @IBAction func toNext()
     {

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var whatIsItLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
-    @IBOutlet weak var categorieTF: UITextField!
+    @IBOutlet weak var categorieTF: NMTextField!
     @IBOutlet weak var toDescriptionBtn: UIButton!
     @IBOutlet weak var warningLbl: UILabel!
     
@@ -52,7 +52,7 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             food.name = nameTF.text
             food.category = categorieTF.text
             
-            let destViewController: addFoodDescriptionViewController = segue.destination as! addFoodDescriptionViewController
+            let destViewController: AddFoodDescriptionViewController = segue.destination as! AddFoodDescriptionViewController
             
             destViewController.food = food
         
@@ -115,13 +115,22 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
         PickerView.delegate = self
         categorieTF.inputView = PickerView
    }
-    
+    func isInputValid(inputString:String) -> Bool
+    {
+        if((inputString.isEmpty) || (inputString.characters.count < 2) || (inputString.characters.count > 20))
+        {
+            
+            return false
+        }
+        
+        return true
+    }
     
     @IBAction func toNext()
     {
         
         
-        if ((nameTF.text! == "") || (categorieTF.text! == "") || ((nameTF.text?.characters.count)!) < 3)
+       if ((isInputValid(inputString: nameTF.text!) == false) || (categorieTF.text! == ""))
         {
             warningLbl.text = "please fill all the fields"
             warningLbl.textColor = UIColor.red
@@ -133,7 +142,7 @@ class addFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             
             
             
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDescription") as! addFoodDescriptionViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodDescription") as! AddFoodDescriptionViewController
             secondViewController.food = food
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }

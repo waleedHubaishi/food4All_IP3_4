@@ -35,8 +35,8 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var pickUpLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var pickUPonLbl: UILabel!
-    @IBOutlet weak var pickedUpOnTF: UITextField!
-    @IBOutlet weak var pickUpAtTF: UITextField!
+    @IBOutlet weak var pickedUpOnTF: NMTextField!
+    @IBOutlet weak var pickUpAtTF: NMTextField!
     @IBOutlet weak var toAddPlaceBtn: UIButton!
     @IBOutlet weak var warningLbl: UILabel!
    
@@ -75,10 +75,26 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
         
         food.pickedUp = pickedUpOnTF.text
         food.pickedUpAt = pickUpAtTF.text
-        let destViewController: addFoodPlaceViewController = segue.destination as! addFoodPlaceViewController
+        let destViewController: AddFoodPlaceViewController = segue.destination as! AddFoodPlaceViewController
         destViewController.food = food
         
     }
+    
+    
+    // takes expiration date as String and return the maximum pickup date as date
+    func calMaxDate(expirationDate:String)->Date
+    {
+        
+        let dateFormatter3 = DateFormatter()
+        dateFormatter3.timeStyle = .medium
+        dateFormatter3.dateFormat = "dd.MM.yyyy"
+        
+        let maxDate = dateFormatter3.date(from: expirationDate)
+        
+        return maxDate!
+        
+    }
+    
     
     @IBAction func pickUpOn(_ sender: UITextField) {
         let dateFormatter3 = DateFormatter()
@@ -87,7 +103,9 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
         pickedUpOnTF.text = "\(dateFormatter3.string(from: Date() as Date))"
         
         let datePickerView:UIDatePicker = UIDatePicker()
+        //let maxDate = dateFormatter3.date(from: food.expiration)
         datePickerView.minimumDate = NSDate() as Date
+        datePickerView.maximumDate = calMaxDate(expirationDate: food.expiration)
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
         datePickerView.addTarget(self, action: #selector(AddFoodPickUpViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
@@ -120,10 +138,6 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     func pickUpAtFunc(sender: UIDatePicker) {
-        
-
-        
-        
         let dateFormatter1 = DateFormatter()
         dateFormatter1.dateStyle = DateFormatter.Style.medium
         dateFormatter1.timeStyle = DateFormatter.Style.none
@@ -143,7 +157,7 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
             warningLbl.textColor = UIColor.red
         }
         else{
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! addFoodPlaceViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! AddFoodPlaceViewController
             secondViewController.food = food
 
             self.navigationController?.pushViewController(secondViewController, animated: true)
