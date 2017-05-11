@@ -1,5 +1,11 @@
 package com.example.chewbacca.food4all;
 
+import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
+import android.view.KeyEvent;
+import android.view.inputmethod.EditorInfo;
+import android.widget.TextView;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,30 +15,25 @@ import static org.junit.Assert.*;
  */
 public class LoginActivityTest {
     @Test
-    public void onRequestPermissionsResult() throws Exception {
-
-        // given
-        int grantResults = 0;
-
-        // when
-
-        // then
-
-    }
-
-    @Test
     public void onCreateLoader() throws Exception {
 
     }
 
-    @Test
-    public void onLoadFinished() throws Exception {
+    // void onCreate
+    private LoginActivity.UserLoginTask mAuthTask = null;
 
-    }
+    private void attemptLogin() {
+        if (mAuthTask != null) {
+            return;
+        }
+    };
 
-    @Test
-    public void onLoaderReset() throws Exception {
-
-    }
+    public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
+        if (id == R.id.login || id == EditorInfo.IME_NULL) {
+            attemptLogin();
+            return true;
+        }
+        return false;
+    };
 
 }

@@ -54,4 +54,6 @@
     <string name="Reserve">Reservieren</string>
     <string name="Popup3">Der Artikel wurde für dich reserviert.</string>
     <string name="Date">Datum</string>
+    <string name="search">Suche</string>
+    <string name="add">Hinzufügen</string>
 </resources>
