@@ -10,6 +10,8 @@ import UIKit
 
 class RegistrationNameViewController: UIViewController {
 
+    var person: Person = Person()
+    
     @IBOutlet weak var userNameTF: UITextField!
     
     @IBOutlet weak var emailTF: UITextField!
@@ -23,44 +25,46 @@ class RegistrationNameViewController: UIViewController {
 
     }
     
-    @IBAction func toPasswordVC(){
-        
-        let length = userNameTF.text?.characters.count
-//        checkingEmailFT(emailTF: emailTF.text!)
-        if (!(length! < 21 && length! > 4)){
-            displayAlertMessage(messageToDisplay: "Benutzername ist ungültig!")
+    func isInputValid(inputLength:Int) -> Bool {
+        if((inputLength < 5) || (inputLength > 20)) {
+            return false
         }
-        
-        if !(EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){
-            displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")}
-            
-        else{
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "passWord") as! RegistrationPasswordViewController
-            self.navigationController?.pushViewController(secondViewController, animated: true)}
+        return true
     }
     
-    func displayAlertMessage(messageToDisplay: String)
-    {
+    @IBAction func toPasswordVC() {
+        
+        let length = userNameTF.text?.characters.count
+
+        if (isInputValid(inputLength: length!) == false) {
+            displayAlertMessage(messageToDisplay: "Benutzername ist ungültig!")
+        }
+        if !(EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)) {
+            displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")
+        }
+        if !(EmailExistenceViewController().existEmailAddress(emailAddressString: emailTF.text!)) {
+            displayAlertMessage(messageToDisplay: "Emailadresse existiert!")
+        }
+        else {
+            person.userName = userNameTF.text!
+            person.email = emailTF.text!
+            
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "passWord") as! RegistrationPasswordViewController
+            secondViewController.person = person
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
+    
+    func displayAlertMessage(messageToDisplay: String) {
         print(messageToDisplay)
         let alertController = UIAlertController(title: "Fehler", message: messageToDisplay, preferredStyle: .alert)
         
-        let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-            
-            // Code in this block will trigger when OK button tapped.
-            print("Ok button tapped");
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            (action:UIAlertAction!) in
         }
-        
         alertController.addAction(OKAction)
-        
         self.present(alertController, animated: true, completion:nil)
     }
-    
-//    func checkingEmailFT(emailTF : String){
-//        EmailTextFieldVerficationViewController().emailVerification(emailT: emailTF)
-//        if EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF) == false {
-//            displayAlertMessage(messageToDisplay: "Emailadresse ist ungültig!")
-//        }
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

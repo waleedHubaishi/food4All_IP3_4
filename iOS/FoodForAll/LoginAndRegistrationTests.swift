@@ -1,15 +1,14 @@
 //
-//  FoodForAllTests.swift
-//  FoodForAllTests
+//  LoginAndRegistrationTests.swift
+//  FoodForAll
 //
-//  Created by Waleed al-Hubaishi on 29.11.16.
-//  Copyright © 2016 Waleed al-Hubaishi. All rights reserved.
+//  Created by Wing Kha on 16.03.17.
+//  Copyright © 2017 Waleed al-Hubaishi. All rights reserved.
 //
 
 import XCTest
-@testable import FoodForAll
 
-class FoodForAllTests: XCTestCase {
+class LoginAndRegistrationTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
