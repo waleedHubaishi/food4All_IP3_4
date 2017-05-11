@@ -14,7 +14,6 @@
 		A42089981DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42089971DF9B76400147A3C /* AddFoodCheckPhotoViewController.swift */; };
 		A454A0E11DED9A1100F7601F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E01DED9A1100F7601F /* AppDelegate.swift */; };
 		A454A0E31DED9A1100F7601F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E21DED9A1100F7601F /* ViewController.swift */; };
-		A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0E41DED9A1100F7601F /* Main.storyboard */; };
 		A454A0E91DED9A1100F7601F /* FoodForAll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A454A0E71DED9A1100F7601F /* FoodForAll.xcdatamodeld */; };
 		A454A0EB1DED9A1100F7601F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A454A0EA1DED9A1100F7601F /* Assets.xcassets */; };
 		A454A0EE1DED9A1100F7601F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */; };
@@ -96,7 +95,6 @@
 		A454A0DD1DED9A1100F7601F /* FoodForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454A0E01DED9A1100F7601F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A454A0E21DED9A1100F7601F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A454A0E51DED9A1100F7601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A454A0E81DED9A1100F7601F /* FoodForAll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodForAll.xcdatamodel; sourceTree = "<group>"; };
 		A454A0EA1DED9A1100F7601F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A454A0ED1DED9A1100F7601F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				BD024FE11DF9A4A100FC1F06 /* advertise */,
 				BD024FE01DF9A48200FC1F06 /* loginAndRegistration */,
 				A47299831DEF271C002B3977 /* icons */,
-				A454A0E41DED9A1100F7601F /* Main.storyboard */,
 				A454A0E01DED9A1100F7601F /* AppDelegate.swift */,
 				A454A0E21DED9A1100F7601F /* ViewController.swift */,
 				A4DDC84E1DF08EB4006C94F8 /* TabBarViewController.swift */,
@@ -440,7 +437,6 @@
 				A454A0EB1DED9A1100F7601F /* Assets.xcassets in Resources */,
 				A4DDC8431DF07805006C94F8 /* gallery.png in Resources */,
 				A47FCDBF1DF1813E00F70C1A /* add-01.png in Resources */,
-				A454A0E61DED9A1100F7601F /* Main.storyboard in Resources */,
 				A4DDC8421DF07805006C94F8 /* camera.png in Resources */,
 				A47299961DF02B2D002B3977 /* oneCircle.png in Resources */,
 				A47299951DF02B2D002B3977 /* fourCircles.png in Resources */,
@@ -541,14 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A454A0E41DED9A1100F7601F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A454A0E51DED9A1100F7601F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A454A0EC1DED9A1100F7601F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
