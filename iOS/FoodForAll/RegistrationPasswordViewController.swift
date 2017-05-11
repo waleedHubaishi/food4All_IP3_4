@@ -9,25 +9,42 @@
 import UIKit
 
 class RegistrationPasswordViewController: UIViewController {
+    
+    var person: Person = Person()
 
     @IBOutlet weak var passwordTF: UITextField!
     
-    @IBOutlet weak var passwordverificationTF: UITextField!
-    
+    @IBOutlet weak var passwordverificationTF: UITextField!    
     
     @IBAction func toCapcha(_ sender: Any) {
         
         if (!(isValidPassword(passwordString: passwordTF.text!))) {
-            displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
+            //displayAlertMessage(messageToDisplay: "Passwort ist ungültig!")
+            let alertController = UIAlertController(title: "Fehler", message: "Passwort ist ungültig!", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) {
+                (action:UIAlertAction!) in
+            }
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true, completion:nil)
         }
-        if(!(passwordTF.text! == passwordverificationTF.text!)){
-            displayAlertMessage(messageToDisplay: "Beide Passworte stimmen nicht überein!")
+        if(!(passwordTF.text! == passwordverificationTF.text!)) {
+            //displayAlertMessage(messageToDisplay: "Beide Passworte stimmen nicht überein!")
+            let alertController = UIAlertController(title: "Fehler", message: "Beide Passworte stimmen nicht überein!", preferredStyle: .alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .default) {
+                (action:UIAlertAction!) in
+            }
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true, completion:nil)
         }
-        else{
+        else {
+            person.password = passwordTF.text!
+            
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "capcha") as! RegistrationCaptchaViewController
+            secondViewController.person = person
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
-        
     }
     
     override func viewDidLoad() {
@@ -42,9 +59,7 @@ class RegistrationPasswordViewController: UIViewController {
     }
 
     
-    
-    func displayAlertMessage(messageToDisplay: String)
-    {
+    func displayAlertMessage(messageToDisplay: String) {
         print(messageToDisplay)
         let alertController = UIAlertController(title: "Fehler", message: messageToDisplay, preferredStyle: .alert)
         
@@ -59,34 +74,36 @@ class RegistrationPasswordViewController: UIViewController {
         self.present(alertController, animated: true, completion:nil)
     }
     
+<<<<<<< HEAD
 
     
     
+=======
+>>>>>>> iOS_loginAndReg
     //password check
     func isValidPassword(passwordString: String) -> Bool {
         
         var returnValue = true
-        let passwordRegEx = "([A-Za-z._%+-:/><#]{7,30})([0-9]{1,})"
+        let passwordRegEx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,30}$"
         
         do {
             let regex = try NSRegularExpression(pattern: passwordRegEx)
             let nsString = passwordString as NSString
             let results = regex.matches(in: passwordString, range: NSRange(location: 0, length: nsString.length))
             
-            if results.count == 0
-            {
+            if results.count == 0 {
                 returnValue = false
             }
-            
-            
         } catch let error as NSError {
             print("invalid regex: \(error.localizedDescription)")
             returnValue = false
         }
-        
         return  returnValue
     }
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> iOS_loginAndReg
 }
