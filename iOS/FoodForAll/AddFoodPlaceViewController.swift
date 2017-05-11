@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 
-class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
+class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate  {
+    
     
     @IBOutlet weak var placeLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
@@ -25,9 +27,20 @@ class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
     var currentLocation:CLLocation?
     var locationValue:CLLocationCoordinate2D!
     
+    @IBOutlet weak var searchResultsTableView: UITableView!
     
+    
+    
+    @IBAction func defaultAddressButton(_ sender: Any) {
+    }
+    
+    @IBAction func addAddressButton(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
+        
+       
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -39,9 +52,7 @@ class AddFoodPlaceViewController: UIViewController, CLLocationManagerDelegate {
         
         choseMyAddressTF.isHidden = true
     }
-    
-   
-    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
