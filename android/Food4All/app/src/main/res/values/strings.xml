@@ -63,4 +63,7 @@
     <string name="name">Name</string>
     <string name="Time">Uhrzeit</string>
     <string name="Rating">Bewertung</string>
+    <string name="reserved">Reserviert</string>
+    <string name="shared">Geteilt</string>
+    <string name="my_food">Mein Essen</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reserved" type="id">Reserviert</item>
+    <item name="Reserviert" type="id">Reserved</item>
+    <item name="Geteilt" type="id">Shared</item>
+</resources>
