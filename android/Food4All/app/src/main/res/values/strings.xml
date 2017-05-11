@@ -48,7 +48,7 @@
     <string name="Bezeichnung">Bezeichnung</string>
     <string name="Category">Kategorie</string>
     <string name="CategoryName">Bezeichnung</string>
-    <string name="Abholen">Abholen bis:</string>
+    <string name="Abholen">Abholbar bis:</string>
     <string name="Haltbar">Haltbar bis:</string>
     <string name="Description">Bezeichnung:</string>
     <string name="Reserve">Reservieren</string>
@@ -61,4 +61,6 @@
     <string name="add_picture">Bild hinzufügen</string>
     <string name="save">Speichern</string>
     <string name="name">Name</string>
+    <string name="Time">Uhrzeit</string>
+    <string name="Rating">Bewertung</string>
 </resources>
