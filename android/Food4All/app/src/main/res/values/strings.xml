@@ -56,4 +56,9 @@
     <string name="Date">Datum</string>
     <string name="search">Suche</string>
     <string name="add">Hinzufügen</string>
+    <string name="Place">Ort</string>
+    <string name="Location">Standort</string>
+    <string name="add_picture">Bild hinzufügen</string>
+    <string name="save">Speichern</string>
+    <string name="name">Name</string>
 </resources>

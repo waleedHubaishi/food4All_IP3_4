@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorbackground"
     android:orientation="vertical"
     tools:context="com.example.chewbacca.food4all.Adv5Activity">
+
     <TextureView
         android:id="@+id/texture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn_takepicture"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true" />
+
     <Button
         android:id="@+id/btn_takepicture"
         android:layout_width="wrap_content"
