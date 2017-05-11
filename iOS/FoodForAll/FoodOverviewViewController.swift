@@ -26,7 +26,7 @@ class FoodOverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(food.name)
+       
         // Do any additional setup after loading the view.
         foodName.text = food.name
         foodCategory.text = food.category
@@ -53,6 +53,17 @@ class FoodOverviewViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
+    @IBAction func addFood(_ sender: UIButton) {
+        foodList.append(food)
+        //self.navigationController?.pushViewController(secondViewController, animated: true)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as! UITabBarController
+        vc.selectedIndex = 0
+        self.present(vc, animated: true, completion: nil)
+        print("hello i am the new")
+        print(food)
+    }
 
     /*
     // MARK: - Navigation
