@@ -14,6 +14,9 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Register2Activity extends AppCompatActivity {
 
     private ImageButton imgButton;
@@ -50,6 +53,12 @@ public class Register2Activity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private boolean isPasswordValid(String password) {
+        Pattern p = Pattern.compile(".+@.+\\.[a-z]+");
+        Matcher m = p.matcher(password);
+        return m.matches();
     }
 
     /** Called when the user clicks the Weiter-button */
