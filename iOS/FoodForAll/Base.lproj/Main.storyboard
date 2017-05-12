@@ -454,7 +454,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Finish" image="next-blue.png"/>
                                 <connections>
-                                    <segue destination="2Ud-yl-8Tw" kind="show" id="DzR-G8-2fJ">
+                                    <segue destination="2Ud-yl-8Tw" kind="show" identifier="toPicturePage" id="DzR-G8-2fJ">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -1100,7 +1100,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PC1-b8-Flg" id="7xi-lY-4UQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="100.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nUn-Wy-Hif">
@@ -1168,8 +1168,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="TuP-Ap-7Aa" id="WbZ-jC-uj7"/>
-                                    <outlet property="delegate" destination="TuP-Ap-7Aa" id="9a7-pK-L4z"/>
+                                    <outlet property="dataSource" destination="TuP-Ap-7Aa" id="ara-JF-sdx"/>
+                                    <outlet property="delegate" destination="TuP-Ap-7Aa" id="ah1-qw-dAW"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-y1-LGk">
