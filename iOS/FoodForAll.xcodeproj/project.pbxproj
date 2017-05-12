@@ -85,6 +85,8 @@
 		A480D9581EC50DC200441F10 /* EmailTextFieldVerficationViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D9551EC50DC200441F10 /* EmailTextFieldVerficationViewControllerTest.swift */; };
 		A480D9591EC50DC200441F10 /* RegistrationNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D9561EC50DC200441F10 /* RegistrationNameViewControllerTest.swift */; };
 		A480D95C1EC5159D00441F10 /* RatingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D95B1EC5159D00441F10 /* RatingHomeViewController.swift */; };
+		A4ABB75B1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */; };
+		A4ABB75D1EC5C2AD002183D1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABB75C1EC5C2AD002183D1 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +190,8 @@
 		A480D9551EC50DC200441F10 /* EmailTextFieldVerficationViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextFieldVerficationViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D9561EC50DC200441F10 /* RegistrationNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D95B1EC5159D00441F10 /* RatingHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingHomeViewController.swift; sourceTree = "<group>"; };
+		A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00 LoadingScreen-medium.png"; sourceTree = "<group>"; };
+		A4ABB75C1EC5C2AD002183D1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,7 @@
 				A41B5F6F1EC4776E005417EC /* LaunchScreen.storyboard */,
 				A41B5F6A1EC4776E005417EC /* FoodForAll.xcdatamodeld */,
 				A41B5F6D1EC4776E005417EC /* Assets.xcassets */,
+				A4ABB75C1EC5C2AD002183D1 /* LaunchScreenViewController.swift */,
 			);
 			path = FoodForAll;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 		A41B5FA71EC4787C005417EC /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */,
 				A41B601B1EC4E89E005417EC /* coming-soon.png */,
 				A41B601C1EC4E89E005417EC /* Pasta.png */,
 				A41B601D1EC4E89E005417EC /* location-arrow.png */,
@@ -544,6 +550,7 @@
 				A41B60371EC4E89E005417EC /* Pasta.png in Resources */,
 				A41B603B1EC4E89E005417EC /* regThreeCircles.png in Resources */,
 				A41B5F6E1EC4776E005417EC /* Assets.xcassets in Resources */,
+				A4ABB75B1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png in Resources */,
 				A41B5F691EC4776E005417EC /* Main.storyboard in Resources */,
 				A41B603E1EC4E89E005417EC /* plus_tabbar.png in Resources */,
 				A41B60491EC4E89E005417EC /* camera.png in Resources */,
@@ -591,6 +598,7 @@
 				A41B5FF31EC4E0ED005417EC /* FoodForAllTests-Bridging-Header.swift in Sources */,
 				A41B5FA61EC477CD005417EC /* FoodOverviewViewController.swift in Sources */,
 				A480D95C1EC5159D00441F10 /* RatingHomeViewController.swift in Sources */,
+				A4ABB75D1EC5C2AD002183D1 /* LaunchScreenViewController.swift in Sources */,
 				A41B5FF71EC4E0ED005417EC /* PasswordForgotViewController.swift in Sources */,
 				A41B60121EC4E493005417EC /* SearchresultsViewController.swift in Sources */,
 				A41B60101EC4E47A005417EC /* FoodTableViewCell.swift in Sources */,

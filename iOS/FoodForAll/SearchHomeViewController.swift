@@ -24,10 +24,16 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.foodTableview.backgroundColor = UIColor.white
         self.foodTableview.separatorStyle = .none
+        self.foodTableview.dataSource=self
+        self.foodTableview.delegate=self
+
         
         
         // Do any additional setup after loading the view.
     }
+    
+    
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +57,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         button.frame = CGRect.init(x: 0, y: 0, width: 65, height: 40)
         let barButton = UIBarButtonItem.init(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
-        
+
         if(foodList.isEmpty)
         {
             print("empty")
@@ -62,14 +68,15 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             temp.pickedUp = "13.05.2017"
             temp.pickedUpAt = "13:13"
             temp.place = "Brugg"
-            var image =
-                temp.foodPhoto = UIImage(named: "pasta")!
+            //var image =
+            //temp.foodPhoto = UIImage(named: "pasta")!
             foodList.append(temp)
             
         }
             
         else
         {
+            self.foodTableview.reloadData()
             print(foodList)
             
         }
@@ -87,7 +94,12 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foodList.count
+        if(foodList.count != 0){
+            return foodList.count
+        }
+        else{
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
