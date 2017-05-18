@@ -66,4 +66,7 @@
     <string name="reserved">Reserviert</string>
     <string name="shared">Geteilt</string>
     <string name="my_food">Mein Essen</string>
+    <string name="button_back">Zurück</string>
+    <string name="what">Was?</string>
+    <string name="gallery">Galerie</string>
 </resources>
