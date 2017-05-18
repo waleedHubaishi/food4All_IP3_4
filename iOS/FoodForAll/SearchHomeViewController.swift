@@ -14,6 +14,8 @@ var foodList = [Food]()
 class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let temp = Food();
+    let temp2 = Food();
+
     var indexOfSelectedRow:Int = 0
     @IBOutlet weak var foodTableview: UITableView!
     
@@ -58,6 +60,8 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         let barButton = UIBarButtonItem.init(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
 
+        self.foodTableview.reloadData()
+
         if(foodList.isEmpty)
         {
             print("empty")
@@ -69,14 +73,25 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             temp.pickedUpAt = "13:13"
             temp.place = "Brugg"
             //var image =
-            //temp.foodPhoto = UIImage(named: "pasta")!
+            temp.foodPhoto = UIImage(named: "pasta.png")
             foodList.append(temp)
+            
+            temp2.name = "Burger";
+            temp2.category = "Raw";
+            temp2.description = "delievered cold"
+            temp2.expiration = "12.12.2020"
+            temp2.pickedUp = "13.05.2020"
+            temp2.pickedUpAt = "13:13"
+            temp2.place = "Brugg"
+            //var image = 
+            temp2.foodPhoto = UIImage(named: "F4ALogo.png")
+            foodList.append(temp2)
+
             
         }
             
         else
         {
-            self.foodTableview.reloadData()
             print(foodList)
             
         }
@@ -126,20 +141,11 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         indexOfSelectedRow = (indexPath.row)
-        print("index path is")
-        print(indexOfSelectedRow)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "chosenFoodDetails") as! ChosenFoodViewController
+        secondViewController.food = foodList[indexOfSelectedRow]
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toFoodDetail") {
-            // initialize new view controller and cast it as your view controller
-            let viewController = segue.destination as! ChosenFoodViewController
-            print("index path is in prepare ")
-            print(indexOfSelectedRow)
-            // your new view controller should have property that will store passed value
-            viewController.food = foodList[indexOfSelectedRow]
-        }
-    }
     
     
 }

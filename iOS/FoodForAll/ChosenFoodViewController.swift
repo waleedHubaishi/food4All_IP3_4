@@ -28,16 +28,36 @@ class ChosenFoodViewController: UIViewController {
     @IBOutlet weak var descriptionHeaderLabel: UILabel!
     @IBOutlet weak var reserveButton: UIButton!
     
+    @IBOutlet weak var foodNameBGView: UIView!
+    @IBOutlet weak var categoryBGView: UIView!
+    
+    @IBOutlet weak var userBGView: UIView!
+    
+    @IBOutlet weak var descriptionBGView: UIView!
+    @IBOutlet weak var pickUpBGView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        chosenFoodPhoto.image = food.foodPhoto
-        categoryNameLabel.text = food.category
         foodNameLabel.text = food.name
+        foodNameLabel.layer.borderWidth = 1.0
+        foodNameLabel.layer.cornerRadius = 8
+
+        
+        chosenFoodPhoto.image = food.foodPhoto
+        
+        categoryNameLabel.text = food.category
+        categoryNameLabel.layer.borderWidth = 1.0
+        categoryNameLabel.layer.cornerRadius = 8
+        
         toPickUpAtLabel.text = food.pickedUpAt
         toKeepTillLabel.text = food.expiration
         toPickUpOnLabel.text = food.pickedUp
+        
         descriptionTV.text = food.description
+        descriptionTV.layer.borderWidth = 1.0
+        descriptionTV.layer.cornerRadius = 8
+        
         reserveButton.setTitle("Abholen", for: .normal)
         
         // Do any additional setup after loading the view.
