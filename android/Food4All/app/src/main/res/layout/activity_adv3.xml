@@ -12,6 +12,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.chewbacca.food4all.Adv3Activity">
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:background="@android:color/background_light"
+        android:text="@string/button_go_on" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light"
+        android:text="@string/button_back" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -23,41 +44,6 @@
         android:text="Abholung"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView6"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView6"
-        android:layout_marginBottom="79dp"
-        android:text="TextView" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="57dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_toEndOf="@+id/textView9"
-        android:layout_toRightOf="@+id/textView9"
-        android:onClick="goToAdv4Activity"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
-        android:layout_toLeftOf="@+id/textView9"
-        android:layout_toStartOf="@+id/textView9"
-        android:onClick="goToAdv2Activity"
-        app:srcCompat="@mipmap/ic_launcher" />
 
     <ProgressBar
         android:id="@+id/progressBar3"

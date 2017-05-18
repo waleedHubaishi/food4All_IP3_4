@@ -24,28 +24,6 @@
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp"
-        android:text="TextView" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="57dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_toEndOf="@+id/textView11"
-        android:layout_toRightOf="@+id/textView11"
-        android:onClick="goToAdv5Activity"
-        app:srcCompat="@mipmap/ic_launcher" />
-
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
@@ -56,35 +34,45 @@
         android:onClick="gotoadv7Activity"
         app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" />
 
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton8"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
-        android:layout_toLeftOf="@+id/textView11"
-        android:layout_toStartOf="@+id/textView11"
-        android:onClick="goToAdv3Activity"
-        app:srcCompat="@mipmap/ic_launcher" />
-
     <ProgressBar
         android:id="@+id/progressBar5"
-        style="@style/?android:attr/progressBarStyle"
+        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView10"
-        android:layout_toEndOf="@+id/imageButton9" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageButton9"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/name"
         android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:background="@android:color/background_light"
+        android:text="@string/button_go_on" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light"
+        android:text="@string/button_back" />
 
 </RelativeLayout>
