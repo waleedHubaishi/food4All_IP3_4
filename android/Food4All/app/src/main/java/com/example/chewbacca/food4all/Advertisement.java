@@ -9,20 +9,16 @@ import java.util.ArrayList;
 
 public class Advertisement {
 
-
-    private String foodName, description, imageUrl;
-    private String[] foodCategory;
-    private int foodID;
+    private String advName, description, imageUrl, advCategory;
+    private int advID;
     private boolean statusResv, statusPickup;
     private Date expTimestamp, pickupTimestamp;
     private Person donor, receiver;
 
-    public String[] getFoodCategory() {
-        return foodCategory;
-    }
+    public String getAdvCategory() { return advCategory; }
 
-    public void setFoodCategory(String[] foodCategory) {
-        this.foodCategory = foodCategory;
+    public void setAdvCategory(String advCategory) {
+        this.advCategory = advCategory;
     }
 
     public Person getReceiver() {
@@ -73,8 +69,8 @@ public class Advertisement {
         this.pickupTimestamp = pickupTimestamp;
     }
 
-    public void setFoodName(String foodName) {
-        this.foodName = foodName;
+    public void setAdvName(String advName) {
+        this.advName = advName;
     }
 
     public void setDescription(String description) {
@@ -85,8 +81,8 @@ public class Advertisement {
         this.imageUrl = imageURL;
     }
 
-    public String getFoodName() {
-        return foodName;
+    public String getAdvName() {
+        return advName;
     }
 
     public String getDescription() {
@@ -101,11 +97,11 @@ public class Advertisement {
         this.imageUrl = imageUrl;
     }
 
-    public int getFoodID() {
-        return foodID;
+    public int getAdvID() {
+        return advID;
     }
 
-    public void setFoodID(int foodID) {
-        this.foodID = foodID;
+    public void setAdvID(int advID) {
+        this.advID = advID;
     }
 }
