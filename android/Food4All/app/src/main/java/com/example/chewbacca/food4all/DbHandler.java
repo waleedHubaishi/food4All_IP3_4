@@ -119,32 +119,46 @@ public class DbHandler {
         return true;
     }
 
-    // TODO:
-    /*boolean addAdv(Advertisement adver) {
+    // This method adds an advertisement to the db
+    boolean addAdv(Advertisement adver) {
+        int idAdv = adver.getAdvID();
+        int idUser = adver.getDonor().getPersonID();
+        String category = adver.getAdvCategory();
+        String name = adver.getAdvName();
+        String description = adver.getDescription();
+        java.sql.Date timeExpiry = adver.getExpTimestamp();
+        java.sql.Date timePickup = adver.getPickupTimestamp();
+        String imgUrl = adver.getImageUrl();
+
+        // TODO: get the IDAddr and IDCity from the DB from the address String
+        String addr = adver.getDonor().getAddress();
+        
         try {
             String insertTableSQL = "INSERT INTO advertisement "
-                    + "(Name, Description, ExpTimestamp, PickupTimestamp, IDAdv, IDUser, IDAddr, IDResv, IDCity) values"
-                    + "(?,?,?,?,?,?,?,?,?)";
+                		+ "(IDAdvr, IDUser, IDAddr, IDCity, NameCat, NameFood, Description, TimeExpiry, TimePickup, StatusResv, StatusPickup, ImageUrl) values"
+                		+ "(?,?,?,?,?,?,?,?,?,?,?,?,?)";
             preparedStatement = con.prepareStatement(insertTableSQL);
-            preparedStatement.setString(1, adver.getFoodName());
-            preparedStatement.setString(2, adver.getDescription());
-            preparedStatement.setDate(3, adver.getExpTimestamp());
-            preparedStatement.setDate(4, adver.getPickupTimestamp());
-            preparedStatement.setInt(5, getCatIdByName(adver.getFoodCategory()));
-            preparedStatement.setInt(6, getCatIdByName(adver));
-            preparedStatement.setInt(7, getCatIdByName(adver.()));
-            preparedStatement.setInt(8, getCatIdByName(adver.()));
-            preparedStatement.setInt(9, getCatIdByName(adver.()));
-
+            preparedStatement.setInt(1, idAdv);
+            preparedStatement.setInt(2, idUser);
+            preparedStatement.setInt(3, 1);
+            preparedStatement.setInt(4, 1);
+            preparedStatement.setString(5, category);
+            preparedStatement.setString(6, name);
+            preparedStatement.setString(7, description);
+            preparedStatement.setDate(8, timeExpiry);
+            preparedStatement.setDate(9, timePickup);
+            preparedStatement.setBoolean(10, false);
+            preparedStatement.setBoolean(11, false);
+            preparedStatement.setString(12, imgUrl);
 
             preparedStatement.executeUpdate();
             Log.d(TAG, "User successfully added!");
+            return true;
         } catch (SQLException e) {
             Log.e(TAG, "ERROR: User could not be added!", e);
             return false;
         }
-        return true;
-    }*/
+    }
 
     // TODO:
     boolean delAdv(Advertisement adver) {
