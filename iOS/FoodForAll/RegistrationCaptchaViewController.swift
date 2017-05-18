@@ -25,9 +25,9 @@ class RegistrationCaptchaViewController: UIViewController {
             var request = URLRequest(url: url! as URL)
             request.httpMethod = "POST"
             
-            let dataString = "&Name=\(person.userName)" +
-                             "&Email=\(person.email)" +
-                             "&Password=\(person.password)"
+            let dataString = "Name=\(person.userName!)" +
+                             "&Email=\(person.email!)" +
+                             "&Password=\(person.password!)"
             let dataDB = dataString.data(using: .utf8)
             do {
                 let uploadTask = URLSession.shared.uploadTask(with: request, from: dataDB) {
