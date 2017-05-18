@@ -46,10 +46,10 @@ public class DbHandler {
             con = DriverManager.getConnection(url, user, pass);
 
             if (con.isClosed()==false) {
-                Log.d(TAG, "MySQL connection established!");
+                Log.d(TAG, "Function connect succeeded!");
             }
         } catch (Exception e) {
-            Log.e(TAG, "ERROR: MySQL connection failed!", e);
+            Log.e(TAG, "ERROR: Function connect failed!", e);
             throw e;
         }
         return true;
@@ -68,7 +68,7 @@ public class DbHandler {
             }
             return true;
         } catch (SQLException e) {
-            Log.e(TAG, "ERROR: Connection could not be closed!", e);
+            Log.e(TAG, "ERROR: Function closeCon failed!", e);
             return false;
         }
     }
@@ -84,12 +84,34 @@ public class DbHandler {
             preparedStatement.setString(3, pass);
 
             preparedStatement.executeUpdate();
-            Log.d(TAG, "User successfully added!");
+            Log.d(TAG, "Function regUser succeeded!");
+            return true;
         } catch (SQLException e) {
-            Log.e(TAG, "ERROR: User could not be added!", e);
+            Log.e(TAG, "ERROR: Function regUser failed!", e);
             return false;
         }
-        return true;
+    }
+
+    // This method is for the login check
+    boolean signIn(String email, String pass) {
+        try {
+            String signInSQL = "SELECT * FROM user "
+            + "WHERE Email=? AND Password=?";
+            preparedStatement = con.prepareStatement(signInSQL);
+            preparedStatement.setString(1, email);
+            preparedStatement.setString(2, pass);
+            resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()) {
+                Log.d(TAG, "Function signIN has a result!");
+                return true;
+            } else {
+                Log.d(TAG, "Function signIn has found no result!");
+                return false;
+            }
+        } catch (SQLException e) {
+            Log.e(TAG, "ERROR: Function signIn failed!", e);
+            return false;
+        }
     }
 
     /* TODO: This fct should only delete the current user! */
