@@ -10,21 +10,10 @@
     $response = array();
     
     if($_SERVER['REQUEST_METHOD']=='POST'){
-        
-        /*//getting values
-        $userName = $_POST['name'];
-        $userEmail = $_POST['email'];
-        $userPassword = $_POST['password'];
 
-        if(is_null($userName)) {
-            echo "asdf";
-        } else {
-            echo "qwer";
-        }*/
-
-        $userName = 'blablubli';
-        $userEmail = 'bla@blu.bli';
-        $userPassword = 'lel';
+        //getting values
+        $userEmail = htmlspecialchars($_POST['Email']);
+        $userPassword = htmlspecialchars($_POST['Password']);
         
         //including the db operation file
         require_once 'DbOperation.php';
@@ -32,16 +21,15 @@
         $db = new DbOperation();
         
         //inserting values
-        if($db->createUser($userName, $userEmail, $userPassword)){
+        if($db->loginUser($userEmail, $userPassword)){
             $response['error']=false;
-            $response['message']='User added successfully';
-        }else{
-            
+            $response['message']='User logged in successfully';
+        } else {
             $response['error']=true;
-            $response['message']='Could not add user';
+            $response['message']='ERROR: Could not find this user!';
         }
         
-    }else{
+    } else {
         $response['error']=true;
         $response['message']='You are not authorized';
     }
