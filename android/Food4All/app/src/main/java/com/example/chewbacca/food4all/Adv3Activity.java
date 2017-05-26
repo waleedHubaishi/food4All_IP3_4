@@ -103,7 +103,7 @@ public class Adv3Activity extends AppCompatActivity {
 
         });
 
-        final ImageButton nextPage = (ImageButton) findViewById(R.id.imageButton);
+        final Button nextPage = (Button) findViewById(R.id.button9);
         final EditText editText2 = (EditText) findViewById(R.id.editText2);
         final EditText editText4 = (EditText) findViewById(R.id.editText4);
         nextPage.setEnabled(false);

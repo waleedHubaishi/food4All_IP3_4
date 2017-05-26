@@ -56,6 +56,7 @@
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
         android:background="@android:color/background_light"
+        android:onClick="goToAdv3Activity"
         android:text="@string/button_go_on" />
 
     <Button
@@ -65,6 +66,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/background_light"
+        android:onClick="goToAdv1Activity"
         android:text="@string/button_back" />
 
 </RelativeLayout>

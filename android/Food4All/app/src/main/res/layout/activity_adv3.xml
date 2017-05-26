@@ -22,6 +22,7 @@
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
         android:background="@android:color/background_light"
+        android:onClick="goToAdv4Activity"
         android:text="@string/button_go_on" />
 
     <Button
@@ -31,6 +32,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/background_light"
+        android:onClick="goToAdv2Activity"
         android:text="@string/button_back" />
 
     <TextView

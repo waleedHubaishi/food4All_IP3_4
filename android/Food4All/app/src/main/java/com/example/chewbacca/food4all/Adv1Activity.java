@@ -22,11 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Adv1Activity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    // Spinner element
-    Spinner spinner;
-
-
-
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +38,8 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         // Spinner click listener
         spinner.setOnItemSelectedListener(this);
 
-
-
-
         //Validation of the Edittext
-//         EditText firstText = (EditText)findViewById(R.id.editText);
-         final ImageButton nextPage = (ImageButton)findViewById(R.id.imageButton2);
+        final Button nextPage = (Button) findViewById(R.id.button5);
         nextPage.setEnabled(false);
 
         ((EditText)findViewById(R.id.editText)).addTextChangedListener(new TextWatcher() {
@@ -78,22 +70,7 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
                 }
             }
         });
-//        firstText.setOnClickListener(new EditText().OnClickListener(){
-//        nextPage.setOnClickListener(new EditText.OnKeyListener(){
-
-//            @Override
-//            public boolean onKey(View view, int i, KeyEvent keyEvent) {
-//                if(editText.getText().toString().length() == 0){
-//                    editText.setError("Feld muss gefüllt sein!");
-//                nextPage.setClickable(false);
-//                } else{
-//                    nextPage.setClickable(true);
-//
-//                }
-//                return false;
-//            }
-//            });
-}
+    }
 
     /** Called when the user clicks the Login button */
     public void goToAdv2Activity(View view) {
@@ -115,8 +92,8 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         startActivity(intent);
     }
 
-    public void gotoav10 (View view){
-        Intent intent = new Intent(this, adv10Activity.class);
+    public void goToStartscreen (View view){
+        Intent intent = new Intent(this, Startscreen.class);
         startActivity(intent);
     }
 
@@ -165,6 +142,5 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
-
     }
 }

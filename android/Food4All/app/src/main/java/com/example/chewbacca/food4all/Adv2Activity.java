@@ -8,6 +8,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -21,9 +22,8 @@ public class Adv2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adv2);
 
-        final ImageButton nextPage = (ImageButton)findViewById(R.id.imageButton3);
+        final Button nextPage = (Button)findViewById(R.id.button7);
         nextPage.setEnabled(false);
-//        nextPage.setOnClickListener();
 
         ((EditText)findViewById(R.id.editText3)).addTextChangedListener(new TextWatcher() {
             @Override
