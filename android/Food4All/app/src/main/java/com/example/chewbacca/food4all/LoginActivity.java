@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate method started");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
@@ -330,35 +331,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
+        // Get DbHandler instance
+        DbHandler dbHandler = DbHandler.getInstance( );
+
         private final String mEmail;
         private final String mPassword;
 
-        private static final String url = "jdbc:mysql://86.119.36.198:3306/food4all";
-        private static final String user = "food4all";
-        private static final String pass = "";
 
-        private void validateUser() {
-            Log.d(TAG, "validateUser() started");
-            try {
-                Class.forName("com.mysql.jdbc.Driver");
-
-                Connection con = DriverManager.getConnection(url, user, pass);
-
-                String result = "Database connection success\n";
-                Statement st = con.createStatement();
-                ResultSet rs = st.executeQuery("select * from user");
-                ResultSetMetaData rsmd = rs.getMetaData();
-
-                while(rs.next()) {
-                    result += rsmd.getColumnName(1) + ": " + rs.getInt(1) + "\n";
-                    result += rsmd.getColumnName(2) + ": " + rs.getString(2) + "\n";
-                }
-                Log.d(TAG, result);
-            } catch(Exception e) {
-                e.printStackTrace();
-                //System.out.println(e.toString());
-            }
-        }
 
         UserLoginTask(String email, String password) {
             mEmail = email;
@@ -376,49 +355,31 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }).start();*/
 
             try {
-                validateUser();
-
                 // Simulate network access.
                 Thread.sleep(2000);
+
+                Log.d(TAG, "Credential variables are mEmail=" + mEmail + " and mPassword=" + mPassword);
+                if(dbHandler.signIn(mEmail, mPassword)) {
+                    Log.d(TAG, "Email and Password exist on the Database!");
+                } else {
+                    throw new InterruptedException();
+                }
             } catch (InterruptedException e) {
+                Log.e(TAG, "ERROR: Could not do authentication in doInBackground function!", e);
                 return false;
             }
 
+            /* TODO: Do we need this?
             for (String credential : DUMMY_CREDENTIALS) {
                 String[] pieces = credential.split(":");
                 if (pieces[0].equals(mEmail)) {
                     // Account exists, return true if the password matches.
                     return pieces[1].equals(mPassword);
                 }
-            }
+            } */
 
-            // TODO: register the new account here.
             return true;
         }
-
-        /* TODO: check also if insert query works, just for knowledge
-        protected void insert() {
-            try {
-                Class.forName("com.mysql.jdbc.Driver");
-
-                Connection con = DriverManager.getConnection(url, user, pass);
-
-                String result = "Database connection success\n";
-                Statement st = con.createStatement();
-                ResultSet rs = st.executeQuery("INSERT INTO `user` (`IDuser`, `Name`, `Email`, `Password`, `Exp`, `Level`, `Rating`, `RatingCounter`, `TimeRegistration`) VALUES ('3', 'test', 'test@test.test', 'test', '123', '123', '1', '123', '2017-03-20 00:00:00');");
-                ResultSetMetaData rsmd = rs.getMetaData();
-
-                while(rs.next()) {
-                    result += rsmd.getColumnName(1) + ": " + rs.getInt(1) + "\n";
-                    result += rsmd.getColumnName(2) + ": " + rs.getString(2) + "\n";
-                }
-                System.out.println(result);
-            } catch (ClassNotFoundException e1) {
-                e1.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } */
 
         @Override
         protected void onPostExecute(final Boolean success) {
