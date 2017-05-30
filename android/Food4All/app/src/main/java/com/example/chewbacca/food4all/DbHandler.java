@@ -1,5 +1,6 @@
 package com.example.chewbacca.food4all;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 import java.util.Date;
@@ -18,7 +19,7 @@ import java.util.Date;
  */
 
 // TODO: write all the functions for this class
-public class DbHandler {
+public class DbHandler extends AsyncTask<String, String, String> {
     private static final String TAG = LoginActivity.class.getSimpleName(); // used for debugging messages
     private static final String url = "jdbc:mysql://86.119.36.198:3306/food4all";
     private static final String user = "food4all";
@@ -29,13 +30,22 @@ public class DbHandler {
     private static PreparedStatement preparedStatement = null;
     private static ResultSet resultSet = null;
 
-    private static final DbHandler ourInstance = new DbHandler();
-
-    public static DbHandler getInstance() {
-        return ourInstance;
+    // Singleton instance --> more info here: http://www.javaworld.com/article/2073352/core-java/simply-singleton.html
+    private static DbHandler instance = null;
+    protected DbHandler() {
+        // Exists only to defeat instantiation.
     }
 
-    private DbHandler() {
+    public static DbHandler getInstance() {
+        if(instance == null) {
+            instance = new DbHandler();
+        }
+        return instance;
+    }
+
+    @Override
+    protected String doInBackground(String... params) {
+        return null;
     }
 
     boolean connect() throws Exception {
