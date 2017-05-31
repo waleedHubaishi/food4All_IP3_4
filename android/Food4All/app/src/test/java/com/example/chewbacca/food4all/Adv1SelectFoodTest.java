@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by xao on 03.05.2017.
  */
-public class Adv1ActivityTest {
+public class Adv1SelectFoodTest {
     @Test
     public void goToAdv2Activity() throws Exception {
 

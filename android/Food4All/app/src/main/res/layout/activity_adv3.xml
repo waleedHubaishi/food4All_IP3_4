@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chewbacca.food4all.Adv3Activity">
+    tools:context="com.example.chewbacca.food4all.Adv3TimeDateSelect">
 
     <Button
         android:id="@+id/button9"
@@ -83,13 +83,11 @@
         android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Location" />
+        android:text="Location"
+        android:layout_below="@+id/editText4"
+        android:layout_toStartOf="@+id/imageButton11" />
 
     <ImageButton
         android:id="@+id/imageButton11"

@@ -52,7 +52,7 @@ public class Adv3TimeDateSelect extends AppCompatActivity {
                 int mMonth = mcurrentDate.get(Calendar.MONTH);
                 int mDay = mcurrentDate.get(Calendar.DAY_OF_MONTH);
 
-                DatePickerDialog mDatePicker = new DatePickerDialog(Adv3TimeDateSelect.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog mDatePicker = new DatePickerDialog(Adv3TimeDateSelect.this, R.style.DialogTheme, new DatePickerDialog.OnDateSetListener() {
                     public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
                         // TODO Auto-generated method stub
                         datePicker.setText("" + selectedday + "/" + (selectedmonth + 1) + "/" + selectedyear);
@@ -75,6 +75,7 @@ public class Adv3TimeDateSelect extends AppCompatActivity {
 
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(Adv3TimeDateSelect.this,
+                        R.style.DialogTheme,
                         new TimePickerDialog.OnTimeSetListener() {
 
                             @Override

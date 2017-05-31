@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorbackground"
     android:orientation="vertical"
-    tools:context="com.example.chewbacca.food4all.Adv5Activity">
+    tools:context="com.example.chewbacca.food4all.Adv5CameraView">
 
     <TextureView
         android:id="@+id/texture"

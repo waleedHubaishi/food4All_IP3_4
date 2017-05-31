@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chewbacca.food4all.Adv4Activity">
+    tools:context="com.example.chewbacca.food4all.Adv6GalleryCamera">
 
     <TextView
         android:id="@+id/textView10"
@@ -87,6 +87,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@android:color/background_light"
+        android:onClick="goToAdv3Activity"
         android:text="@string/button_back" />
 
 </RelativeLayout>
