@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -17,14 +18,23 @@ import java.util.List;
 
 public class Adv1SelectFood extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner spinner;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adv1);
 
+        // reference to progressbar element
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+
         // Spinner element
         spinner = (Spinner) findViewById(R.id.spinner2);
+
+        progressBar.setVisibility(View.VISIBLE);
+        progressBar.setMax(4);
+        progressBar.setProgress(1);
 
         // Loading spinner data from database
         loadSpinnerData();
