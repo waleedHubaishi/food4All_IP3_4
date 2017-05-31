@@ -20,6 +20,7 @@ class Food {
     var pickedUp:String!
     var place:String!
     var foodPhoto:UIImage!
+    var donaterName:String!
     
 }
 

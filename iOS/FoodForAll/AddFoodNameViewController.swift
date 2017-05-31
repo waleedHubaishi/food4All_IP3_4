@@ -139,6 +139,7 @@ class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
             
             food.name = nameTF.text
             food.category = categorieTF.text
+            food.donaterName = "Wing"
             
             
             

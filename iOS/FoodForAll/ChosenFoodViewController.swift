@@ -28,6 +28,7 @@ class ChosenFoodViewController: UIViewController {
     @IBOutlet weak var descriptionHeaderLabel: UILabel!
     @IBOutlet weak var reserveButton: UIButton!
     
+    @IBOutlet weak var donerNameLabel: UILabel!
     @IBOutlet weak var foodNameBGView: UIView!
     @IBOutlet weak var categoryBGView: UIView!
     
@@ -39,29 +40,55 @@ class ChosenFoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        reserveButton.setTitle("Abholen", for: .normal)
+        
+        let borderColor : UIColor = UIColor.lightGray
+        
         foodNameLabel.text = food.name
-        foodNameLabel.layer.borderWidth = 1.0
-        foodNameLabel.layer.cornerRadius = 8
-
+        foodNameBGView.layer.borderWidth = 3.0
+        foodNameBGView.layer.borderColor = borderColor.cgColor
+        foodNameBGView.layer.cornerRadius = 15
+        
+        //donerNameLabel.text = food.doner
+        userBGView.layer.borderWidth = 3.0
+        userBGView.layer.borderColor = borderColor.cgColor
+        userBGView.layer.cornerRadius = 15
+        
+        
+        descriptionHeaderLabel.textColor = borderColor
+        descriptionTV.text = food.description
+        descriptionBGView.layer.borderWidth = 3.0
+        descriptionBGView.layer.borderColor = borderColor.cgColor
+        descriptionBGView.layer.cornerRadius = 15
+        
+        pickUpTillHeaderLabel.textColor = borderColor
+        toKeepTillHeaderLabel.textColor = borderColor
+        toPickUpAtLabel.text = food.pickedUpAt+" Uhr, "+food.pickedUp
+        toKeepTillLabel.text = food.expiration
+        pickUpBGView.layer.borderWidth = 3.0
+        pickUpBGView.layer.borderColor = borderColor.cgColor
+        pickUpBGView.layer.cornerRadius = 15
+        
+        categoryHeaderLabel.textColor = borderColor
+        categoryNameLabel.text = food.category
+        categoryBGView.layer.borderWidth = 3.0
+        categoryBGView.layer.borderColor = borderColor.cgColor
+        categoryBGView.layer.cornerRadius = 15
         
         chosenFoodPhoto.image = food.foodPhoto
+        chosenFoodPhoto.layer.borderWidth = 3.0
+        chosenFoodPhoto.layer.borderColor = borderColor.cgColor
+        chosenFoodPhoto.layer.cornerRadius = 15
         
-        categoryNameLabel.text = food.category
-        categoryNameLabel.layer.borderWidth = 1.0
-        categoryNameLabel.layer.cornerRadius = 8
-        
-        toPickUpAtLabel.text = food.pickedUpAt
-        toKeepTillLabel.text = food.expiration
-        toPickUpOnLabel.text = food.pickedUp
-        
-        descriptionTV.text = food.description
-        descriptionTV.layer.borderWidth = 1.0
-        descriptionTV.layer.cornerRadius = 8
-        
-        reserveButton.setTitle("Abholen", for: .normal)
+        reserveButton.setTitleColor(UIColor.orange, for: .normal)
+        reserveButton.layer.borderWidth = 3.0
+        reserveButton.layer.borderColor = borderColor.cgColor
+        reserveButton.layer.cornerRadius = 15
         
         // Do any additional setup after loading the view.
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -71,9 +98,12 @@ class ChosenFoodViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         if(reserveButton.currentTitle == "Abholen")
         {
+            reserveButton.setTitleColor(UIColor.green, for: .normal)
             reserveButton.setTitle("reserviert", for: .normal)
+        
         }
         else{
+            reserveButton.setTitleColor(UIColor.orange, for: .normal)
             reserveButton.setTitle("Abholen", for: .normal)
         }
     }

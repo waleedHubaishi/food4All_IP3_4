@@ -25,18 +25,15 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.foodTableview.backgroundColor = UIColor.white
-        self.foodTableview.separatorStyle = .none
+        //self.foodTableview.separatorStyle = .none
         self.foodTableview.dataSource=self
         self.foodTableview.delegate=self
-
         
+        // Assign your color to this property.
+        self.foodTableview.separatorColor = UIColor.white
         
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -74,6 +71,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             temp.place = "Brugg"
             //var image =
             temp.foodPhoto = UIImage(named: "pasta.png")
+            temp.donaterName = "Lorenzo"
             foodList.append(temp)
             
             temp2.name = "Burger";
@@ -84,16 +82,10 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             temp2.pickedUpAt = "13:13"
             temp2.place = "Brugg"
             //var image = 
-            temp2.foodPhoto = UIImage(named: "F4ALogo.png")
-            foodList.append(temp2)
+            temp2.foodPhoto = UIImage(named: "burger.png")
+            temp2.donaterName = "Julien"
 
-            
-        }
-            
-        else
-        {
-            print(foodList)
-            
+            foodList.append(temp2)
         }
         
     }
@@ -118,7 +110,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.clear
+        //cell.backgroundColor = UIColor.clear
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -126,7 +118,11 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         
         cell.contentView.backgroundColor = UIColor.init(red: 17.0/255.0, green: 186.0/255.0, blue: 204.0/255.0, alpha: 1.0)
         
-        cell.layer.cornerRadius = 10
+        //cell.preservesSuperviewLayoutMargins = false
+        //cell.separatorInset = UIEdgeInsets.zero
+        //cell.layoutMargins = UIEdgeInsets.zero
+        
+        cell.layer.cornerRadius = 15
         cell.layer.masksToBounds = true
         
         let foodInTable = foodList[indexPath.row]
@@ -135,6 +131,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.pickUpTillHour.text = foodInTable.pickedUpAt
         cell.bisLbl.text = foodInTable.pickedUp
         cell.foodImage.image = foodInTable.foodPhoto
+        cell.donaterName.text = foodInTable.donaterName
         
         return cell
     }
