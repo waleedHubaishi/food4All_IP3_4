@@ -1643,6 +1643,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-a7-80b">
                                 <rect key="frame" x="119" y="530" width="136" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <state key="normal" title="Abholen"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="xCS-PY-CId" eventType="touchUpInside" id="VJ7-WX-r0N"/>
