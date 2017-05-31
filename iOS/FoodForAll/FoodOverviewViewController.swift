@@ -53,7 +53,7 @@ class FoodOverviewViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    
+
     @IBAction func addFood(_ sender: UIButton) {
         foodList.append(food)
         //self.navigationController?.pushViewController(secondViewController, animated: true)

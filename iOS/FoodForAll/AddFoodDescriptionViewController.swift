@@ -82,7 +82,7 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         var limitMaxLength = 1
         
         if textView == descriptoinTV {
-            limitMaxLength = 30
+            limitMaxLength = 120
         }
         
         
