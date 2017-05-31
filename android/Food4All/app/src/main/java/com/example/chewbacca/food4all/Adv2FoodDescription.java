@@ -6,16 +6,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Adv2Activity extends AppCompatActivity {
+public class Adv2FoodDescription extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +52,7 @@ public class Adv2Activity extends AppCompatActivity {
 
     /** Called when the user clicks the Login button */
     public void goToAdv1Activity(View view) {
-        Intent intent = new Intent(this, Adv1Activity.class);
+        Intent intent = new Intent(this, Adv1SelectFood.class);
         startActivity(intent);
     }
 
@@ -76,7 +70,7 @@ public class Adv2Activity extends AppCompatActivity {
             System.out.println(exampleTwo);
         }
 
-        Intent intent = new Intent(this, Adv3Activity.class);
+        Intent intent = new Intent(this, Adv3TimeDateSelect.class);
         startActivity(intent);
     }
     /**

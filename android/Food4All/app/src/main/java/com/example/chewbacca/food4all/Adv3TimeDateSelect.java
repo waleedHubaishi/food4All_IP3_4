@@ -5,9 +5,6 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationManager;
-import android.media.Image;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,22 +12,18 @@ import android.test.mock.MockPackageManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
-import java.util.StringTokenizer;
 
-public class Adv3Activity extends AppCompatActivity {
+public class Adv3TimeDateSelect extends AppCompatActivity {
     EditText datePicker;
     EditText timePicker;
 
@@ -59,7 +52,7 @@ public class Adv3Activity extends AppCompatActivity {
                 int mMonth = mcurrentDate.get(Calendar.MONTH);
                 int mDay = mcurrentDate.get(Calendar.DAY_OF_MONTH);
 
-                DatePickerDialog mDatePicker = new DatePickerDialog(Adv3Activity.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog mDatePicker = new DatePickerDialog(Adv3TimeDateSelect.this, new DatePickerDialog.OnDateSetListener() {
                     public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
                         // TODO Auto-generated method stub
                         datePicker.setText("" + selectedday + "/" + (selectedmonth + 1) + "/" + selectedyear);
@@ -81,7 +74,7 @@ public class Adv3Activity extends AppCompatActivity {
                 final String blubber = "lol";
 
 
-                TimePickerDialog timePickerDialog = new TimePickerDialog(Adv3Activity.this,
+                TimePickerDialog timePickerDialog = new TimePickerDialog(Adv3TimeDateSelect.this,
                         new TimePickerDialog.OnTimeSetListener() {
 
                             @Override
@@ -159,7 +152,7 @@ public class Adv3Activity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 // create class object
-                gps = new GPSTracker(Adv3Activity.this);
+                gps = new GPSTracker(Adv3TimeDateSelect.this);
 
                 // check if GPS enabled
                 if (gps.canGetLocation()) {
@@ -194,13 +187,13 @@ public class Adv3Activity extends AppCompatActivity {
 
     /** Called when the user clicks the Login button */
     public void goToAdv2Activity(View view) {
-        Intent intent = new Intent(this, Adv2Activity.class);
+        Intent intent = new Intent(this, Adv2FoodDescription.class);
         startActivity(intent);
     }
 
     /** Called when the user clicks the Login button */
     public void goToAdv4Activity(View view) {
-        Intent intent = new Intent(this, Adv6Activity.class);
+        Intent intent = new Intent(this, Adv6GalleryCamera.class);
         startActivity(intent);
     }
 

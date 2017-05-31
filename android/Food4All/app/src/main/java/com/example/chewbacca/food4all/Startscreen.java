@@ -3,10 +3,7 @@ package com.example.chewbacca.food4all;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 public class Startscreen extends AppCompatActivity {
 
@@ -30,7 +27,7 @@ public class Startscreen extends AppCompatActivity {
 
     /** provisional Activiy to get to the advertisement views */
     public void goToFirstAdvertisementPage(View view) {
-        Intent intent = new Intent(this, Adv1Activity.class);
+        Intent intent = new Intent(this, Adv1SelectFood.class);
         startActivity(intent);
     }
 }

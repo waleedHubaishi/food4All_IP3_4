@@ -40,8 +40,8 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-public class Adv5Activity extends AppCompatActivity {
-    private static final String TAG = "Adv5Activity";
+public class Adv5CameraView extends AppCompatActivity {
+    private static final String TAG = "Adv5CameraView";
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     private static final int REQUEST_CAMERA_PERMISSION = 200;
 
@@ -117,7 +117,7 @@ public class Adv5Activity extends AppCompatActivity {
         public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
 
             super.onCaptureCompleted(session, request, result);
-            Toast.makeText(Adv5Activity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
+            Toast.makeText(Adv5CameraView.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
             createCameraPreview();
 //            savePicture(result);
         }
@@ -244,7 +244,7 @@ public class Adv5Activity extends AppCompatActivity {
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
                     super.onCaptureCompleted(session, request, result);
-                    Toast.makeText(Adv5Activity.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Adv5CameraView.this, "Saved:" + file, Toast.LENGTH_SHORT).show();
                     createCameraPreview();
                 }
             };
@@ -293,7 +293,7 @@ public class Adv5Activity extends AppCompatActivity {
 
                 @Override
                 public void onConfigureFailed(@NonNull CameraCaptureSession cameraCaptureSession) {
-                    Toast.makeText(Adv5Activity.this, "Configuration change", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Adv5CameraView.this, "Configuration change", Toast.LENGTH_SHORT).show();
                 }
             }, null);
         } catch (CameraAccessException e) {
@@ -312,7 +312,7 @@ public class Adv5Activity extends AppCompatActivity {
             imageDimension = map.getOutputSizes(SurfaceTexture.class)[0];
             // Add permission for camera and let user grant the permission
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(Adv5Activity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CAMERA_PERMISSION);
+                ActivityCompat.requestPermissions(Adv5CameraView.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CAMERA_PERMISSION);
                 return;
             }
             manager.openCamera(cameraId, stateCallback, null);
@@ -350,7 +350,7 @@ public class Adv5Activity extends AppCompatActivity {
         if (requestCode == REQUEST_CAMERA_PERMISSION) {
             if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
                 // close the app
-                Toast.makeText(Adv5Activity.this, "Sorry!!!, you can't use this app without granting permission", Toast.LENGTH_LONG).show();
+                Toast.makeText(Adv5CameraView.this, "Sorry!!!, you can't use this app without granting permission", Toast.LENGTH_LONG).show();
                 finish();
             }
         }

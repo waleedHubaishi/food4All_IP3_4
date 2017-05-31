@@ -1,27 +1,21 @@
 package com.example.chewbacca.food4all;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adv1Activity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class Adv1SelectFood extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner spinner;
 
     @Override
@@ -84,7 +78,7 @@ public class Adv1Activity extends AppCompatActivity implements AdapterView.OnIte
         Spinner mySpinner=(Spinner) findViewById(R.id.spinner2);
         String spinnerText = mySpinner.getSelectedItem().toString();
 
-        Intent intent = new Intent(this, Adv2Activity.class);
+        Intent intent = new Intent(this, Adv2FoodDescription.class);
         Bundle newActivityBundle = new Bundle();
         newActivityBundle.putString("productName", value);
         newActivityBundle.putString("productCategory", spinnerText);
