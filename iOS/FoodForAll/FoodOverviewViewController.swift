@@ -30,7 +30,7 @@ class FoodOverviewViewController: UIViewController {
         // Do any additional setup after loading the view.
         foodName.text = food.name
         foodCategory.text = food.category
-        donaterName.text = "Lorenzo"
+        donaterName.text = food.donaterName
         pickedupOn.text = food.pickedUp
         pickedupAtTill.text = food.pickedUpAt
         expirationDate.text = food.expiration

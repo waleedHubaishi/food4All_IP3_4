@@ -80,6 +80,7 @@
 		A41B60521EC4E8E1005417EC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A41B60511EC4E8E1005417EC /* Info.plist */; };
 		A41BEC1A1EDED79000E4A117 /* threeStars.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC191EDED79000E4A117 /* threeStars.png */; };
 		A41BEC1E1EDEDE6800E4A117 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC1D1EDEDE6800E4A117 /* burger.png */; };
+		A41BEC241EDEFB3700E4A117 /* crown_200.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC231EDEFB3700E4A117 /* crown_200.png */; };
 		A480D94F1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94C1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift */; };
 		A480D9501EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94D1EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift */; };
 		A480D9511EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94E1EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift */; };
@@ -187,6 +188,7 @@
 		A41B60511EC4E8E1005417EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41BEC191EDED79000E4A117 /* threeStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeStars.png; sourceTree = "<group>"; };
 		A41BEC1D1EDEDE6800E4A117 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		A41BEC231EDEFB3700E4A117 /* crown_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown_200.png; sourceTree = "<group>"; };
 		A480D94C1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodNameViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D94D1EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodPickUpViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D94E1EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodDescriptionViewControllerTest.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 		A41B5FA71EC4787C005417EC /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A41BEC231EDEFB3700E4A117 /* crown_200.png */,
 				A41BEC1D1EDEDE6800E4A117 /* burger.png */,
 				A41BEC191EDED79000E4A117 /* threeStars.png */,
 				A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */,
@@ -545,6 +548,7 @@
 				A41B604A1EC4E89E005417EC /* gallery.png in Resources */,
 				A41B60481EC4E89E005417EC /* info-01.png in Resources */,
 				A41B60401EC4E89E005417EC /* search_tabbar.png in Resources */,
+				A41BEC241EDEFB3700E4A117 /* crown_200.png in Resources */,
 				A41B603F1EC4E89E005417EC /* profile_tabbar.png in Resources */,
 				A41B60441EC4E89E005417EC /* magnifying-glass.png in Resources */,
 				A41B603A1EC4E89E005417EC /* regOneCircle.png in Resources */,

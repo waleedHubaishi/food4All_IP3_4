@@ -61,6 +61,13 @@ class ChosenFoodViewController: UIViewController {
         descriptionBGView.layer.borderColor = borderColor.cgColor
         descriptionBGView.layer.cornerRadius = 15
         
+        if(!((donerNameLabel.text?.isEmpty)!)){
+        donerNameLabel.text = food.donaterName
+        }
+        else{
+            donerNameLabel.text = "Muster Mustermann"
+        }
+        
         pickUpTillHeaderLabel.textColor = borderColor
         toKeepTillHeaderLabel.textColor = borderColor
         toPickUpAtLabel.text = food.pickedUpAt+" Uhr, "+food.pickedUp
@@ -121,6 +128,16 @@ class ChosenFoodViewController: UIViewController {
         {
             reserveButton.setTitleColor(UIColor.green, for: .normal)
             reserveButton.setTitle("reserviert", for: .normal)
+            
+            let contactPopUP = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "contactDetails") as! ConfirmationAndContactInfoViewController
+            
+            contactPopUP.doner.email = "muster@website.com"
+            contactPopUP.doner.userName = donerNameLabel.text
+            
+            self.addChildViewController(contactPopUP)
+            contactPopUP.view.frame = self.view.frame
+            self.view.addSubview(contactPopUP.view)
+            contactPopUP.didMove(toParentViewController: self)
         
         }
         else{
