@@ -11,6 +11,7 @@ import UIKit
 class ChosenFoodViewController: UIViewController {
     
     var food:Food = Food()
+    var indexOfSelectedElement = 0
     
     @IBOutlet weak var foodNameLabel: UILabel!
     @IBOutlet weak var chosenFoodBackGround: UIView!
@@ -138,7 +139,9 @@ class ChosenFoodViewController: UIViewController {
             contactPopUP.view.frame = self.view.frame
             self.view.addSubview(contactPopUP.view)
             contactPopUP.didMove(toParentViewController: self)
+            foodList.remove(at: indexOfSelectedElement)
         
+           
         }
         else{
             reserveButton.setTitleColor(UIColor.orange, for: .normal)

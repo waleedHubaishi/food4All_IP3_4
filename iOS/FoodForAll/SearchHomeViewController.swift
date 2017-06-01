@@ -140,6 +140,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         indexOfSelectedRow = (indexPath.row)
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "chosenFoodDetails") as! ChosenFoodViewController
         secondViewController.food = foodList[indexOfSelectedRow]
+        secondViewController.indexOfSelectedElement = indexOfSelectedRow
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     

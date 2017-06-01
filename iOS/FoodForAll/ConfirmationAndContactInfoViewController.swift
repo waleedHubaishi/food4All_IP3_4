@@ -73,6 +73,17 @@ class ConfirmationAndContactInfoViewController: UIViewController {
     @IBAction func closePopUp(_ sender: Any) {
         //self.view.removeFromSuperview()
         self.removeAnimate()
+        
+        super.view.isUserInteractionEnabled = false
+        
+       DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500),execute: {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let vc: UITabBarController = mainStoryboard.instantiateViewController(withIdentifier: "tabBarController") as! UITabBarController
+            vc.selectedIndex = 0
+        
+            self.present(vc, animated: true, completion: nil)
+    })
+        
     }
     
     func showAnimate() {
@@ -90,9 +101,13 @@ class ConfirmationAndContactInfoViewController: UIViewController {
             self.view.alpha = 0.0;
         }, completion:{(finished : Bool)  in
             if (finished) {
+                
                 self.view.removeFromSuperview()
             }
         })
+        
+        
+       
     }
     /*
      // MARK: - Navigation
