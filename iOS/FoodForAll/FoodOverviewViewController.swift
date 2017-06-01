@@ -12,30 +12,48 @@ class FoodOverviewViewController: UIViewController {
 
     var food:Food = Food()
 
-    @IBOutlet weak var foodName: UILabel!
-    @IBOutlet weak var foodCategory: UILabel!
-    @IBOutlet weak var donaterName: UILabel!
-    @IBOutlet weak var pickedupAtTill: UILabel!
-    @IBOutlet weak var pickedupOn: UILabel!
-    @IBOutlet weak var expirationDate: UILabel!
+    
+    
+    @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var chosenFoodBackGround: UIView!
+    @IBOutlet weak var chosenFoodPhoto: UIImageView!
+    @IBOutlet weak var userRating: UIImageView!
+    @IBOutlet weak var categoryHeaderLabel: UILabel!
+    @IBOutlet weak var categoryNameLabel: UILabel!
+    @IBOutlet weak var pickupBackground: UIImageView!
+    @IBOutlet weak var pickUpTillHeaderLabel: UILabel!
+    @IBOutlet weak var toKeepTillHeaderLabel: UILabel!
+    @IBOutlet weak var toKeepTillLabel: UILabel!
+    @IBOutlet weak var toPickUpAtLabel: UILabel!
+    @IBOutlet weak var toPickUpOnLabel: UILabel!
     @IBOutlet weak var descriptionTV: UITextView!
+    @IBOutlet weak var descriptionHeaderLabel: UILabel!
+    
+    @IBOutlet weak var donerNameLabel: UILabel!
+    @IBOutlet weak var foodNameBGView: UIView!
+    @IBOutlet weak var categoryBGView: UIView!
+    
+    @IBOutlet weak var userBGView: UIView!
+    
+    @IBOutlet weak var descriptionBGView: UIView!
+    @IBOutlet weak var pickUpBGView: UIView!
+    
     @IBOutlet weak var editBtn: UIButton!
-    @IBOutlet weak var confirmBtn: UIButton!
-    @IBOutlet weak var foodImage: UIImageView!
+    
+    @IBOutlet weak var addBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print(food.name)
         // Do any additional setup after loading the view.
-        foodName.text = food.name
-        foodCategory.text = food.category
-        donaterName.text = food.donaterName
-        pickedupOn.text = food.pickedUp
-        pickedupAtTill.text = food.pickedUpAt
-        expirationDate.text = food.expiration
+        foodNameLabel.text = food.name
+        categoryNameLabel.text = food.category
+        donerNameLabel.text = food.donaterName
+        toPickUpAtLabel.text = food.pickedUpAt + " Uhr, " + food.pickedUp
+        toKeepTillLabel.text = food.expiration
         descriptionTV.text = food.description
-        foodImage.image = food.foodPhoto
+        chosenFoodPhoto.image = food.foodPhoto
         
         descriptionTV.layer.borderWidth = 0.5
         descriptionTV.layer.borderColor = UIColor.gray.cgColor
@@ -44,12 +62,12 @@ class FoodOverviewViewController: UIViewController {
         
         let borderColor : UIColor = UIColor.lightGray
         
-        confirmBtn.layer.borderWidth = 2.0
-        confirmBtn.layer.borderColor = borderColor.cgColor
-        confirmBtn.layer.cornerRadius = 15
-        confirmBtn.setTitleColor(borderColor, for: .normal)
-        confirmBtn.setTitle("Bestätigen", for: .normal)
-        confirmBtn.setTitleColor(UIColor.green, for: .normal)
+        addBtn.layer.borderWidth = 2.0
+        addBtn.layer.borderColor = borderColor.cgColor
+        addBtn.layer.cornerRadius = 15
+        addBtn.setTitleColor(borderColor, for: .normal)
+        addBtn.setTitle("Bestätigen", for: .normal)
+        addBtn.setTitleColor(UIColor.green, for: .normal)
         
         editBtn.layer.borderWidth = 2.0
         editBtn.layer.borderColor = borderColor.cgColor
