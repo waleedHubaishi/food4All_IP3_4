@@ -22,7 +22,6 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
 
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.foodTableview.backgroundColor = UIColor.white
