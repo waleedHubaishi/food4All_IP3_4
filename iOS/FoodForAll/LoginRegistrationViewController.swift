@@ -25,11 +25,11 @@ class LoginRegistrationViewController: UIViewController {
     @IBOutlet weak var signUpB: UIButton!
     
     @IBAction func signIN(_ sender: Any) {
-//        checkingEmailFT(emailTF: emailTF.text!)
-//        if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
-//            if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
-        if ((EmailExistenceViewController().existEmailAddress(emailAddressString: emailTF.text!))  && (EmailExistenceViewController().existPassword(passwordString: passwordTF.text!))){
-//            displayAlertMessage(messageToDisplay: "Emailadresse existiert!")
+        checkingEmailFT(emailTF: emailTF.text!)
+        if (EmailTextFieldVerficationViewController().isValidEmailAddress(emailAddressString: emailTF.text!)){}
+            if (isValidPassword(passwordString: passwordTF.text!) && (tempEmail == emailTF.text!) && (tempPass == passwordTF.text!)) {
+//        if ((EmailExistenceViewController().existEmailAddress(emailAddressString: emailTF.text!))  && (EmailExistenceViewController().existPassword(passwordString: passwordTF.text!))){
+ //           displayAlertMessage(messageToDisplay: "Emailadresse existiert!")
 //            if (EmailExistenceViewController().existPassword(passwordString: passwordTF.text!)) {
 //                displayAlertMessage(messageToDisplay: "Password existiert!")
            
