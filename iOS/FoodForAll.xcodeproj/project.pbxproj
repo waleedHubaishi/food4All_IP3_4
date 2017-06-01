@@ -51,7 +51,6 @@
 		A41B60141EC4E4AB005417EC /* ChosenFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B60131EC4E4AB005417EC /* ChosenFoodViewController.swift */; };
 		A41B60161EC4E4C4005417EC /* ConfirmationAndContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B60151EC4E4C4005417EC /* ConfirmationAndContactInfoViewController.swift */; };
 		A41B60361EC4E89E005417EC /* coming-soon.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B601B1EC4E89E005417EC /* coming-soon.png */; };
-		A41B60371EC4E89E005417EC /* Pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B601C1EC4E89E005417EC /* Pasta.png */; };
 		A41B60381EC4E89E005417EC /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B601D1EC4E89E005417EC /* location-arrow.png */; };
 		A41B60391EC4E89E005417EC /* F4ALogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B601E1EC4E89E005417EC /* F4ALogo.png */; };
 		A41B603A1EC4E89E005417EC /* regOneCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B601F1EC4E89E005417EC /* regOneCircle.png */; };
@@ -81,6 +80,7 @@
 		A41BEC1A1EDED79000E4A117 /* threeStars.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC191EDED79000E4A117 /* threeStars.png */; };
 		A41BEC1E1EDEDE6800E4A117 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC1D1EDEDE6800E4A117 /* burger.png */; };
 		A41BEC241EDEFB3700E4A117 /* crown_200.png in Resources */ = {isa = PBXBuildFile; fileRef = A41BEC231EDEFB3700E4A117 /* crown_200.png */; };
+		A42AFD021EE026BF00E1ECDF /* pasta.png in Resources */ = {isa = PBXBuildFile; fileRef = A42AFD011EE026BF00E1ECDF /* pasta.png */; };
 		A480D94F1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94C1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift */; };
 		A480D9501EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94D1EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift */; };
 		A480D9511EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D94E1EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift */; };
@@ -159,7 +159,6 @@
 		A41B60131EC4E4AB005417EC /* ChosenFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChosenFoodViewController.swift; sourceTree = "<group>"; };
 		A41B60151EC4E4C4005417EC /* ConfirmationAndContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationAndContactInfoViewController.swift; sourceTree = "<group>"; };
 		A41B601B1EC4E89E005417EC /* coming-soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coming-soon.png"; sourceTree = "<group>"; };
-		A41B601C1EC4E89E005417EC /* Pasta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pasta.png; sourceTree = "<group>"; };
 		A41B601D1EC4E89E005417EC /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
 		A41B601E1EC4E89E005417EC /* F4ALogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = F4ALogo.png; sourceTree = "<group>"; };
 		A41B601F1EC4E89E005417EC /* regOneCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regOneCircle.png; sourceTree = "<group>"; };
@@ -189,6 +188,7 @@
 		A41BEC191EDED79000E4A117 /* threeStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeStars.png; sourceTree = "<group>"; };
 		A41BEC1D1EDEDE6800E4A117 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 		A41BEC231EDEFB3700E4A117 /* crown_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown_200.png; sourceTree = "<group>"; };
+		A42AFD011EE026BF00E1ECDF /* pasta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pasta.png; sourceTree = "<group>"; };
 		A480D94C1EC50D8C00441F10 /* AddFoodNameViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodNameViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D94D1EC50D8C00441F10 /* AddFoodPickUpViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodPickUpViewControllerTest.swift; sourceTree = "<group>"; };
 		A480D94E1EC50D8C00441F10 /* AddFoodDescriptionViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodDescriptionViewControllerTest.swift; sourceTree = "<group>"; };
@@ -308,12 +308,12 @@
 		A41B5FA71EC4787C005417EC /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A42AFD011EE026BF00E1ECDF /* pasta.png */,
 				A41BEC231EDEFB3700E4A117 /* crown_200.png */,
 				A41BEC1D1EDEDE6800E4A117 /* burger.png */,
 				A41BEC191EDED79000E4A117 /* threeStars.png */,
 				A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */,
 				A41B601B1EC4E89E005417EC /* coming-soon.png */,
-				A41B601C1EC4E89E005417EC /* Pasta.png */,
 				A41B601D1EC4E89E005417EC /* location-arrow.png */,
 				A41B601E1EC4E89E005417EC /* F4ALogo.png */,
 				A41B601F1EC4E89E005417EC /* regOneCircle.png */,
@@ -537,6 +537,7 @@
 				A41B60501EC4E89E005417EC /* zeroCircles.png in Resources */,
 				A41B60361EC4E89E005417EC /* coming-soon.png in Resources */,
 				A41B60461EC4E89E005417EC /* house.png in Resources */,
+				A42AFD021EE026BF00E1ECDF /* pasta.png in Resources */,
 				A41B60471EC4E89E005417EC /* frame-01.png in Resources */,
 				A41B5F711EC4776E005417EC /* LaunchScreen.storyboard in Resources */,
 				A41BEC1E1EDEDE6800E4A117 /* burger.png in Resources */,
@@ -559,7 +560,6 @@
 				A41BEC1A1EDED79000E4A117 /* threeStars.png in Resources */,
 				A41B603C1EC4E89E005417EC /* regTwoCircles.png in Resources */,
 				A41B604C1EC4E89E005417EC /* fourCircles.png in Resources */,
-				A41B60371EC4E89E005417EC /* Pasta.png in Resources */,
 				A41B603B1EC4E89E005417EC /* regThreeCircles.png in Resources */,
 				A41B5F6E1EC4776E005417EC /* Assets.xcassets in Resources */,
 				A4ABB75B1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png in Resources */,
