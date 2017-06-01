@@ -22,7 +22,8 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
+
         self.foodTableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.foodTableview.backgroundColor = UIColor.white
         //self.foodTableview.separatorStyle = .none
@@ -88,6 +89,10 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             foodList.append(temp2)
         }
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {
