@@ -41,6 +41,23 @@ class FoodOverviewViewController: UIViewController {
         descriptionTV.layer.borderColor = UIColor.gray.cgColor
         descriptionTV.layer.cornerRadius = 5
         descriptionTV.clipsToBounds = true
+        
+        let borderColor : UIColor = UIColor.lightGray
+        
+        confirmBtn.layer.borderWidth = 2.0
+        confirmBtn.layer.borderColor = borderColor.cgColor
+        confirmBtn.layer.cornerRadius = 15
+        confirmBtn.setTitleColor(borderColor, for: .normal)
+        confirmBtn.setTitle("Bestätigen", for: .normal)
+        confirmBtn.setTitleColor(UIColor.green, for: .normal)
+        
+        editBtn.layer.borderWidth = 2.0
+        editBtn.layer.borderColor = borderColor.cgColor
+        editBtn.layer.cornerRadius = 15
+        editBtn.setTitleColor(borderColor, for: .normal)
+        editBtn.setTitle("Bearbeiten", for: .normal)
+        editBtn.setTitleColor(UIColor.orange, for: .normal)
+        
 
     }
 

@@ -87,7 +87,7 @@ class AddFoodNameViewController: UIViewController, UITextFieldDelegate, UIPicker
     }
     
     
-    var pickerDataSoruce = ["Cooked", "Raw", "Liquid"]
+    var pickerDataSoruce = ["gekocht", "rohkost", "flüssig"]
 
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

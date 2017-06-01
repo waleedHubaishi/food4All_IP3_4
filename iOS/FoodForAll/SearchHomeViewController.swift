@@ -63,7 +63,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         {
             print("empty")
             temp.name = "Pasta";
-            temp.category = "cooked";
+            temp.category = "gekocht";
             temp.description = "delievered hot"
             temp.expiration = "12.12.2017"
             temp.pickedUp = "13.05.2017"
@@ -75,7 +75,7 @@ class SearchHomeViewController: UIViewController, UITableViewDelegate, UITableVi
             foodList.append(temp)
             
             temp2.name = "Burger";
-            temp2.category = "Raw";
+            temp2.category = "gekocht";
             temp2.description = "delievered cold"
             temp2.expiration = "12.12.2020"
             temp2.pickedUp = "13.05.2020"

@@ -96,7 +96,7 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
         }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if(textView.text == "your description here")
+        if(textView.text == "Beschreibe dein Essen")
         {
             textView.text = ""
             textView.alpha = 1
@@ -111,7 +111,7 @@ class AddFoodDescriptionViewController: UIViewController, UITextViewDelegate, UI
     func textViewDidEndEditing(_ textView: UITextView) {
         if(textView.text == "")
         {
-            textView.text = "your description here"
+            textView.text = "Beschreibe dein Essen"
             textView.textColor = UIColor.gray
             textView.alpha = 0.5
         }
