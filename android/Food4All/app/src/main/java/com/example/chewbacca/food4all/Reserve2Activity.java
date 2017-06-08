@@ -1,5 +1,6 @@
 package com.example.chewbacca.food4all;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,6 +52,9 @@ public class Reserve2Activity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Toast.makeText(Reserve2Activity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(Reserve2Activity.this, Reserve1Activity.class);
+                myIntent.putExtra("key", web[position]); //Optional parameters
+                Reserve2Activity.this.startActivity(myIntent);
 
             }
         });

@@ -46,6 +46,9 @@
         <activity android:name=".Register4Activity" />
         <activity android:name=".Adv2FoodDescription" />
         <activity android:name=".Adv3TimeDateSelect" />
+        <activity android:name=".Reserve2Activity" />
+        <activity android:name=".Reserve1Activity" />
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name" />
@@ -86,7 +89,6 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".Adv8ActivityGalleryView" />
-        <activity android:name=".Adv11ShowImageview" />
         <activity android:name=".Adv12ActivitySuccessPage" />
     </application>
 
