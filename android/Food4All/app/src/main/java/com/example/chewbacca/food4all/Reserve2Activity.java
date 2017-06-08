@@ -36,7 +36,6 @@ public class Reserve2Activity extends AppCompatActivity {
             R.drawable.ic_audiotrack
     };
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

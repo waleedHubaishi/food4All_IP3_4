@@ -30,4 +30,9 @@ public class Startscreen extends AppCompatActivity {
         Intent intent = new Intent(this, Adv1SelectFood.class);
         startActivity(intent);
     }
+    /** provisional Activiy to get to the advertisement views */
+    public void goToReservepage(View view) {
+        Intent intent = new Intent(this, Reserve2Activity.class);
+        startActivity(intent);
+    }
 }

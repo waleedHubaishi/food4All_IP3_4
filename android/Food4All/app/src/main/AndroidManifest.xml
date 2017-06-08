@@ -87,7 +87,7 @@
 
         <activity android:name=".Adv8ActivityGalleryView" />
         <activity android:name=".Adv11ShowImageview" />
-        <activity android:name=".Adv12ActivitySuccessPage"></activity>
+        <activity android:name=".Adv12ActivitySuccessPage" />
     </application>
 
 </manifest>

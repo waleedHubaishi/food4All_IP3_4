@@ -85,4 +85,11 @@
         android:text="@string/add"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToReservepage"
+        android:text="Reserve" />
+
 </LinearLayout>

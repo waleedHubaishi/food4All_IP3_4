@@ -44,7 +44,7 @@
     <string name="title_activity_adv7">Adv7Activity</string>
     <string name="title_activity_adv7_select_location">Map</string>
     <string name="tap_instructions">Tap to chose your coordinates</string>
-    <string name="hello" >Hello FoodHero</string>
+    <string name="hello">Hello FoodHero</string>
     <string name="Bezeichnung">Bezeichnung</string>
     <string name="Category">Kategorie</string>
     <string name="CategoryName">Bezeichnung</string>
@@ -69,4 +69,5 @@
     <string name="button_back">Zurück</string>
     <string name="what">Was?</string>
     <string name="gallery">Galerie</string>
+    <string name="title_activity_test">test</string>
 </resources>
