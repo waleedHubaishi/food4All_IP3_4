@@ -10,7 +10,6 @@ import UIKit
 
 class AdvertiseInfoViewController: UIViewController {
 
-    @IBOutlet weak var whatIsThatLbl: UILabel!
     @IBOutlet weak var progressPhoto: UIImageView!
     @IBOutlet weak var plusImage: UIImageView!
     @IBOutlet weak var FiveSmallStepsLbl: UILabel!
