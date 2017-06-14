@@ -179,6 +179,7 @@ class AddFoodPickUpViewController: UIViewController, UITextFieldDelegate {
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FoodPlace") as! AddFoodPlaceViewController
             secondViewController.food = food
 
+            
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }
