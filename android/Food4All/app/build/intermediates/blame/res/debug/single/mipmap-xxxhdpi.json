@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_f4a.png",
+        "source": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_f4a.png"
+    }
+]

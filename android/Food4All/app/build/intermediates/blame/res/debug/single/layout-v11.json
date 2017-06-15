@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Chewbacca\\.android\\build-cache\\b5e85ab6eeebe3c563bffe14150c602562dec2d5\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    }
+]

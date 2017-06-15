@@ -1,0 +1,7 @@
+#Wed Jun 14 22:32:15 CEST 2017
+base.0=C\:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6e4d37e9478347629793d63088aebc455b8f8637
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a31d6a49a4e9505c226ef25a004ea62134c22ee8\\classes.dex
+base.1=C\:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a31d6a49a4e9505c226ef25a004ea62134c22ee8
+file.0=C\:\\Git\\IP-316vt_Food4All\\android\\Food4All\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6e4d37e9478347629793d63088aebc455b8f8637\\classes.dex

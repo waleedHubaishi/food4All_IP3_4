@@ -22,24 +22,28 @@ class DbOperation
     //Function to create a new user
     public function createUser($userName, $userEmail, $userPassword)
     {
-        //Start Björn-Code
-        $sql = "INSERT INTO user (Name, Email, Password) values ('" . $userName . "', '" . $userEmail . "', '" . $userPassword . "')";
-        if (mysqli_query($this->conn, $sql)) {
+        $sql = "INSERT INTO user (name, email, password) values (".$userName.", ".$userEmail.", ".$userPassword.")";
+        if (mysqli_query($conn, $sql)) {
             echo "Query success!";
             return true;
         } else {
             echo "Query failed!";
             return false;
         }
-        //End Björn-Code
-    }
+        $stmt = $this->conn->prepare("INSERT INTO 'user' ('Name', 'Email', 'Password') values (?, ?, ?)");
+        print_r($userName);
+        print_r($userEmail);
+        print_r($userPassword);
+        // print_r($stmt);
+        $stmt->bind_param("sss", $userName, $userEmail, $userPassword);
+        $result = $stmt->execute();
 
-    public function boolean loginUser($userEmail, $userPassword) {
-        $sql = "SELECT IDuser FROM user WHERE Email='" . $userEmail . "' AND Password='" . $userPassword . "'";
-        $result = mysqli_query($this->conn, $sql);
-        if(mysqli_num_rows($result)==1) {
+        $stmt->close();
+        if ($result) {
+            print_r("asdfasdf");
             return true;
         } else {
+            print_r("qwerqwer");
             return false;
         }
     }
