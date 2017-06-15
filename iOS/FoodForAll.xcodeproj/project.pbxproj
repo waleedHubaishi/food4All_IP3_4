@@ -90,6 +90,10 @@
 		A480D95C1EC5159D00441F10 /* RatingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480D95B1EC5159D00441F10 /* RatingHomeViewController.swift */; };
 		A4ABB75B1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */; };
 		A4ABB75D1EC5C2AD002183D1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ABB75C1EC5C2AD002183D1 /* LaunchScreenViewController.swift */; };
+		A4EB40251EF2996B0051DD13 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EB40241EF2996B0051DD13 /* circle-user-7.png */; };
+		A4EB40281EF2999C0051DD13 /* plus-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EB40261EF2999C0051DD13 /* plus-simple-7.png */; };
+		A4EB40291EF2999C0051DD13 /* search-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EB40271EF2999C0051DD13 /* search-7.png */; };
+		A4EB402B1EF29D460051DD13 /* crown-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EB402A1EF29D460051DD13 /* crown-7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +202,10 @@
 		A480D95B1EC5159D00441F10 /* RatingHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingHomeViewController.swift; sourceTree = "<group>"; };
 		A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00 LoadingScreen-medium.png"; sourceTree = "<group>"; };
 		A4ABB75C1EC5C2AD002183D1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		A4EB40241EF2996B0051DD13 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
+		A4EB40261EF2999C0051DD13 /* plus-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-simple-7.png"; sourceTree = "<group>"; };
+		A4EB40271EF2999C0051DD13 /* search-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-7.png"; sourceTree = "<group>"; };
+		A4EB402A1EF29D460051DD13 /* crown-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crown-7.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,10 +316,14 @@
 		A41B5FA71EC4787C005417EC /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				A4EB40261EF2999C0051DD13 /* plus-simple-7.png */,
+				A4EB40271EF2999C0051DD13 /* search-7.png */,
+				A4EB40241EF2996B0051DD13 /* circle-user-7.png */,
 				A42AFD011EE026BF00E1ECDF /* pasta.png */,
 				A41BEC231EDEFB3700E4A117 /* crown_200.png */,
 				A41BEC1D1EDEDE6800E4A117 /* burger.png */,
 				A41BEC191EDED79000E4A117 /* threeStars.png */,
+				A4EB402A1EF29D460051DD13 /* crown-7.png */,
 				A4ABB75A1EC5BFCA002183D1 /* 00 LoadingScreen-medium.png */,
 				A41B601B1EC4E89E005417EC /* coming-soon.png */,
 				A41B601D1EC4E89E005417EC /* location-arrow.png */,
@@ -545,8 +557,10 @@
 				A41B60431EC4E89E005417EC /* add-01.png in Resources */,
 				A41B60391EC4E89E005417EC /* F4ALogo.png in Resources */,
 				A41B604F1EC4E89E005417EC /* twoCircles.png in Resources */,
+				A4EB40281EF2999C0051DD13 /* plus-simple-7.png in Resources */,
 				A41B60381EC4E89E005417EC /* location-arrow.png in Resources */,
 				A41B604A1EC4E89E005417EC /* gallery.png in Resources */,
+				A4EB40291EF2999C0051DD13 /* search-7.png in Resources */,
 				A41B60481EC4E89E005417EC /* info-01.png in Resources */,
 				A41B60401EC4E89E005417EC /* search_tabbar.png in Resources */,
 				A41BEC241EDEFB3700E4A117 /* crown_200.png in Resources */,
@@ -555,7 +569,9 @@
 				A41B603A1EC4E89E005417EC /* regOneCircle.png in Resources */,
 				A41B60451EC4E89E005417EC /* fridge.png in Resources */,
 				A41B603D1EC4E89E005417EC /* myfridge.png in Resources */,
+				A4EB40251EF2996B0051DD13 /* circle-user-7.png in Resources */,
 				A41B60421EC4E89E005417EC /* next-blue.png in Resources */,
+				A4EB402B1EF29D460051DD13 /* crown-7.png in Resources */,
 				A41B604B1EC4E89E005417EC /* fiveCircles.png in Resources */,
 				A41BEC1A1EDED79000E4A117 /* threeStars.png in Resources */,
 				A41B603C1EC4E89E005417EC /* regTwoCircles.png in Resources */,
